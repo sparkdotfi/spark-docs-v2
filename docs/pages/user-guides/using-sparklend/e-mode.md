@@ -14,12 +14,14 @@ E-mode does not restrict the usage of other assets as collateral. Assets outside
 
 ### How do I enter E-mode?
 
-To enter E-mode from the go to **My portfolio** and find the **Borrow** section. Here you will find an **E-Mode Toggle**, which you can click.\
-<img src="../../.gitbook/assets/e-mode.png" alt="" data-size="original">
+To enter E-mode from the go to **My portfolio** and find the **Borrow** section. Here you will find an **E-Mode Toggle**, which you can click.
+
+![](/assets/e-mode.png)
 
 You can then select which E-mode category you wish to choose.
 
-<figure><img src="../../.gitbook/assets/e-mode-eth.png" alt=""><figcaption><p>Selection of E-Mode Category</p></figcaption></figure>
+![](/assets/e-mode-eth.png)
+*Selection of E-Mode Category*
 
 You then submit the transactions in the **Actions** section to enable E-Mode.
 

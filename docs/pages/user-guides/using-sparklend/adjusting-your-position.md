@@ -12,9 +12,8 @@ Having an active borrow position on Spark requires ongoing monitoring and manage
 
 1.  To monitor your Spark position, navigate to the **My portfolio** page.
 
-
-    ![](/assets/deposit-2.png)
-    *The Dashboard*
+![](/assets/deposit-2.png)
+*The Dashboard*
 
 
 2.  The section **Your position** will show:
@@ -26,8 +25,8 @@ Having an active borrow position on Spark requires ongoing monitoring and manage
     **Note:** If you do not have an active position, it will show an empty position, and a button below to create one using the **Easy Borrow Flow**.
 
 
-    ![](/assets/deposit-5.png)
-    *Your Position: Shows collateral value, loan value, and the max borrow amount*
+![](/assets/deposit-5.png)
+*Your Position: Shows collateral value, loan value, and the max borrow amount*
 
 
 3.  The **Dashboard** also displays the current Health Factor of the borrow position.
@@ -38,29 +37,30 @@ Having an active borrow position on Spark requires ongoing monitoring and manage
 
     **Note:** If you are using more than one collateral type, the current price and liquidation price information is not displayed.
 
-
-    ![](/assets/deposit-8.png)
-    *The Health Factor for your Spark position*
+![](/assets/deposit-8.png)
+*The Health Factor for your Spark position*
 
 
 4.  On the **My portfolio page** you have the necessary functionality to adjust your position.
 
-    *   In the **Deposit** section you can deposit and withdraw assets. [See the steps here](/user-guides/using-sparklend/depositing-assets).
+*   In the **Deposit** section you can deposit and withdraw assets. [See the steps here](/user-guides/using-sparklend/depositing-assets).
 
-    ![](/assets/deposit-3.png)
-    *Deposit Section*
+![](/assets/deposit-3.png)
+*Deposit Section*
 
-    * In the **Deposit** section you can also enable or disable assets as collateral. Learn about this here.
-    *   In the **Borrow** section you can borrow or repay assets. [See the steps here](b/user-guides/using-sparklend/borrowing-assets).
+* In the **Deposit** section you can also enable or disable assets as collateral. Learn about this here.
+*   In the **Borrow** section you can borrow or repay assets. [See the steps here](b/user-guides/using-sparklend/borrowing-assets).
 
 
-    ![](/assets/deposit-9.png)
-    *Borrow Section*
+![](/assets/deposit-9.png)
+*Borrow Section*
 
 
     For example, if your position is close to liquidation you can either repay some of fully your loan, or deposit more collateral. See the [deposit assets](/user-guides/using-sparklend/depositing-assets) and [borrow asset](/user-guides/using-sparklend/borrowing-assets) sections for the step by step guide.
 
+
 5. If your position is liquidated, your position will be updated accordingly and automatically. Depending on the exact situation for the liquidation you might still have an open borrow position. [You can read more about liquidations here](/user-guides/using-sparklend/liquidations).
+
 
 ## FAQ
 

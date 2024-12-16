@@ -6,14 +6,15 @@ description: Learn how to repay your loans on Spark.
 
 ## Tutorial
 
-{% hint style="warning" %}
-**Note:** If you have borrowed USDS using the Easy Borrow Flow, your debt must be repaid in DAI. To do so, you can downgrade USDS to DAI on the Savings page. [Find more info here.](../upgrading-to-usds-and-susds/)
-{% endhint %}
+:::warning
+**Note:** If you have borrowed USDS using the Easy Borrow Flow, your debt must be repaid in DAI. To do so, you can downgrade USDS to DAI on the Savings page. [Find more info here.](/user-guides/upgrading-to-usds-and-susds/)
+:::
 
 1.  To repay your loan, navigate to the **My portfolio** page and find the **Borrow** section. Assets that you have borrowed will show up in the **Your borrow** column.\
 
 
-    <figure><img src="../../.gitbook/assets/deposit-9.png" alt=""><figcaption><p>Borrow Section: Click on repay on the right to initiate repayment of loan</p></figcaption></figure>
+![](/assets/deposit-9.png)
+*Borrow Section: Click on repay on the right to initiate repayment of loan*
 
 
 2. To repay your loan, click on the **Repay** button for the specific asset.\
@@ -21,7 +22,8 @@ description: Learn how to repay your loans on Spark.
 3.  In the **Repay window**, you specify the amount of borrowed assets you wish to repay. You can choose to fully or partially repay your loan. To fully repay the loan, click on **MAX** in the input bar.\
 
 
-    <figure><img src="../../.gitbook/assets/repay.png" alt=""><figcaption><p>Repay Dai Loan</p></figcaption></figure>
+![](/assets/repay.png)
+*Repay Dai Loan*
 
 
 4. Based on the specified amount, the transaction overview will display the remaining debt, and the health factor of the position.\
@@ -30,11 +32,12 @@ description: Learn how to repay your loans on Spark.
 
 6. Once you have done all the necessary transactions, the specified amount of assets will be transferred from your wallet and be repaid to the pool. Your overall position will be updated, which is reflected in the **Health Factor** and overview in **Your position**.
 
-<figure><img src="../../.gitbook/assets/repay-1.png" alt=""><figcaption><p>Sucessful repayment</p></figcaption></figure>
+![](/assets/repay-1.png)
+*Sucessful repayment*
 
 ## FAQ
 
 You can find more information here:
 
-* [**Depositing Assets FAQ**](depositing-assets.md#faq)
-* [**Borrowing Assets FAQ**](borrowing-assets.md#faq)
+* [**Depositing Assets FAQ**](/user-guides/using-sparklend/depositing-assets#faq)
+* [**Borrowing Assets FAQ**](/user-guides/using-sparklend/borrowing-assets#faq)

@@ -21,7 +21,7 @@ The Spark PSM extends the Sky PSM liquidity on Ethereum mainnet to other chains,
 * **`usds`**: IERC20 interface of USDS.
 * **`susds`**: IERC20 interface of sUSDS. Note that this is an ERC20 and not a ERC4626 because it's not on mainnet.
 * **`pocket`**: Address that holds custody of USDC. The `pocket` can deploy USDC to yield-bearing strategies. Defaulted to the address of the PSM itself.
-* **`rateProvider`**: Contract that returns a conversion rate between and sUSDS and USD in 1e27 precision. [See Cross-chain Savings Rate Oracle for more information.](cross-chain-savings-rate-oracle.md)
+* **`rateProvider`**: Contract that returns a conversion rate between and sUSDS and USD in 1e27 precision. [See Cross-chain Savings Rate Oracle for more information.](/dev/savings/cross-chain-savings-rate-oracle)
 * **`totalShares`**: Total shares in the PSM. Shares represent the ownership of the underlying assets in the PSM.
 * **`shares`**: Mapping of user addresses to their shares.
 
@@ -50,9 +50,9 @@ The Spark PSM extends the Sky PSM liquidity on Ethereum mainnet to other chains,
 
 #### **Conversion Functions**
 
-{% hint style="warning" %}
-**NOTE:** These functions do not round in the same way as preview functions, so they are meant to be used for general quoting purposes.
-{% endhint %}
+:::warning
+**Note:** These functions do not round in the same way as preview functions, so they are meant to be used for general quoting purposes.
+:::
 
 * **`convertToAssets`**: Converts shares to the equivalent amount of a specified asset.
 * **`convertToAssetValue`**: Converts shares to their equivalent value in USD terms with 18 decimal precision.
@@ -78,9 +78,9 @@ You can fetch the liquidity of the PSM3 by checking the USDS and sUSDS ERC20 tok
 
 USDS and USDC are always converted at a fixed 1:1 ratio.
 
-sUSDS is a yield accumulating token, meaning its price will increase vs USDS/USDC over time. A [rate provider oracle](cross-chain-savings-rate-oracle.md) is used to provide the sUSDS price.
+sUSDS is a yield accumulating token, meaning its price will increase vs USDS/USDC over time. A [rate provider oracle](/dev/savings/cross-chain-savings-rate-oracle) is used to provide the sUSDS price.
 
 ## Additional resources
 
-* [Cross-chain USDS & sUSDS](cross-chain-usds-and-susds.md)
-* [Cross-chain Savings Rate Oracle](cross-chain-savings-rate-oracle.md)
+* [Cross-chain USDS & sUSDS](/dev/savings/cross-chain-usds-and-susds)
+* [Cross-chain Savings Rate Oracle](/dev/savings/cross-chain-savings-rate-oracle)

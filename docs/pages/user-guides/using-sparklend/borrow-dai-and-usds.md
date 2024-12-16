@@ -1,24 +1,21 @@
 ---
 description: Learn how to use the Easy Borrow Flow to borrow USDS or DAI.
+content: 
+  width: 1000
 ---
 
 # Borrow DAI and USDS
-
 :::warning
-**Note:** When borrowing USDS, you are actually borrowing DAI which is then upgraded to USDS in the same transaction. This means that your debt is in DAI and must be repaid using DAI. To payback DAI, you can downgrade USDS to DAI on the Savings page. [Find more info here.](../upgrading-to-usds-and-susds/)
+**Note:** When borrowing USDS, you are actually borrowing DAI which is then upgraded to USDS in the same transaction. This means that your debt is in DAI and must be repaid using DAI. To payback DAI, you can downgrade USDS to DAI on the Savings page. [Find more info here.](/user-guides/upgrading-to-usds-and-susds/)
 :::
-
 ## Tutorial
 
 On the **Borrow DAI and USDS** page, you can borrow USDS and DAI, by depositing crypto assets as collateral. If you wish to borrow other assets than USDS or DAI, navigate to the **My portfolio** page and follow the [deposit assets](/user-guides/using-sparklend/depositing-assets) and [borrowing assets](/user-guides/using-sparklend/borrowing-assets) steps instead.
 
 1.  Navigate to the **Borrow DAI and USDS** page.
 
-
-    ![](/assets/borrow-1.png)
-    *Navigating to Borrow DAI and USDS*
-
-
+![](/assets/borrow-1.png)
+*Navigating to Borrow DAI and USDS*
 
 ![](/assets/borrow-2.png)
 *The Borrow DAI or USDS page*
@@ -58,31 +55,30 @@ On the **Borrow DAI and USDS** page, you can borrow USDS and DAI, by depositing 
 
 9.  This will showcase the *Health Factor*, the *Liquidation Price* and the current *Collateral Pricing* for the position.
 
+![](/assets/borrow-7.png)
+*The Health Factor Overview*
 
-    ![](/assets/borrow-7.png)
-    *The Health Factor Overview*
+* The **Health Factor** is a measure of how close the position is to liquidation based on the current LTV. A Health Factor **below 1** means the position can be liquidated. Users are responsible for keeping a Health Factor above 1, in order to avoid liquidation. The LTV of the position can change over time if the underlying collateral changes in value, and as debt accrues due to interest rates.
+* **Current Price** shows the current market price of the collateral asset provided by the price oracle.
+* If the price of the collateral asset reaches the **Liquidation Price**, the position can be liquidated.
 
-    * The **Health Factor** is a measure of how close the position is to liquidation based on the current LTV. A Health Factor **below 1** means the position can be liquidated. Users are responsible for keeping a Health Factor above 1, in order to avoid liquidation. The LTV of the position can change over time if the underlying collateral changes in value, and as debt accrues due to interest rates.
-    * **Current Price** shows the current market price of the collateral asset provided by the price oracle.
-    * If the price of the collateral asset reaches the **Liquidation Price**, the position can be liquidated.
-
-    **Note:** If you are using more than one collateral type, the current price and liquidation price information is not displayed.
+:::info
+**Note:** If you are using more than one collateral type, the current price and liquidation price information is not displayed.
+:::
 
 10. The **Actions** section below shows the transactions necessary to create the borrow position. You must click the buttons to sign each transactions with the connected wallet.
 
+![](/assets/borrow-8.png)
+*Actions Window*
 
-    ![](/assets/borrow-8.png)
-    *Actions Window*
-
-    * **Token Permit/Approval:** You must approve the deposit of the collateral token.
-    * **Deposit:** You deposit the collateral tokens into the borrow position.
-    * **Borrow:** You borrow the specified amount of assets.
+* **Token Permit/Approval:** You must approve the deposit of the collateral token.
+* **Deposit:** You deposit the collateral tokens into the borrow position.
+* **Borrow:** You borrow the specified amount of assets.
 
 11. Once every step is done, you will have received the borrowed Dai in your wallet, and a confirmation and overview of the actions. You can click on **View in dashboard** to view your new position.
 
-
-    ![](/assets/borrow-9.png)
-    *Confirmation Window*
+![](/assets/borrow-9.png)
+*Confirmation Window*
 
 ## FAQ
 

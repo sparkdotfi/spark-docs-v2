@@ -16,7 +16,7 @@ Learn how to deposit into farms, claim rewards, and withdraw from farms, using t
 
 - [Claiming Rewards](/user-guides/farming-rewards/claiming-rewards)
 
-- [Withdrawing From Farms](/user-guides/farming-rewardss/withdrawing-from-farms)
+- [Withdrawing From Farms](/user-guides/farming-rewards/withdrawing-from-farms)
 
 ## Farms FAQ
 

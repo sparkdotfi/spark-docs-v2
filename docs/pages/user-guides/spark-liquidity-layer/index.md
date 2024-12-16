@@ -69,14 +69,14 @@ Once funds have been bridged to the destination chain, they can be deployed into
 
 ### Direct Liquidity to Aave Lido Market
 
-The SLL supplies USDS liquidity to the Aave Lido lending market. This allows Aave users to borrow USDS against approved collateral types, generating yield for Spark. The risk parameters such as maximum amount are controlled by Sky.\
-You can find the Aave Lido USDS market here: [Aave Lido USDS market](https://app.aave.com/reserve-overview/?underlyingAsset=0xdc035d45d973e3ec169d2276ddab16f1e407384f\&marketName=proto\_lido\_v3).
+The SLL supplies USDS liquidity to the Aave Lido lending market. This allows Aave users to borrow USDS against approved collateral types, generating yield for Spark. The risk parameters such as maximum amount are controlled by Sky.
+You can find the Aave Lido USDS market here: [Aave Lido USDS market](https://app.aave.com/reserve-overview/?underlyingAsset=0xdc035d45d973e3ec169d2276ddab16f1e407384f&marketName=proto_lido_v3).
 
 ### Direct Liquidity to Morpho Markets
 
 The SLL supplies Dai liquidity to a series of Morpho lending markets that accepts Ethena's USDe and sUSDe as collateral. These various markets are isolated and have different risk parameters enabling a more granular approach to risk management. This allows Morpho users to borrow Dai against USDe and sUSDe, generating yield for Spark.
 
-You can find the Dai Morpho markets here: [Morpho Spark Dai Vault](https://app.morpho.org/vault?vault=0x73e65DBD630f90604062f6E02fAb9138e713edD9\&network=mainnet).
+You can find the Dai Morpho markets here: [Morpho Spark Dai Vault](https://app.morpho.org/vault?vault=0x73e65DBD630f90604062f6E02fAb9138e713edD9&network=mainnet).
 
 ### Cross-chain Liquidity using Spark PSM
 

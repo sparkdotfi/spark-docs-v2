@@ -23,8 +23,8 @@ Savings are supported on Ethereum, Base and Gnosis Chain. More major networks wi
 1. Make sure you are connected to the network you wish to use. [Savings are supported across different networks](/user-guides/earning-savings/savings-usds.md#supported-networks-and-token-addresses).
 2.  To earn yield on your stablecoins such as USDS, DAI, and USDC, navigate to the **Savings** page.
 
-    ![](/assets/savings-1.png)
-    *Savings Page*
+![](/assets/savings-1.png)
+*Savings Page*
 
 3. If you have stablecoins in your wallet, the UI will show you the savings opportunity based on your holdings. It shows the current Sky Savings Rate (SSR), a 30 day projected savings and a 1-year projected savings.
 
@@ -57,8 +57,8 @@ The following example showcases a USDC deposit:
 1.  When you wish to withdraw accrued savings, you simply click on the withdraw button in the Savings USDS window. In the withdraw window you specify the asset and amount you wish to withdraw. To finalize the withdrawal you must execute the transactions in the **Actions** section.
 
 
-    ![](/assets/savings-5.png)
-    *Withdraw from Savings*
+![](/assets/savings-5.png)
+*Withdraw from Savings*
 
 ![](/assets/savings-6.png)
 *Withdraw from Savings*

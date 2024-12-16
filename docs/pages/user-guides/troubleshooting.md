@@ -73,6 +73,6 @@ Alternatively, if your wallet provider doesn't have this option, you can still d
 
 Here is a guide about the topic for [MyCrypto](https://support.mycrypto.com/how-to/sending/checking-or-replacing-a-transaction-after-it-has-been-sent).
 
-{% hint style="info" %}
+:::info
 If you still have any questions or issues, feel free to reach out to the Spark team on the official [Discord](https://discord.com/sparkdao).
-{% endhint %}
+:::

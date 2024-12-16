@@ -4,23 +4,23 @@ description: Learn about the SPK Token and Pre-farming Airdrop.
 
 # SPK Token & Airdrop
 
-{% hint style="warning" %}
-The SPK token is not released yet, please beware of scammers.
-{% endhint %}
+:::danger
+**The SPK token is not released yet, please beware of scammers.**
+:::
 
-{% hint style="info" %}
+:::info
 SPK pre-farming airdrop is ongoing, see current stats at [BlockAnalitica's website](https://spark.blockanalitica.com/v1/ethereum/airdrop/).
-{% endhint %}
+:::
 
 ## What is SPK?
 
 SPK is the governance token of the Spark Sky Star. [Learn more about this here.](https://forum.makerdao.com/t/makerdao-endgame-launch-season/23857)
 
-## What is Spark Sky Star? <a href="#what-is-spark-subdao" id="what-is-spark-subdao"></a>
+## What is Spark Sky Star?
 
 Spark is a Sky Star, a part of the Sky Ecosystem. [You can read more about the Sky Star here.](https://forum.makerdao.com/t/sky-has-arrived/24959#p-98600-spark-the-first-sky-star-14)
 
-Sky Stars are currently in bootstrapping phase and will be officially launched in late 2024.
+Sky Stars are currently in bootstrapping phase and will be officially launched in 2025
 
 ## Has SPK been launched yet?
 
@@ -30,7 +30,7 @@ When the token is launched, announcements will be made from the official X accou
 
 ## What is the SPK pre-farming airdrop?
 
-Spark is running a pre-farming airdrop campaign based on usage of its lending platform. Users of the platform will receive an airdrop, depending on how much and how long they have used the platform during specific periods, also known as seasons. Users will continue to be able to farm the SPK token after it has launched. See further details on [how to qualify](spk-token.md#how-do-i-qualify-for-the-spk-airdrop) for the airdrop, and the [different seasons](spk-token.md#season-1-aug-20-2023-may-20-2024) below.
+Spark is running a pre-farming airdrop campaign based on usage of its lending platform. Users of the platform will receive an airdrop, depending on how much and how long they have used the platform during specific periods, also known as seasons. Users will continue to be able to farm the SPK token after it has launched. See further details on [how to qualify](#how-do-i-qualify-for-the-spk-airdrop) for the airdrop, and the [different seasons](#season-1-aug-20-2023-may-20-2024) below.
 
 ## How many SPK tokens are distributed?
 
@@ -41,9 +41,9 @@ In season 1 60M SPK was allocated to users who qualified for the airdrop.
 * 80 % (48M) is allocated to users borrowing DAI
 * 20 % (12M) is allocated to users supplying ETH.
 
-Season 1 was a pre-farming period of 9 months active from Aug 20 2023 14:25 UTC (Ethereum block 17956537) to May 20 2024 14:25 UTC.\
-\
-**Note:** In season 1 the [airdrop formula](spk-token.md#how-much-spk-will-i-earn) was used across the entire time period, so your allocation is based on the qualifying amount and how long it was borrowed/supplied.
+Season 1 was a pre-farming period of 9 months active from Aug 20 2023 14:25 UTC (Ethereum block 17956537) to May 20 2024 14:25 UTC.
+
+**Note:** In season 1 the [airdrop formula](#how-much-spk-will-i-earn) was used across the entire time period, so your allocation is based on the qualifying amount and how long it was borrowed/supplied.
 
 ### Active: Season 2 (May 20, 2024 - Sky Star Launch TBD)
 
@@ -60,7 +60,7 @@ The monthly SPK rewards are allocated as following:
 
 Season 2 is an additional pre-farming period, which runs until the Spark Sky Star launches as part of Sky Endgame launch season.
 
-**Note:** In season 2, the [airdrop formula](spk-token.md#how-much-spk-will-i-earn) will be applied per block, meaning you will accrue SPK each block, based on the qualifying amount borrowed/supplied.
+**Note:** In season 2, the [airdrop formula](#how-much-spk-will-i-earn) will be applied per block, meaning you will accrue SPK each block, based on the qualifying amount borrowed/supplied.
 
 #### Aave
 
@@ -82,7 +82,8 @@ To prevent gaming the incentives through "stablecoin looping", meaning supplying
 
 The SPK emissions follow the rules set forth in [MIP101: Sky Atlas Immutable Alignment Artifact](https://forum.makerdao.com/t/mip102c2-sp21-mip-amendment-subproposal/23039/5#h-4312-allocatordao-emissions-107) as part of the Sky Endgame, which states that **4.6 billion SPK tokens will be emitted over the first 10 years**. 4 billion tokens are emitted through Genesis farming, which gradually decreases over time, and 600 million tokens are allocated to a workforce bonus pool. See the allocation chart below:
 
-<figure><img src="https://lh7-us.googleusercontent.com/Z2TNoqqBEAX74fQs7KrfEuyceN7_Qmz_hZ79r8lVZzdZYvQu7I5HHTT5Iyz8b1AUYMU44N7t_wnNdfkR-5mKZb_rsy159dudWxjlAOYAIcOLVp_G6vnrlyeZhDPMczICv0UEF-SBMadzc6p5iwCCU8M" alt=""><figcaption><p>SPK Genesis Distribution</p></figcaption></figure>
+![](/assets/spk_distribution.png)
+*SPK Genesis Distribution*
 
 The Genesis farming follow the following emission schedule:
 
@@ -99,13 +100,14 @@ The Genesis farming follow the following emission schedule:
 | Year 9      | 125                                | 3875                              |
 | Year 10     | 125                                | 4000                              |
 
-<figure><img src="https://lh7-us.googleusercontent.com/wlhK-TUh8Hfrm8bhvMGjK1S2s6mlOu2tYB96hVDrfFT-4fkcPLIP3dEImbCGpGIb9QvZkCRmBX3s4gzq0w7hTOowmBkMRXTiVs4GA_wfMDWYpCVMJzXmPSP7CORN-4WzMjXBoqZKcdxXsP8TSWJF9ts" alt=""><figcaption><p>SPK Emissions Over First 10 Years</p></figcaption></figure>
+![](/assets/spk_emissions.png)
+*SPK Emissions Over First 10 Years*
 
 ## How do I qualify for the SPK airdrop?
 
-This section only relates to SPK rewards on SparkLend. To learn more about the Aave SPK rewards [read more here](spk-token.md#aave).
+This section only relates to SPK rewards on SparkLend. To learn more about the Aave SPK rewards [read more here](#aave).
 
-Users of [Spark](http://app.spark.fi) who borrow DAI or supply ETH qualify for the SPK airdrop. You can see the formula for calculating the SPK amount in the [following section](spk-token.md#how-many-spk-tokens-are-distributed).
+Users of [Spark](http://app.spark.fi) who borrow DAI or supply ETH qualify for the SPK airdrop. You can see the formula for calculating the SPK amount in the [following section](#how-many-spk-tokens-are-distributed).
 
 **Note**: Attempting to game the airdrop by lending sDAI while borrowing DAI or lending and borrowing ETH on the same account will forfeit your inclusion in the airdrop.
 
@@ -130,7 +132,7 @@ For clarity here are some **valid examples:**
 
 ## How much SPK will I earn?
 
-This section only relates to SPK rewards on SparkLend. To learn more about the Aave SPK rewards [read more here](spk-token.md#aave).
+This section only relates to SPK rewards on SparkLend. To learn more about the Aave SPK rewards [read more here](#aave).
 
 The SPK Airdrop for SparkLend is calculated using the following formula:
 
@@ -138,19 +140,19 @@ The SPK Airdrop for SparkLend is calculated using the following formula:
 
 Please note all supplies and borrows are denominated in USD and will use the on-chain oracle price at that block to determine the conversion.
 
-For Aave SPK rewards, [read more here](spk-token.md#aave).
+For Aave SPK rewards, [read more here](#aave).
 
-To calculate the final airdrop, the formula will be computed for every account on each block within the valid time range, and the Airdrop value will be summed over every included block to produce a final number for each account. The relative weight of this number will then be converted to the allocated SPK token supply. See the [seasons sections](spk-token.md#season-1-aug-20-2023-may-20-2024) for the different time frames.
+To calculate the final airdrop, the formula will be computed for every account on each block within the valid time range, and the Airdrop value will be summed over every included block to produce a final number for each account. The relative weight of this number will then be converted to the allocated SPK token supply. See the [seasons sections](#season-1-aug-20-2023-may-20-2024) for the different time frames.
 
 ### Anti-cheat formula
 
-As noted in the “[How do I qualify for the airdrop?](spk-token.md#how-do-i-qualify-for-the-spk-airdrop)” section, there are certain actions that count against the airdrop on SparkLend. The full airdrop formula including the anti-cheat measure is as follows:
+As noted in the “[How do I qualify for the airdrop?](#how-do-i-qualify-for-the-spk-airdrop)” section, there are certain actions that count against the airdrop on SparkLend. The full airdrop formula including the anti-cheat measure is as follows:
 
 Full anti-cheat formula (don’t worry about this if you are using the system legitimately:
 
 `Airdrop = 80% * (DAI Borrows - sDAI Supplies * sDAI Liquidation Threshold) + 20% * (ETH Supplies - ETH Borrows / ETH Liquidation Threshold)`
 
-For Aave Rewards anti-cheat formula, [read more here](spk-token.md#aave).
+For Aave Rewards anti-cheat formula, [read more here](#aave).
 
 ## Which geographies qualify for the pre-farming airdrop?
 
@@ -174,4 +176,4 @@ The SPK token will be released when the Spark Sky Star launches as part of the S
 
 Details on how to claim SPK will be announced on the official X accounts of [Sky (@SkyEcosystem)](https://x.com/SkyEcosystem) and [Spark (@sparkdotfi)](https://x.com/sparkdotfi) once the launch date arrives.
 
-\
+

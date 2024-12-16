@@ -12,13 +12,11 @@ SparkLend is a decentralized non-custodial liquidity market protocol where users
 
 Get started using SparkLend using this guide:
 
-{% content-ref url="borrow-dai-and-usds.md" %}
-[borrow-dai-and-usds.md](borrow-dai-and-usds.md)
-{% endcontent-ref %}
+- [Borrow DAI and USDS](/user-guides/using-sparklend/borrow-dai-and-usds)
 
 ## What are the risks?
 
-No platform can be considered entirely risk-free. The risks related to the SparkLend platform are the smart contract risk (risk of a bug within the protocol code) and liquidation risk (risk on the collateral liquidation process). Every possible step has been taken to minimize the risk as much as possible, the protocol code is public and open source and it has been audited. Additionally, you can find additional security-related information in the [security and audits](https://devs.spark.fi/security-and-audits) sections.
+No platform can be considered entirely risk-free. The risks related to the SparkLend platform are the smart contract risk (risk of a bug within the protocol code) and liquidation risk (risk on the collateral liquidation process). Every possible step has been taken to minimize the risk as much as possible, the protocol code is public and open source and it has been audited. Additionally, you can find additional security-related information in the [Security Audits](dev/security/security-and-audits) section.
 
 ## Feature Overview
 
@@ -28,25 +26,16 @@ On SparkLend, users are able to deposit assets into liquidity markets where they
 
 You can lean more about Depositing, Lending and Borrowing here:
 
-{% content-ref url="depositing-assets.md" %}
-[depositing-assets.md](depositing-assets.md)
-{% endcontent-ref %}
-
-{% content-ref url="borrowing-assets.md" %}
-[borrowing-assets.md](borrowing-assets.md)
-{% endcontent-ref %}
+- [Depositing Assets](/user-guides/using-sparklend/depositing-assets)
+- [Borrowing Assets](/user-guides/using-sparklend/borrowing-assets)
 
 ### Efficiency Mode (E-Mode)
 
 The High Efficiency Mode or _**E-Mode**_ allows borrowers to extract the highest borrowing power out of their collateral when supplied and borrowed assets are correlated in price, particularly when both are derivatives of the same underlying asset (e.g. stablecoins pegged to USD).
 
-This can enabling a wave of new use cases such as High leverage forex trading, Highly efficient yield farming (for example, deposit ETH staking derivatives to borrow ETH), Diversified risk management&#x20;
-
 Learn more about E-Mode here:
 
-{% content-ref url="e-mode.md" %}
-[e-mode.md](e-mode.md)
-{% endcontent-ref %}
+- [E-mode](/user-guides/using-sparklend/e-mode)
 
 ### Isolation Mode
 
@@ -54,9 +43,7 @@ New assets can be listed as _**isolated**_. Borrowers depositing an isolated ass
 
 Learn more about Isolation mode here:
 
-{% content-ref url="spark-lend-features.md" %}
-[spark-lend-features.md](spark-lend-features.md)
-{% endcontent-ref %}
+- [Isolation Mode](/user-guides/using-sparklend/isolation-mode)
 
 ### Siloed Borrowing
 
@@ -87,9 +74,9 @@ In SparkLend, it is possible to lower the borrowing power of any asset to as low
 
 SparkLend introduces the ability for the Sky Governance to grant entities permission to update the risk parameters with going through governance vote for every change. These entities can be DAOs or automated agents that can build on top of this feature to react automatically in case of unanticipated events.
 
-{% hint style="info" %}
+:::info
 Sky Governance will have the ability to revoke access to existing Risk Admins or add new Risk Admins.
-{% endhint %}
+:::
 
 ### Price Oracle Sentinel
 
@@ -103,6 +90,4 @@ The variable liquidation close factor will based on the Health Factor (HF) allow
 
 You can read more about liquidations here:
 
-{% content-ref url="liquidations.md" %}
-[liquidations.md](liquidations.md)
-{% endcontent-ref %}
+- [Liquidations](/user-guides/using-sparklend/liquidations)

@@ -6,46 +6,50 @@ description: Learn how to borrow non Dai assets, and how to use E-mode.
 
 ## Tutorial
 
-In order to borrow assets, you must first deposit assets as collateral. [Click here](depositing-assets.md) for a step by step deposit guide.
+In order to borrow assets, you must first deposit assets as collateral. [Click here](/user-guides/using-sparklend/depositing-assets) for a step by step deposit guide.
 
-If you wish to borrow USDS or Dai you can use the [**Borrow DAI or USDS**](borrow-dai-and-usds.md) page.
+If you wish to borrow USDS or Dai you can use the [**Borrow DAI or USDS**](/user-guides/using-sparklend/borrow-dai-and-usds) page.
 
-1.  To borrow assets navigate to the **My portfolio** page and scroll down to the **Borrow** section.\
+1.  To borrow assets navigate to the **My portfolio** page and scroll down to the **Borrow** section.
 
+![](/assets/deposit-2.png)
+*My Portfolio*
 
-    <figure><img src="../../.gitbook/assets/deposit-2 (1).png" alt=""><figcaption><p>My Portfolio<br></p></figcaption></figure>
-
-    <figure><img src="../../.gitbook/assets/deposit-9.png" alt=""><figcaption><p>Borrow Section</p></figcaption></figure>
+![](/assets/deposit-9.png)
+*Borrow Section*
 
 
 2. The **Borrow** section shows the following information:
    * The assets that can be borrowed
    * The available liquidity that can be borrowed
    * Your current borrow amount
-   * The current borrow interest rate for the specific asset\
+   * The current borrow interest rate for the specific asset
 
-3.  If you are borrowing an asset that is correlated with the deposited collateral type, you can activate the **E-Mode** **toggle** to increase the borrow amount.\
-    \
-    <img src="../../.gitbook/assets/e-mode.png" alt="" data-size="original">\
-    \
-    This is available between ETH correlated assets (ETH, wsETH, rETH) and stablecoin correlated assets (DAI, USDC, USDT), and allows for increased leverage. For example, you can enable E-mode if you are borrowing ETH using wstETH as collateral. If you are borrowing assets not supported in E-mode, you cannot enable E-mode. For example, if you have already borrowed Dai against ETH, you cannot enable E-mode until this loan has been repaid. [You can read more about E-mode here.](e-mode.md)\
-
-
-    <figure><img src="../../.gitbook/assets/e-mode-eth.png" alt=""><figcaption><p>E-mode Categories</p></figcaption></figure>
+3.  If you are borrowing an asset that is correlated with the deposited collateral type, you can activate the **E-Mode** **toggle** to increase the borrow amount.
+    
+![](/assets/e-mode.png)
+    
+This is available between ETH correlated assets (ETH, wsETH, rETH) and stablecoin correlated assets (DAI, USDC, USDT), and allows for increased leverage. For example, you can enable E-mode if you are borrowing ETH using wstETH as collateral. If you are borrowing assets not supported in E-mode, you cannot enable E-mode. For example, if you have already borrowed Dai against ETH, you cannot enable E-mode until this loan has been repaid. [You can read more about E-mode here.](/user-guides/using-sparklend/e-mode)
 
 
-4. You can borrow an asset by navigating to the asset row, and clicking **Borrow**.\
-
-5.  In the **Borrow window** you specify the amount you wish to borrow. In the **Transaction overview** it will display the Health Factor of the borrow position. The **Actions** section will guide you through the steps to create the borrow position.\
-
-
-    <figure><img src="../../.gitbook/assets/borrow-weth.png" alt=""><figcaption><p>Borrow Window: WETH</p></figcaption></figure>
+![](/assets/e-mode-eth.png)
+*E-mode Categories</p></figcaption></figure>
 
 
-6.  Once you have done all the necessary transactions, you will receive the borrowed assets. Your overall position will be updated, which is reflected in the **Health Factor** and overview in **Your position**.\
+4. You can borrow an asset by navigating to the asset row, and clicking **Borrow**.
+
+5.  In the **Borrow window** you specify the amount you wish to borrow. In the **Transaction overview** it will display the Health Factor of the borrow position. The **Actions** section will guide you through the steps to create the borrow position.
 
 
-    <figure><img src="../../.gitbook/assets/borrow-weth-done.png" alt=""><figcaption><p>Confirmation: Borrowing WETH</p></figcaption></figure>
+![](/assets/borrow-weth.png)
+*Borrow Window: WETH*
+
+
+6.  Once you have done all the necessary transactions, you will receive the borrowed assets. Your overall position will be updated, which is reflected in the **Health Factor** and overview in **Your position**.
+
+
+    ![](/assets/borrow-weth-done.png)
+    *Confirmation: Borrowing WETH</p></figcaption></figure>
 
 
 7. If you wish to borrow more at a later stage, you simply repeat this process.
@@ -92,9 +96,7 @@ In order to payback the loan you simply go to the Borrowings section of your das
 
 In order to avoid the reduction of your health factor leading to liquidation, you can repay the loan or deposit more collateral assets in order to increase your health factor. Learn more about liquidations here:
 
-{% content-ref url="liquidations.md" %}
-[liquidations.md](liquidations.md)
-{% endcontent-ref %}
+- [Liquidations](/user-guides/using-sparklend/liquidations)
 
 ### How can I use permit?
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Cross-chain SSR Oracle reports the Sky Savings Rate (SSR) values across various bridges. This is primarily used to provide integrators the sUSDS/USDS conversion rate (the value of 1 sUSDS in USDS) as sUSDS is an accumulating token that increases in value against USDS over time. This oracle is used by the [Spark PSM](spark-psm.md), to enable swapping between USDS and sUSDS at the current conversion rate. Another example use case is decentralized exchanges leveraging the oracle to make liquidity management more capital efficient, by automatically moving sUSDS/USDS order book liquidity according to the conversion rate.
+The Cross-chain SSR Oracle reports the Sky Savings Rate (SSR) values across various bridges. This is primarily used to provide integrators the sUSDS/USDS conversion rate (the value of 1 sUSDS in USDS) as sUSDS is an accumulating token that increases in value against USDS over time. This oracle is used by the [Spark PSM](/dev/savings/spark-psm), to enable swapping between USDS and sUSDS at the current conversion rate. Another example use case is decentralized exchanges leveraging the oracle to make liquidity management more capital efficient, by automatically moving sUSDS/USDS order book liquidity according to the conversion rate.
 
 The oracle provides three sUSDS values in sync:&#x20;
 
@@ -20,9 +20,7 @@ The oracle provides convenience functions to fetch the conversion rate at variou
 
 Check the Spark Address Registry for the most up to date resource for contract deployments:
 
-{% content-ref url="../deployments/spark-address-registry.md" %}
-[spark-address-registry.md](../deployments/spark-address-registry.md)
-{% endcontent-ref %}
+- [Spark Address Registry](/dev/deployments#spark-address-registry)
 
 ## Contracts
 
@@ -71,7 +69,7 @@ The Sky Savings Rate is a compounding rate that is stored in the rate accumulato
 
 ## Additional resources
 
-* [Cross-chain USDS & sUSDS](cross-chain-usds-and-susds.md)
-* [Spark PSM](spark-psm.md)
+* [Cross-chain USDS & sUSDS](/dev/savings/cross-chain-usds-and-susds)
+* [Spark PSM](/dev/savings/spark-psm)
 * [Sky Savings Rate Mechanism](https://github.com/makerdao/developerguides/blob/master/mcd/intro-rate-mechanism/intro-rate-mechanism.md#dai-savings-rate)
 

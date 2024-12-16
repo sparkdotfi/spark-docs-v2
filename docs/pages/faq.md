@@ -132,7 +132,7 @@ In order to avoid the reduction of your health factor leading to liquidation, yo
 
 The Spark Liquidity Layer (SLL) automates liquidity provision of USDS, sUSDS, and USDC directly from Sky across various blockchain networks and DeFi protocols. This enables users to easily earn the Sky Savings Rate on their preferred network using sUSDS. Additionally, it allows Spark to automate liquidity provision into DeFi markets to optimize yield.
 
-You can read more about it here: [Spark Liquidity Layer](user-guides/spark-liquidity-layer/).
+You can read more about it here: [Spark Liquidity Layer](/user-guides/spark-liquidity-layer/).
 
 ### What are the benefits?
 

@@ -24,6 +24,7 @@ ChainSecurity completed the audits for the deployment of SparkLend along with au
 
 {% file src="../.gitbook/assets/Cantina - Spark Liquidity Layer (2024-09-25).pdf" %}
 
+
 {% file src="../.gitbook/assets/Cantina - Spark Liquidity Layer (2024-10-23).pdf" %}
 
 {% file src="../.gitbook/assets/Chainsecurity - Spark Liquidity Layer (2024-10-22).pdf" %}

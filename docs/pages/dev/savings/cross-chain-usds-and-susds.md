@@ -1,18 +1,18 @@
 # Cross-chain USDS & sUSDS
 
-{% hint style="info" %}
+:::info
 If you are looking to integrate Ethereum mainnet sUSDS, you should use [this documentation instead](susds-token.md).
-{% endhint %}
+:::
 
 ## Overview
 
-The Spark Liquidity Layer enables cross-chain liquidity of USDS and sUSDS. Integrators on these networks can tap into this liquidity by integrating these cross-chain tokens, and the [Spark PSM](spark-psm.md).&#x20;
+The Spark Liquidity Layer enables cross-chain liquidity of USDS and sUSDS. Integrators on these networks can tap into this liquidity by integrating these cross-chain tokens, and the [Spark PSM](/dev/savings/spark-psm).
 
 The crosschain USDS and sUSDS tokens use the same simple ERC20 token implementation. The only difference between them is that sUSDS will increase in value over time according to the Sky Savings Rate. Converting between them on other networks can be done at no slippage or fees beyond gas using the Spark PSM. The crosschain sUSDS token does not contain any ERC4626 functionality - this is only available on Ethereum mainnet.
 
-{% hint style="info" %}
+:::info
 Savings USDS and the Sky Savings Rate are non-custodial and permissionless smart contracts offered by [Sky](https://sky.money), and is not issued by Spark. Spark does not have any control over the Sky Savings Rate or the sUSDS token.
-{% endhint %}
+:::
 
 ## Contract Details
 
@@ -46,8 +46,8 @@ The contract uses the ERC-1822 UUPS pattern for upgradeability and the ERC-1967 
 ## Additional resources
 
 * [Spark Liquidity Layer](https://docs.spark.fi/user-guides/spark-liquidity-layer)
-* [Spark PSM](spark-psm.md)
-* [sUSDS (Mainnet)](susds-token.md)
+* [Spark PSM](/dev/savings/spark-psm)
+* [sUSDS (Mainnet)](/dev/savings/susds-token)
 * [Overview of](https://docs.spark.fi/user-guides/earning-savings/savings-usds#what-is-dsr-1)[ Sky Savings Rate](https://docs.spark.fi/user-guides/earning-savings/savings-usds#what-is-dsr-1)
 * [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626)
 * [ERC-4626 Tokenized Vault Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/)
