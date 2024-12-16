@@ -16,9 +16,7 @@ USDS enables users to earn additional rewards, such as a higher APY on Savings U
 
 Follow this guide to upgrade your DAI to USDS:
 
-{% content-ref url="upgrading-to-usds.md" %}
-[upgrading-to-usds.md](upgrading-to-usds.md)
-{% endcontent-ref %}
+- [Upgrading to USDS](/user-guides/upgrading-to-usds-and-susds/upgrading-to-usds)
 
 ## What is sUSDS?
 
@@ -26,9 +24,7 @@ sUSDS is the new version of sDAI, offered by Sky which offers a higher yield. sU
 
 Follow this guide to upgrade your sDAI to sUSDS:
 
-{% content-ref url="upgrading-to-susds.md" %}
-[upgrading-to-susds.md](upgrading-to-susds.md)
-{% endcontent-ref %}
+- [Upgrading to sUSDS](/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds)
 
 ## What is the Sky Savings Rate?
 
@@ -54,9 +50,7 @@ Yes, you are always able to downgrade USDS to DAI at no slippage or fee beyond g
 
 Follow this guide to downgrade your USDS to DAI:
 
-{% content-ref url="downgrading-to-dai.md" %}
-[downgrading-to-dai.md](downgrading-to-dai.md)
-{% endcontent-ref %}
+- [Downgrading to Dai](/user-guides/upgrading-to-usds-and-susds/downgrading-to-dai)
 
 ## Can I still use sDAI?
 
@@ -64,16 +58,12 @@ Yes, when depositing funds into Savings, you can use a toggle to select if you w
 
 ## Can I borrow USDS?
 
-Yes, you can borrow USDS using the [Easy Borrow Flow](../using-sparklend/borrow-dai-and-usds.md). However, on the backend you are borrowing DAI, which is instantly upgraded for USDS, meaning your debt will be and must be repaid in DAI. In order to repay DAI debt, you can downgrade USDS to DAI following the steps in this guide:
+Yes, you can borrow USDS using the [Easy Borrow Flow](/user-guides/using-sparklend/borrow-dai-and-usds). However, on the backend you are borrowing DAI, which is instantly upgraded for USDS, meaning your debt will be and must be repaid in DAI. In order to repay DAI debt, you can downgrade USDS to DAI following the steps in this guide:
 
-{% content-ref url="downgrading-to-dai.md" %}
-[downgrading-to-dai.md](downgrading-to-dai.md)
-{% endcontent-ref %}
+- [Downgrading to Dai](/user-guides/upgrading-to-usds-and-susds/downgrading-to-dai)
 
 ## Can I repay my debt in USDS?
 
 No, if you borrow USDS, your position debt will be in DAI and must be repaid in DAI. In order to repay DAI debt, you can downgrade USDS to DAI following the steps in this guide:
 
-{% content-ref url="downgrading-to-dai.md" %}
-[downgrading-to-dai.md](downgrading-to-dai.md)
-{% endcontent-ref %}
+- [Downgrading to Dai](/user-guides/upgrading-to-usds-and-susds/downgrading-to-dai)

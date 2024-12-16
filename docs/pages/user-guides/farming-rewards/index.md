@@ -4,25 +4,19 @@ description: Learn more about farms and Sky Token Rewards.
 
 # Farming Rewards
 
-{% hint style="info" %}
+:::info
 The Sky Token Rewards and related smart contracts are non-custodial smart contracts offered, issued and deployed by Sky, not Spark. Spark is not an issuer or in control of the Sky Token Rewards.
-{% endhint %}
+:::
 
 ## Learn how to use Farms
 
 Learn how to deposit into farms, claim rewards, and withdraw from farms, using the following tutorials:
 
-{% content-ref url="depositing-into-farms.md" %}
-[depositing-into-farms.md](depositing-into-farms.md)
-{% endcontent-ref %}
+- [Depositing Into Farms](/user-guides/farming-rewards/depositing-into-farms)
 
-{% content-ref url="claiming-rewards.md" %}
-[claiming-rewards.md](claiming-rewards.md)
-{% endcontent-ref %}
+- [Claiming Rewards](/user-guides/farming-rewards/claiming-rewards)
 
-{% content-ref url="withdrawing-from-farms.md" %}
-[withdrawing-from-farms.md](withdrawing-from-farms.md)
-{% endcontent-ref %}
+- [Withdrawing From Farms](/user-guides/farming-rewardss/withdrawing-from-farms)
 
 ## Farms FAQ
 
@@ -32,9 +26,7 @@ You can deposit USDS into farms to earn Sky Token Rewards. You can select differ
 
 Learn how to deposit into farms here:
 
-{% content-ref url="depositing-into-farms.md" %}
-[depositing-into-farms.md](depositing-into-farms.md)
-{% endcontent-ref %}
+- [Depositing Into Farms](/user-guides/farming-rewards/depositing-into-farms)
 
 ### What is the SKY token address?
 
@@ -50,21 +42,13 @@ You earn Sky Token Rewards based on the amount of USDS you deposit into the farm
 
 You can claim earned Sky Token Rewards any time you want as they accrue in real time.
 
-Learn how to claim rewards here:
-
-{% content-ref url="claiming-rewards.md" %}
-[claiming-rewards.md](claiming-rewards.md)
-{% endcontent-ref %}
+Learn how to claim rewards here: [Claiming Rewards](/user-guides/farming-rewards/claiming-rewards)
 
 ### Are there any withdrawal restrictions?
 
 No, deposited funds can always be instantly withdrawn with no liquidity constraint and no fees beyond gas cost. No other actor than the user itself have access to deposited funds.
 
-Learn how to withdraw from farms here:
-
-{% content-ref url="withdrawing-from-farms.md" %}
-[withdrawing-from-farms.md](withdrawing-from-farms.md)
-{% endcontent-ref %}
+Learn how to withdraw from farms here: [Withdrawing From Farms](/user-guides/farming-rewards/withdrawing-from-farms)
 
 ### Can I deposit Savings USDS or Savings DAI?
 

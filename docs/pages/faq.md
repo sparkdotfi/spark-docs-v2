@@ -20,19 +20,15 @@ Spark consists of three main product categories:
 
 ### What is Savings?
 
-Spark enables users to easily deposit stablecoins into savings, and receive Savings USDS (sUSDS) tokens in return. The sUSDS tokens represents your share of USDS in the Sky Savings Rate. As savings accrue, sUSDS increases in value over time. The Sky Savings Rate is set by Sky Governance.&#x20;
+Spark enables users to easily deposit stablecoins into savings, and receive Savings USDS (sUSDS) tokens in return. The sUSDS tokens represents your share of USDS in the Sky Savings Rate. As savings accrue, sUSDS increases in value over time. The Sky Savings Rate is set by Sky Governance.
 
-Learn how to use Savings here:
+[Learn how to use Savings here](/user-guides/earning-savings/)
 
-{% content-ref url="user-guides/earning-savings/" %}
-[earning-savings](user-guides/earning-savings/)
-{% endcontent-ref %}
-
-{% hint style="info" %}
+:::info
 **Note:** Savings USDS and the Sky Savings Rate are non-custodial and permissionless smart contracts offered by Sky, and is not issued or deployed by Spark. Spark never has custody of funds deposited into or any control of the Sky Savings Rate or sUSDS token.
-{% endhint %}
+:::
 
-### What is the Sky Savings Rate? <a href="#what-is-dsr" id="what-is-dsr"></a>
+### What is the Sky Savings Rate?
 
 Sky Savings Rate (SSR) is a feature of the Sky Protocol that enables any USDS holder to earn a savings rate on their USDS. The SSR is paid out in USDS.
 
@@ -42,13 +38,13 @@ The Sky Savings Rate offers higher yield than the Dai Savings Rate.
 
 The Sky Savings Rate is set by Sky Governance and is subject to change. Spark has no control over the Sky Savings Rate.
 
-### What is sUSDS? <a href="#what-is-sdai" id="what-is-sdai"></a>
+### What is sUSDS?
 
 Savings USDS (sUSDS) is the upgraded version of sDAI, which offers higher yield than sDAI. sUSDS is a tokenized representation of USDS deposited in the Sky Savings Rate (SSR) offered by Sky. The sUSDS token enables users to receive returns on their SSR deposits while still being able to transfer, stake, lend and use it in any way they want.
 
 ### How do I acquire sUSDS?
 
-To acquire sUSDS and earn savings you can deposit USDS and other stablecoins using the [Spark App](user-guides/earning-savings/).
+To acquire sUSDS and earn savings you can deposit USDS and other stablecoins using the [Spark App](/user-guides/earning-savings/).
 
 For technical documentation on the sUSDS implementation please refer to the [Developer docs](https://devs.spark.fi/savings/susds-token).
 
@@ -58,19 +54,11 @@ For technical documentation on the sUSDS implementation please refer to the [Dev
 
 SparkLend is a decentralized non-custodial liquidity market protocol that powers the **Spark Borrow** product where users can participate as lenders or borrowers. Lenders provide liquidity to the market to earn a passive income, as their assets are lent out, while borrowers are able to borrow in an overcollateralized and perpetual fashion.
 
-Learn more about Borrow here:
-
-{% content-ref url="user-guides/using-sparklend/" %}
-[using-sparklend](user-guides/using-sparklend/)
-{% endcontent-ref %}
+[Learn more about Borrow here](/user-guides/using-sparklend/).
 
 ### How do I interact with SparkLend?
 
-Get started using SparkLend using this guide:
-
-{% content-ref url="user-guides/using-sparklend/borrow-dai-and-usds.md" %}
-[borrow-dai-and-usds.md](user-guides/using-sparklend/borrow-dai-and-usds.md)
-{% endcontent-ref %}
+[Get started using SparkLend using this guide](/user-guides/using-sparklend/borrow-dai-and-usds.md).
 
 ### What is the cost of interacting with Borrow?
 
@@ -136,11 +124,7 @@ In order to payback the loan you simply go to the Borrowings section of your das
 
 ### How do I avoid liquidation?
 
-In order to avoid the reduction of your health factor leading to liquidation, you can repay the loan or deposit more collateral assets in order to increase your health factor. Learn more about liquidations here:
-
-{% content-ref url="user-guides/using-sparklend/liquidations.md" %}
-[liquidations.md](user-guides/using-sparklend/liquidations.md)
-{% endcontent-ref %}
+In order to avoid the reduction of your health factor leading to liquidation, you can repay the loan or deposit more collateral assets in order to increase your health factor. Learn more about liquidations here: [Liquidations](/user-guides/using-sparklend/liquidations.md)
 
 ## Spark Liquidity Layer
 
@@ -148,11 +132,7 @@ In order to avoid the reduction of your health factor leading to liquidation, yo
 
 The Spark Liquidity Layer (SLL) automates liquidity provision of USDS, sUSDS, and USDC directly from Sky across various blockchain networks and DeFi protocols. This enables users to easily earn the Sky Savings Rate on their preferred network using sUSDS. Additionally, it allows Spark to automate liquidity provision into DeFi markets to optimize yield.
 
-You can read more about it here:
-
-{% content-ref url="user-guides/spark-liquidity-layer/" %}
-[spark-liquidity-layer](user-guides/spark-liquidity-layer/)
-{% endcontent-ref %}
+You can read more about it here: [Spark Liquidity Layer](user-guides/spark-liquidity-layer/).
 
 ### What are the benefits?
 
@@ -168,7 +148,7 @@ The following protocols are currently supported by the SLL:
 
 Additional protocols will be integrated on a continuous basis.
 
-### **What networks are supported by SLL?**
+### What networks are supported by SLL?
 
 The following networks are currently supported by the SLL:
 
@@ -177,29 +157,29 @@ The following networks are currently supported by the SLL:
 
 Other major networks will be supported soon.
 
-### **How do I obtain sUSDS on other networks?**
+### How do I obtain sUSDS on other networks?
 
 On [app.spark.fi/savings](http://app.spark.fi/savings), you can deposit accepted stablecoins such as USDS or USDC on your preferred supported network (e.g. Base) to obtain sUSDS and earn the Sky Savings Rate.
 
-### **How can I exit my sUSDS position on other networks?**
+### How can I exit my sUSDS position on other networks?
 
 If you have sUSDS, you can swap it for other stablecoins such as USDS and USDC at [app.spark.fi/savings](http://app.spark.fi/savings). The SLL ensures there is always ample liquidity to exit your sUSDS position.
 
-### **What are the liquidity constraints for cross-chain liquidty?**
+### What are the liquidity constraints for cross-chain liquidty?
 
 The SLL ensures there is always ample liquidity for users to enter or exit sUSDS on supported networks. Sky aims to keep 25% of USDS collateral backing in cash reserves, which should provide a healthy buffer for users to exit, even for large volumes.
 
-### **Has the Spark Liquidity Layer been audited?**
+### Has the Spark Liquidity Layer been audited?
 
-Yes, you can find the audit reports here: [https://devs.spark.fi/security/security-and-audits#spark-liquidity-layer](https://devs.spark.fi/security/security-and-audits#spark-liquidity-layer)
+Yes, you can find the audit reports here: [Spark Liquidity Layer Audits](/dev/security/security-and-audits#spark-liquidity-layer).
 
-### **Who controls the Spark Liquidity Layer?**
+### Who controls the Spark Liquidity Layer?
 
 Sky Governance determines the use cases supported by the SLL, such as networks and protocols, as well as the accepted risk parameters for each use case, including rate limits, maximum fund amounts or maximum volumes.
 
 ## Spark Sky Star
 
-### What is Spark Sky Star? <a href="#what-is-spark-subdao" id="what-is-spark-subdao"></a>
+### What is Spark Sky Star?
 
 Spark is a Sky Star, a part of the Sky Ecosystem. [You can read more about the Sky Star here.](https://forum.makerdao.com/t/sky-has-arrived/24959#p-98600-spark-the-first-sky-star-14)
 

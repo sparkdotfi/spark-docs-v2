@@ -4,25 +4,25 @@ description: Learn about sDAI and the Dai Savings Rate.
 
 # Savings DAI
 
-{% hint style="info" %}
-**Note:** Savings DAI is the old version of Savings USDS. [Learn how to upgrade to sUSDS and earn a higher yield here.](../upgrading-to-usds-and-susds/upgrading-to-susds.md)
-{% endhint %}
+:::info
+**Note:** Savings DAI is the old version of Savings USDS. [Learn how to upgrade to sUSDS and earn a higher yield here.](/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds.md)
+:::
 
-## What is sDAI? <a href="#what-is-sdai" id="what-is-sdai"></a>
+## What is sDAI?
 
 Savings Dai (sDAI) is the old version of sUSDS. sDai is a tokenized representation of Dai deposited in the Dai Savings Rate (DSR) offered by Sky. The sDAI token enables users to receive returns on their DSR deposits while still being able to transfer, stake, lend and use it in any way they want.
 
-{% hint style="info" %}
+:::info
 **Note:** Savings Dai and the Dai Savings Rate are non-custodial and permissionless smart contracts offered by Sky, and are not issued or deployed by Spark. Spark does not have any control over the Sky Savings Rate or the sDAI token.
-{% endhint %}
+:::
 
 sDAI increases in value according to the DSR, as its Dai denominated value gradually increases over time. sDAI is an accumulating token, not a rebasing token. Each sDAI is fungible and always instantly redeemable for DAI.
 
-To acquire sDAI you can deposit Dai and other stablecoins using the [Spark App](./).
+To acquire sDAI you can deposit Dai and other stablecoins using the [Spark App](https://app.spark.fi/).
 
-For technical documentation on the sDAI implementation please refer to the [Developer docs](https://devs.spark.fi/sdai/technical-docs).
+For technical documentation on the sDAI implementation please refer to the [Developer docs](/dev/savings/sdai-token).
 
-## What is the Dai Savings Rate? <a href="#what-is-dsr" id="what-is-dsr"></a>
+## What is the Dai Savings Rate?
 
 Dai Savings Rate (DSR) is a feature of the Sky Protocol that enables any Dai holder to earn a savings rate on their Dai. The DSR is paid out in Dai.
 

@@ -8,22 +8,28 @@ description: Learn how to claim rewards from farms.
 
 1. To claim rewards from farms, you must first navigate to the specific farm you have deposited into. In this example we use the SKY Farm.
 
-<figure><img src="../../.gitbook/assets/farms-nav.png" alt=""><figcaption><p>Navigate to the Farms page</p></figcaption></figure>
+![](/assets/farms-nav.png)
+*Navigate to the Farms page*
 
-<figure><img src="../../.gitbook/assets/farms-1.png" alt=""><figcaption><p>Click on the farm you wish to<br>claim rewards from</p></figcaption></figure>
+![](/assets/farms-1.png)
+*Click on the farm you wish to claim rewards from*
 
 2. On the specific Farm page, you can see an overview of how many tokens you have earned, and your deposit.
 
-<figure><img src="../../.gitbook/assets/farms-8.png" alt=""><figcaption><p>Overview of your deposit</p></figcaption></figure>
+![](/assets/farms-8.png)
+*Overview of your deposit*
 
 3. To claim token rewards, click on the **Claim** button.
 
-<figure><img src="../../.gitbook/assets/farms-9.png" alt=""><figcaption><p>Click Claim to claim the rewards</p></figcaption></figure>
+![](/assets/farms-9.png)
+*Click Claim to claim the rewards*
 
 4. In the **Claim rewards** window, you will see a **Transaction overview**, which shows how many tokens you are claiming. To claim the tokens, you must submit the transactions in the **Actions panel**.
 
-<figure><img src="../../.gitbook/assets/farms-10.png" alt=""><figcaption><p>The Claim rewards window</p></figcaption></figure>
+![](/assets/farms-10.png)
+*The Claim rewards window*
 
 5. Once you have submitted the transactions, you will see the following confirmation page.
 
-<figure><img src="../../.gitbook/assets/farms-11.png" alt=""><figcaption><p>Confirmation for claimed rewards</p></figcaption></figure>
+![](/assets/farms-11.png)
+*Confirmation for claimed rewards*

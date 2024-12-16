@@ -19,11 +19,11 @@ layout:
 
 The Spark Liquidity Layer (SLL) automates liquidity provision of USDS, sUSDS, and USDC directly from Sky across various blockchain networks and DeFi protocols. This enables users to easily earn the Sky Savings Rate on their preferred network using sUSDS. Additionally, it allows Spark to automate liquidity provision into DeFi markets to optimize yield.
 
-### **Easy access to yield on any chain**
+### Easy access to yield on any chain
 
 A key benefit of the SLL is its automation of sUSDS liquidity provision to other networks, allowing users on those networks to earn yield on stablecoins. Previously, acquiring sUSDS on networks other than Ethereum mainnet was challenging due to low liquidity. The SLL addresses this by providing sUSDS liquidity against major stablecoins directly from Sky to supported networks, starting with Base with other major networks to follow soon. The aim is to offer users on any network access to the best risk-adjusted yield on stablecoins in DeFi.
 
-### **Generating yield for Spark**
+### Generating yield for Spark
 
 The SLL also enables Spark to provide liquidity directly into risk-adjusted yield strategies on other chains and protocols. For example, it can supply stablecoin liquidity to lending markets to earn interest, similar to current practices on Ethereum mainnet with Aave and Morpho. The yield earned from these strategies contributes to funding the Sky Savings Rate, which aims to provide the best risk-adjusted yield in DeFi.
 
@@ -98,7 +98,7 @@ The following protocols are currently supported by the SLL:
 
 Additional protocols will be integrated on a continuous basis.
 
-### **What networks are supported by SLL?**
+### What networks are supported by SLL?
 
 The following networks are currently supported by the SLL:
 
@@ -107,22 +107,21 @@ The following networks are currently supported by the SLL:
 
 Other major networks will be supported soon.
 
-### **How do I obtain sUSDS on other networks?**
+### How do I obtain sUSDS on other networks?
 
 On [app.spark.fi/savings](http://app.spark.fi/savings), you can deposit accepted stablecoins such as USDS or USDC on your preferred supported network (e.g. Base) to obtain sUSDS and earn the Sky Savings Rate.
 
-### **How can I exit my sUSDS position on other networks?**
+### How can I exit my sUSDS position on other networks?
 
 If you have sUSDS, you can swap it for other stablecoins such as USDS and USDC at [app.spark.fi/savings](http://app.spark.fi/savings). The SLL ensures there is always ample liquidity to exit your sUSDS position.
 
-### **What are the liquidity constraints for cross-chain liquidty?**
+### What are the liquidity constraints for cross-chain liquidty?
 
 The SLL ensures there is always ample liquidity for users to enter or exit sUSDS on supported networks. Sky aims to keep 25% of USDS collateral backing in cash reserves, which should provide a healthy buffer for users to exit, even for large volumes.
 
-### **Has the Spark Liquidity Layer been audited?**
+### Has the Spark Liquidity Layer been audited?
 
-Yes, you can find the audit reports here: [https://devs.spark.fi/security/security-and-audits#spark-liquidity-layer](https://devs.spark.fi/security/security-and-audits#spark-liquidity-layer)
+Yes, you can find the audit reports here: [Spark Liquidity Layer Audit Reports](/dev/security/security-and-audits#spark-liquidity-layer)
 
-### **Who controls the Spark Liquidity Layer?**
-
+### Who controls the Spark Liquidity Layer?
 Sky Governance determines the use cases supported by the SLL, such as networks and protocols, as well as the accepted risk parameters for each use case, including rate limits, maximum fund amounts or maximum volumes.
