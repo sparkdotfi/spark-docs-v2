@@ -6,9 +6,9 @@ Contract to get asset prices, manage price sources and update the fallback oracl
 
 SparkLend uses Chainlink Aggregators as the source of all asset prices.
 
-{% hint style="warning" %}
+:::warning
 In the future we will have redundancy with multiple oracle providers.
-{% endhint %}
+:::
 
 ## Methods
 
@@ -64,9 +64,9 @@ Returns the address of the fallback oracle.
 
 Sets the price source for given list of assets.
 
-{% hint style="danger" %}
+:::danger
 This method can be called only by `POOL_ADMIN` or `ASSET_LISTING_ADMIN`. Check [ACLManager](aclmanager.md) for details on system roles.
-{% endhint %}
+:::
 
 Call Params
 
@@ -81,9 +81,9 @@ Call Params
 
 Sets/updates the fallback oracle.
 
-{% hint style="danger" %}
+:::danger
 This method can be called only by `POOL_ADMIN`or`ASSET_LISTING_ADMIN`. Check [ACLManager](aclmanager.md) for details on system roles.
-{% endhint %}
+:::
 
 Call Params
 

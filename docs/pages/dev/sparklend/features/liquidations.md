@@ -1,22 +1,22 @@
 # Liquidations
 
-The health of the SparkLend is dependent on the 'health' of the collateralised positions within the protocol, also known as the 'health factor'. When the 'health factor' of an account's total loans is below 1, anyone can make a `liquidationCall()` to the [`Pool`](../core-contracts/pool.md#liquidationcall) contract, pay back part of the debt owed and receive discounted collateral in return (also known as the liquidation bonus).
+The health of the SparkLend is dependent on the 'health' of the collateralised positions within the protocol, also known as the 'health factor'. When the 'health factor' of an account's total loans is below 1, anyone can make a `liquidationCall()` to the [`Pool`](/dev/sparklend/core-contracts/pool#liquidationcall) contract, pay back part of the debt owed and receive discounted collateral in return (also known as the liquidation bonus).
 
 This incentivises third parties to participate in the health of the overall protocol, by acting in their own interest (to receive the discounted collateral) and as a result, ensure borrows are sufficiently collateralize.
 
 There are multiple ways to participate in liquidations:
 
-1. By calling the liquidationCall() directly in the [Pool](../core-contracts/pool.md#liquidationcall) contract.
+1. By calling the liquidationCall() directly in the [Pool](/dev/sparklend/core-contracts/pool#liquidationcall) contract.
 2. By creating your own automated bot or system to liquidate loans.
 
-{% hint style="warning" %}
-For liquidation calls to be profitable, you must take into account the gas cost involved in liquidating the loan. If a high gas price is used, then the liquidation may be unprofitable for you. See the [Calculating profitability](liquidations.md#calculating-profitability-vs-gas-cost) section for more details.
-{% endhint %}
+:::warning
+For liquidation calls to be profitable, you must take into account the gas cost involved in liquidating the loan. If a high gas price is used, then the liquidation may be unprofitable for you. See the [Calculating profitability](#calculating-profitability-vs-gas-cost) section for more details.
+:::
 
-{% hint style="success" %}
+:::info
 SparkLend allows 100% of debt (i.e. `MAX_LIQUIDATION_CLOSE_FACTOR`) to be liquidated in single `liquidationCall()` if:\
 `HF < CLOSE_FACTOR_HF_THRESHOLD = 0.95`
-{% endhint %}
+:::
 
 ## Prerequisites
 
@@ -33,9 +33,9 @@ When making a `liquidationCall()`, you must:
 
 ## Getting accounts to liquidate
 
-{% hint style="warning" %}
+:::warning
 "User Account" in the SparkLend refer to a single ethereum address that has interacted with the protocol. This can be an externally owned account or contract.
-{% endhint %}
+:::
 
 Only user accounts that have HF < 1 can be liquidated. There are multiple ways you can get the health factor:
 
@@ -43,20 +43,20 @@ Only user accounts that have HF < 1 can be liquidated. There are multiple ways y
 
 1. To gather user account data from on-chain data, one way would be to monitor emitted events from the protocol and keep an up to date index of user data locally.
    1. Events are emitted each time a user interacts with the protocol (supply, borrow, repay, withdraw etc.)
-2. When you have the user's address, you can simply call [`getUserAccountData()`](../core-contracts/pool.md#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
+2. When you have the user's address, you can simply call [`getUserAccountData()`](/dev/sparklend/core-contracts/pool#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
 
 ### GraphQL
 
 Messari subgraph: [The Graph Hosted Service](https://thegraph.com/hosted-service/subgraph/messari/spark-lend-ethereum), [Messari Subgraphs](https://subgraphs.messari.io/subgraph?endpoint=messari/spark-lend-ethereum\&tab=protocol)
 
 1. Similarly to the sections above you will need to gather user account data and keep an index of the user data locally.
-2. SInce GraphQL does not provide real time calculated user data such as `healthFactor,` you will need to compute this locally. The easiest way is to use the [SparkLend-utilities](https://github.com/marsfoundation/spark-utilities#formatusersummary) sdk, which has methods to compute user summary data.
+2. SInce GraphQL does not provide real time calculated user data such as `healthFactor,` you will need to compute this locally. The easiest way is to use the [SparkLend Utilities](https://github.com/marsfoundation/spark-utilities#formatusersummary) SDK, which has methods to compute user summary data.
 
 ## Executing the liquidation call
 
 Once you have the account(s) to liquidate, you will need to calculate the amount of collateral that can be liquidated:
 
-1. Use [`getUserReserveData()`](../periphery-contracts/uipooldataproviderv3.md#getuserreservesdata)
+1. Use [`getUserReserveData()`](/dev/sparklend/periphery-contracts/uipooldataproviderv3#getuserreservesdata)
 2. Max debt that be cleared by single liquidation call is given by the `DEFAULT_LIQUIDATION_CLOSE_FACTOR`(when `CLOSE_FACTOR_HF_THRESHOLD = 0.95 < HF < 1`) or `MAX_LIQUIDATION_CLOSE_FACTOR` (when `HF < CLOSE_FACTOR_HF_THRESHOLD = 0.95`)
    1. `debtToCover = (userStableDebt + userVariableDebt) * LiquidationCloseFactor`
    2. You can pass `uint(-1)`, i.e. `MAX_UINT`, as the `debtToCover` to liquidate the maximum amount allowed.
@@ -69,7 +69,7 @@ One way to calculate the profitability is the following:
 
 1. Store and retrieve each collateral's relevant details such as address, decimals used and liquidation bonus.
 2. Get the user's collateral balance (spTokenBalance).
-3. Get the asset's price according to the SparkLend's oracle contract using [`getAssetPrice()`](../core-contracts/aaveoracle.md#getassetprice).
+3. Get the asset's price according to the SparkLend's oracle contract using [`getAssetPrice()`](/dev/sparklend/core-contracts/aaveoracle#getassetprice).
 4. The maximum collateral bonus received on liquidation is given by the `maxAmountOfCollateralToLiquidate * (1 - liquidationBonus) * collateralAssetPriceEth`
 5. The maximum cost of your transaction will be you gas price multiplied by the amount of gas used. You should be able to get a good estimation of the gas amount used by calling `estimateGas` via your web3 provider.
 6. Your approximate profit will be the value of the collateral bonus (4) minus the cost of your transaction (5).

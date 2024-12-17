@@ -4,9 +4,9 @@
 
 Implements a logic of getting multiple tokens balance for one user address.
 
-{% hint style="info" %}
+:::info
 For getting ETH (native chain token) balance use \`MOCK\_ETH\_ADDRESS = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE\`.
-{% endhint %}
+:::
 
 ## Methods
 

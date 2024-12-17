@@ -7,17 +7,17 @@ This enables:
 * The supplier (aka delegator) to earn extra yield on top of the yield they already earn from the protocol,
 * The borrowers (aka delegatees) to access an uncollateralized loan.
 
-{% hint style="warning" %}
+:::warning
 Borrow by _delegatee_ must be consistent with _delegator_ [eMode](../features/efficiency-mode-emode.md) category.\
 For eg. if a delegator eMode category is `STABLECOINS`, then
 
 * delegator can only borrow `STABLECOINS` eMode category asset.
 * in case _delegator_ approve credit to _delegatee_ for non `STABLECOINS`category (for eg. weth), then borrow would revert.
-{% endhint %}
+:::
 
-{% hint style="danger" %}
+:::danger
 The _delegatee_ cannot abuse credit approval to liquidate _delegator_ i.e. if the borrow puts _delegator's_ position in HF < `HEALTH_FACTOR_LIQUIDATION_THRESHOLD`, then borrow will fail.
-{% endhint %}
+:::
 
 ## Approving the delegation
 
@@ -25,16 +25,16 @@ The [`approveDelegation()`](../tokens/debttoken.md#approvedelegation) or [`deleg
 
 This is done for each debt token that needs to be delegated.
 
-{% hint style="info" %}
+:::info
 The delegator does not need to already have supplied funds in the protocol to `approveDelegation()`. However, **before** the delegatee executes `borrow()`, there must be sufficient collateral supplied by delegator in the protocol.
-{% endhint %}
+:::
 
 ## Borrowing the credit
 
-The borrower (delegatee) calls the [`borrow()`](../../guides/broken-reference/) method on the `Pool`, using the supplier's (delegator's) address in final parameter `onBehalfOf`.
+The borrower (delegatee) calls the [`borrow()`](/dev/sparklend/core-contracts/pool#borrow) method on the `Pool`, using the supplier's (delegator's) address in final parameter `onBehalfOf`.
 
 The borrower's available credit is reduced by the borrowed amount.
 
 ## Repaying the credit
 
-Anyone can repay the debt _OnBehalf_ of the user, by calling one of the methods - [repay()](../core-contracts/pool.md#repay) or [repayWithPermit()](../core-contracts/pool.md#repaywithpermit). The supplier (aka creditor) can also use [repayWithSpTokens()](../core-contracts/pool.md#repaywithsptokens) method to repay debt with their _spTokens_ of the underlying debt asset in the same pool.
+Anyone can repay the debt _OnBehalf_ of the user, by calling one of the methods - [repay()](/dev/sparklend/core-contracts/pool#repay) or [repayWithPermit()](/dev/sparklend/core-contracts/pool#repaywithpermit). The supplier (aka creditor) can also use [repayWithSpTokens()](/dev/sparklend/core-contracts/pool#repaywithsptokens) method to repay debt with their _spTokens_ of the underlying debt asset in the same pool.

@@ -87,9 +87,9 @@ Returns address of the Maker Treasury, controlled by governance, receiving the f
 
 Sets a new Incentives Controller.
 
-{% hint style="danger" %}
+:::danger
 Only Pool Admin can call this methods. To update Incentives Controller on main Spark market, Governance Proposal must be submitted.
-{% endhint %}
+:::
 
 ### permit
 

@@ -54,9 +54,9 @@ Return Value
 
 `function setSequencerOracle(address newSequencerOracle)`
 
-{% hint style="warning" %}
+:::warning
 Can be called only by PoolAdmin.
-{% endhint %}
+:::
 
 Call Params
 
@@ -68,9 +68,9 @@ Call Params
 
 `function setGracePeriod(uint256 newGracePeriod`
 
-{% hint style="warning" %}
+:::warning
 Can be called only by PoolAdmin or RiskAdmin.
-{% endhint %}
+:::
 
 Call Params
 

@@ -26,51 +26,49 @@ Call Params
 * setReserveFactor
 * setDebtCeiling
 * setSiloedBorrowing
-*   setBorrowCap
-
-    `setBorrowCap (asset, newBorrowCap)`
-
+* setBorrowCap
+    
     Allows `RISK_ADMIN` and `POOL_ADMIN` to add/update cap on the total borrow that can be borrowed from the reserve. Once the borrow cap is reached, no more borrow (variable or stable) for the given reserve asset can be initiated.
 
     | Param Name   | Type    | Description                                                    |
     | ------------ | ------- | -------------------------------------------------------------- |
     | asset        | address | Address of the underlying asset.                               |
-    | newBorrowCap | uint256 | <p>Borrow cap in whole tokens.<br>borrowCap == 0 => no cap</p> |
-*   setSupplyCap
+    | newBorrowCap | uint256 | Borrow cap in whole tokens.
+borrowCap == 0 => no cap |
 
-    `setSupplyCap (asset, newSupplyCap)`
+* setSupplyCap
 
     Allows `RISK_ADMIN` and `POOL_ADMIN` to add/update liquidity supply cap on the reserve. Once the supply cap is reached, no more liquidity for the given reserve asset can be supplied to the pool.
 
     | Param Name   | Type    | Description                                                    |
     | ------------ | ------- | -------------------------------------------------------------- |
     | asset        | address | Address of the underlying asset.                               |
-    | newSupplyCap | uint256 | <p>Supply cap in whole tokens.<br>supplyCap == 0 => no cap</p> |
+    | newSupplyCap | uint256 | Supply cap in whole tokens.
+supplyCap == 0 => no cap |
 * setLiquidationProtocolFee
-*   setEModeCategory
-
-    `setEModeCategory (categoryId, ltv, liquidationThreshold, liquidationBonus, oracle, label)`
+* setEModeCategory
 
     Allows `RISK_ADMIN` and `POOL_ADMINS` to configure existing or add new `eModeCategory`
 
     | Param                | Type    | Description                                                                                |
     | -------------------- | ------- | ------------------------------------------------------------------------------------------ |
-    | categoryId           | uint8   | <p>Category id ≠ 0<br>NOTE: category 0 is reserved for default category i.e. non-eMode</p> |
-    | ltv                  | uint16  | <p>Loan to value for given eMode categoryId.<br>Must be ≤ liquidationThreshold</p>         |
+    | categoryId           | uint8   | Category id ≠ 0
+NOTE: category 0 is reserved for default category i.e. non-eMode |
+    | ltv                  | uint16  | Loan to value for given eMode categoryId.
+Must be ≤ liquidationThreshold         |
     | liquidationThreshold | uint16  | Liquidation threshold for given eMode categoryId.                                          |
     | liquidationBonus     | uint16  | Liquidation bonus for given eMode categoryId                                               |
     | oracle               | address | Address of custom price oracle for category                                                |
     | label                | string  | Custom label for the category                                                              |
-*   setAssetEModeCategory
-
-    `setAssetEModeCategory(address asset, uint8 categoryId)`
+* setAssetEModeCategory
 
     Allows `RISK_ADMIN` and `POOL_ADMINS` to configure `eModeCategory` of an asset.
 
     | Param Name | Type    | Description                                                                                   |
     | ---------- | ------- | --------------------------------------------------------------------------------------------- |
     | asset      | address | Address of the reserve asset being configured                                                 |
-    | categoryId | uint8   | <p>≠ 0 one of the already defined eModeCategory<br>= 0 for default aka non-eMode category</p> |
+    | categoryId | uint8   | ≠ 0 one of the already defined eModeCategory
+= 0 for default aka non-eMode category |
 * setUnbackedMintCap
 * setReserveInterestRateStrategyAddress
 
@@ -91,10 +89,6 @@ Call Params
 * updateFlashloanPremiumToProtocol
 
 ## ABI
-
-<details>
-
-<summary>PoolConfigurator ABI</summary>
 
 ```
 [

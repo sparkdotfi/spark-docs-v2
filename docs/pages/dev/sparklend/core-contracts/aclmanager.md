@@ -8,9 +8,9 @@ ACLManager allows a _**Role Admin**_ to manage roles. _**Role Admin**_ is itself
 
 `DEFAULT_ADMIN_ROLE` is held by the _ACLAdmin,_ which is initialised in `PoolAddressesProvider`.
 
-{% hint style="info" %}
-ℹ️ On Ethereum chain `PoolAddressesProvider`, is owned by Maker Governance. In networks other than Ethereum, either the _Crosschain Governance Bridges_ or _Community Multisigs_ are used to manage the `PoolAddressesProvider`.
-{% endhint %}
+:::info
+On Ethereum chain `PoolAddressesProvider`, is owned by Maker Governance. In networks other than Ethereum, either the _Crosschain Governance Bridges_ or _Community Multisigs_ are used to manage the `PoolAddressesProvider`.
+:::
 
 ## Roles
 
@@ -18,13 +18,14 @@ Below we outline the powers/responsibilities of the roles and the specific metho
 
 | Role                  | Responsibilities / Powers                                                                                                                                                                                                                                      | Methods Accessible                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `FLASH_BORROWER`      | <p>Flash loan premium is waived for the holders of this role.</p><p>⛔️ Does not include flashLoanSimple</p>                                                                                                                                                    | `flashLoan`                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `BRIDGE`              | Can leverage the Portal feature                                                                                                                                                                                                                                | <p>mintUnbacked<br>backUnbacked</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `ASSET_LISTING_ADMIN` | <p>Can update</p><ul><li>asset oracle sources</li><li>fallback oracle</li><li>add new assets to the Spark market</li></ul>                                                                                                                                     | <ul><li>setAssetSources</li><li>setFallbackOracle</li><li>initReserves</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `RISK_ADMIN`          | <p>Can update</p><ul><li>grace period of Oracle Sentinels</li><li>reserve params</li><li>unbacked mint cap</li><li>liquidation protocol fee</li><li>existing eMode categories and create new. (not category 0)</li><li>add/remove asset in silo mode</li></ul> | <ul><li>setGracePeriod</li><li>setReserveBorrowing</li><li>configureReserveAsCollateral</li><li>setReserveStableRateBorrowing</li><li>setReserveFreeze</li><li>setBorrowableInIsolation</li><li>setReserveFactor</li><li>setDebtCeiling</li><li>setBorrowCap</li><li>setSupplyCap</li><li>setLiquidationProtocolFee</li><li>setEModeCategory</li><li>setAssetEModeCategory</li><li>setUnbackedMintCap</li><li>setReserveInterestRateStrategyAddress</li><li>setSiloedBorrowing</li></ul> |
-| `ACL_ADMIN`           | Manage the role admins in the ACLManager                                                                                                                                                                                                                       | <ul><li>setRoleAdmin</li><li>addPoolAdmin</li><li>removePoolAdmin</li><li>addEmergencyAdmin</li><li>removeEmergencyAdmin</li><li>addRiskAdmin</li><li>removeRiskAdmin</li><li>addFlashBorrower</li><li>removeFlashBorrower</li><li>addBridge</li><li>removeBridge</li><li>addAssetListingAdmin</li><li>removeAssetListingAdmin</li></ul>                                                                                                                                                 |
+| `FLASH_BORROWER`      | Flash loan premium is waived for the holders of this role.⛔️ Does not include flashLoanSimple                                                                                                                                                    | `flashLoan`                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `BRIDGE`              | Can leverage the Portal feature                                                                                                                                                                                                                                | mintUnbacked backUnbacked                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `ASSET_LISTING_ADMIN` | Can update asset oracle sources  fallback oracle  add new assets to the Spark market                                                                                                                                       |  setAssetSources  setFallbackOracle  initReserves                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `RISK_ADMIN`          | Can update grace period of Oracle Sentinels  reserve params  unbacked mint cap  liquidation protocol fee  existing eMode categories and create new. (not category 0)  add/remove asset in silo mode   |  setGracePeriod  setReserveBorrowing  configureReserveAsCollateral  setReserveStableRateBorrowing  setReserveFreeze  setBorrowableInIsolation  setReserveFactor  setDebtCeiling  setBorrowCap  setSupplyCap  setLiquidationProtocolFee  setEModeCategory  setAssetEModeCategory  setUnbackedMintCap  setReserveInterestRateStrategyAddress  setSiloedBorrowing   |
+| `ACL_ADMIN`           | Manage the role admins in the ACLManager                                                                                                                                                                                                                       |  setRoleAdmin  addPoolAdmin  removePoolAdmin  addEmergencyAdmin  removeEmergencyAdmin  addRiskAdmin  removeRiskAdmin  addFlashBorrower  removeFlashBorrower  addBridge  removeBridge  addAssetListingAdmin  removeAssetListingAdmin                                                                                                                                                   |
 | `EMERGENCY_ADMIN`     | Can pause/unpause the pool or individual reserve                                                                                                                                                                                                               | setPoolPause                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `POOL_ADMIN`          | <p>Can</p><ul><li>update token implementations</li><li>drop reserves</li><li>pause/unpause reserves</li><li>activate/deactivate reserves</li><li>update premiums</li><li>do all the things available to RISK_ADMIN &#x26; ASSET_LISTING_ADMIN</li></ul>        | <ul><li>all methods available to <code>RISK_ADMIN</code></li><li>all methods available to <code>ASSET_LISTING_ADMIN</code></li><li>dropReserve</li><li>updateSpToken</li><li>updateStableDebtToken</li><li>updateVariableDebtToken</li><li>setReserveActive</li><li>updateBridgeProtocolFee</li><li>updateFlashloanPremiumTotal</li><li>updateFlashloanPremiumToProtocol</li></ul>                                                                                                       |
+| `POOL_ADMIN`          | Can update token implementations  drop reserves  pause/unpause reserves  activate/deactivate reserves  update premiums  do all the things available to RISK_ADMIN   ASSET_LISTING_ADMIN          |  all methods available to <code>RISK_ADMIN</code>  all methods available to <code>ASSET_LISTING_ADMIN</code>  dropReserve  updateSpToken  updateStableDebtToken  updateVariableDebtToken  setReserveActive  updateBridgeProtocolFee  updateFlashloanPremiumTotal  updateFlashloanPremiumToProtocol                                                                                                         |
+
 
 ## View Methods
 
@@ -72,15 +73,15 @@ Returns `true` if the address has `ASSET_LISTING_ADMIN` role.
 
 Setup admin to manage Roles.
 
-{% hint style="info" %}
+:::info
 This method can only be called by address with `DEFAULT_ADMIN_ROLE`.
-{% endhint %}
+:::
 
 Call Params
 
 | Name      | Type    | Description                                                                                                                                                                             |
 | --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| role      | bytes32 | <p>keccak256 hash of one of the following:</p><ul><li>POOL_ADMIN</li><li>EMERGENCY_ADMIN</li><li>RISK_ADMIN</li><li>FLASH_BORROWER</li><li>BRIDGE</li><li>ASSET_LISTING_ADMIN</li></ul> |
+| role      | bytes32 | keccak256 hash of one of the following: POOL_ADMIN  EMERGENCY_ADMIN  RISK_ADMIN  FLASH_BORROWER  BRIDGE  ASSET_LISTING_ADMIN   |
 | adminRole | bytes32 | adminRole responsible for role. 0x00 is reserved for DEFAULT\_ADMIN\_ROLE                                                                                                               |
 
 ### addPoolAdmin
@@ -89,9 +90,9 @@ Call Params
 
 Add address to the list of members in `POOL_ADMIN` role. Holders of this role can update token implementations, drop, (un)pause and (de)activate reserves, update premiums and do everything the `ASSET_LISTING_ADMIN` and `RISK_ADMIN` can do.
 
-{% hint style="info" %}
+:::info
 Can be called only by _Role Admin_, specified by _Maker Governance_, responsible for managing `POOL_ADMIN` role.
-{% endhint %}
+:::
 
 Call Params
 
@@ -105,9 +106,9 @@ Call Params
 
 Remove given address from the list of members in `POOL_ADMIN` role.
 
-{% hint style="info" %}
+:::info
 Can be called only by _Role Admin_, specified by _Maker Governance_, responsible for managing `POOL_ADMIN` role.
-{% endhint %}
+:::
 
 Call Params
 
@@ -121,9 +122,9 @@ Call Params
 
 Add address to the list of members in `EMERGENCY_ADMIN` role. Holders of this role can pause and unpause the pool or an individual reserve.
 
-{% hint style="info" %}
+:::info
 Can be called only by _Role Admin_, specified by _Maker Governance_, responsible for managing`EMERGENCY_ADMIN` role.
-{% endhint %}
+:::
 
 | Name  | Type    | Description                                          |
 | ----- | ------- | ---------------------------------------------------- |
@@ -135,9 +136,9 @@ Can be called only by _Role Admin_, specified by _Maker Governance_, responsible
 
 Remove given address from the list of members in `EMERGENCY_ADMIN` role.
 
-{% hint style="info" %}
+:::info
 Can be called only by _Role Admin_, specified by _Maker Governance_, responsible for managing `EMERGENCY_ADMIN` role.
-{% endhint %}
+:::
 
 | Name  | Type    | Description                                                          |
 | ----- | ------- | -------------------------------------------------------------------- |
@@ -165,7 +166,7 @@ Remove given address from the list of members in `RISK_ADMIN` role.
 
 `function addFlashBorrower(address borrower)`
 
-Add address to the list of members in `FLASH_BORROWER` role. Holders of this role do not pay premium for flash loan (Does not apply to `flashLonaSimple`.
+Add address to the list of members in `FLASH_BORROWER` role. Holders of this role do not pay premium for flash loan (Does not apply to `flashLonaSimple`).
 
 ### removeFlashBorrower
 
@@ -183,9 +184,9 @@ Remove given address from the list of members in `FLASH_BORROWER` role.
 
 Add contract address to the list of _**bridges**_. Holders of this role can leverage the Portal feature to seamlessly move supplied assets across Spark Lend markets on different networks.
 
-{% hint style="info" %}
+:::info
 ℹ️ Can be called only by _Role Admin_, specified by _Maker Governance_, responsible for managing `BRIDGE` role.
-{% endhint %}
+:::
 
 | Name   | Type    | Description                                |
 | ------ | ------- | ------------------------------------------ |
@@ -197,9 +198,9 @@ Add contract address to the list of _**bridges**_. Holders of this role can leve
 
 Remove contract address from the list of _**bridges**_.
 
-{% hint style="info" %}
+:::info
 ℹ️ Can be called only by _Role Admin_, specified by _Maker Governance_, responsible for managing `BRIDGE` role.
-{% endhint %}
+:::
 
 | Name   | Type    | Description                                                |
 | ------ | ------- | ---------------------------------------------------------- |
@@ -226,10 +227,6 @@ Remove address from the list of members in `ASSET_LISTING_ADMIN` role.
 | admin | address | address for which ASSET\_LISTING\_ADMIN role permissions must be revoked. |
 
 ## ABI
-
-<details>
-
-<summary>ACLManager ABI</summary>
 
 ```
 [

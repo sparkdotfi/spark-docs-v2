@@ -93,10 +93,6 @@ Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]`
 
 ## ABI
 
-<details>
-
-<summary>UiIncentiveDataProviderV3 ABI</summary>
-
 ```
 [
     {

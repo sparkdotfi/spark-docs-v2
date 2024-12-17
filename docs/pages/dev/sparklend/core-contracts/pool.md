@@ -14,11 +14,11 @@ The `referralCode` is emitted in Supply event and can be for third party referra
 
 {% hint style="warning" %}
 When supplying, the `Pool` contract must have\*\*`allowance()`**to spend funds on behalf of**`msg.sender`\*\* for at-least\*\*`amount`\*\* for the **`asset`** being supplied. This can be done via the standard ERC20 `approve()`method on the underlying token contract
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Referral supply is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
-{% endhint %}
+:::
 
 | Param Name   | Type    | Description                                                                                                                                         |
 | ------------ | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -33,13 +33,13 @@ Referral supply is currently inactive, you can pass `0` as `referralCode`. This 
 
 Supply with transfer approval of supplied asset via permit function. This method removes the need for separate approval tx before supplying asset to the pool.
 
-{% hint style="info" %}
+:::info
 Permit signature must be signed by `msg.sender` with spender as Pool address.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Referral program is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
-{% endhint %}
+:::
 
 Call Params
 
@@ -62,9 +62,9 @@ Withdraws `amount` of the underlying `asset`, i.e. redeems the underlying token 
 
 If user has any existing debt backed by the underlying token, then the max _amount_ available to withdraw is the _amount_ that will not leave user health factor < 1 after withdrawal.
 
-{% hint style="info" %}
+:::info
 When withdrawing`to`another address, `msg.sender`should have `spToken`that will be burned by Pool .
-{% endhint %}
+:::
 
 Call Params
 
@@ -80,13 +80,13 @@ Call Params
 
 Borrows `amount` of `asset` with `interestRateMode`, sending the `amount` to `msg.sender`, with the debt being incurred by `onBehalfOf`.
 
-{% hint style="info" %}
+:::info
 Note: If `onBehalfOf` is not same as `msg.sender`, then `onBehalfOf` must have supplied enough collateral via `supply()` and have delegated credit to `msg.sender` via `approveDelegation()`.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Referral program is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
-{% endhint %}
+:::
 
 Call Params
 
@@ -106,11 +106,11 @@ Repays `onBehalfOf`'s debt `amount` of `asset` which has a `rateMode`.
 
 {% hint style="warning" %}
 When repaying, the `Pool` contract must have\*\*`allowance()`**to spend funds on behalf of**`msg.sender`\*\* for at-least\*\*`amount`\*\* for the **`asset`** you are repaying with. This can be done via the standard ERC20 `approve()`method on the underlying token contract.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Referral program is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
-{% endhint %}
+:::
 
 Call Params
 
@@ -127,9 +127,9 @@ Call Params
 
 Repay with transfer approval of borrowed asset via permit function. This method removes the need for separate approval tx before repaying asset to the pool.
 
-{% hint style="info" %}
+:::info
 Permit signature must be signed by `msg.sender` with spender value as `Pool` address.
-{% endhint %}
+:::
 
 Call Params
 
@@ -190,13 +190,13 @@ Call Params
 
 Sets the `asset` of `msg.sender` to be used as collateral or not.
 
-{% hint style="info" %}
+:::info
 An asset in [Isolation Mode](../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 User won’t be able to disable an asset as collateral if they have an outstanding debt position which could be left with HF < `HEALTH_FACTOR_LIQUIDATION_THRESHOLD` on disabling the given asset as collateral.
-{% endhint %}
+:::
 
 Call Params
 
@@ -215,9 +215,9 @@ When the health factor of a position is below 1, liquidators repay part or all o
 
 Liquidators can only close a certain amount of collateral defined by a close factor. Currently the **close factor is 0.5**. In other words, liquidators can only liquidate a maximum of 50% of the amount pending to be repaid in a position. The liquidation discount applies to this amount.
 
-{% hint style="info" %}
+:::info
 Liquidators must \`approve()\` the \`Pool\` contract to use \`debtToCover\` of the underlying ERC20 of the\`asset\` used for the liquidation.
-{% endhint %}
+:::
 
 **NOTES**
 
@@ -241,17 +241,17 @@ Call Params
 
 Allows users to access liquidity of the pool for given _list of assets for one transaction_ as long as the amount taken plus fee is returned or debt position is opened by the end of transaction.
 
-{% hint style="info" %}
+:::info
 If no debt position is opened, receiver must approve the _Pool_ contract for at least the _amount borrowed + fee_, else transaction will revert.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Flash loan fee is waived for the approved _flashBorrowers_
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Referral program is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
-{% endhint %}
+:::
 
 Call Params
 
@@ -271,17 +271,17 @@ Call Params
 
 Allows users to access liquidity of _one reserve or one transaction_ as long as the amount taken plus fee is returned.
 
-{% hint style="info" %}
+:::info
 Receiver must approve the _Pool_ contract for at least the _amount borrowed + fee,_ else transaction will revert.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Does not waive few for approved _flashBorrowers_ nor allow opening a debt position instead of repaying.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Referral program is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
-{% endhint %}
+:::
 
 Call Params
 
@@ -311,9 +311,9 @@ Call Params
 
 Updates the user efficiency mode category. The category id must be a valid id already defined by _Pool or Risk Admins_
 
-{% hint style="info" %}
+:::info
 Will revert if user is borrowing non-compatible asset or change will drop HF < `HEALTH_FACTOR_LIQUIDATION_THRESHOLD`
-{% endhint %}
+:::
 
 Call Params
 
@@ -325,11 +325,11 @@ Call Params
 
 `mintUnbacked (asset, amount, onBehalfOf, referralCode)`
 
-Allows contracts, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address. This method is part of the Spark Lend [Portal](../../features/portal.md) feature.
+Allows contracts, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address.
 
-{% hint style="info" %}
+:::info
 Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitelisted by the governance.
-{% endhint %}
+:::
 
 | Param        | Type    | Description                                                                                                                                                                  |
 | ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -342,11 +342,11 @@ Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitel
 
 `backUnbacked (asset, amount, fee)`
 
-Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`. This method is part of the Spark Lend [Portal](../../features/portal.md) feature.
+Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`.
 
-{% hint style="info" %}
+:::info
 Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitelisted by the governance.
-{% endhint %}
+:::
 
 | Param  | Type    | Description                                          |
 | ------ | ------- | ---------------------------------------------------- |
@@ -362,7 +362,7 @@ Rescue and transfer tokens locked in this contract`.`
 
 {% hint style="danger" %}
 Only available to`POOL_ADMIN`role. Pool admin is selected by the governance.
-{% endhint %}
+:::
 
 ## View Methods
 

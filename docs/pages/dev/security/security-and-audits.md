@@ -16,25 +16,20 @@ Notable code differences include:
 
 ChainSecurity completed the audits for the deployment of SparkLend along with audits of the additional code used for the custom interest rate strategy for the DAI market and the Savings DAI oracle. You can read the audit reports here:
 
-{% file src="../.gitbook/assets/Chainsecurity - SparkLend Deployment Verification" %}
-
-{% file src="../.gitbook/assets/Chainsecurity - DAI IR Strategy and sDAI Oracle" %}
+- [Chainsecurity - SparkLend Deployment Verification](https://docs.spark.fi/assets/Chainsecurity-SparkLend-Deployment-Verification.pdf)
+- [Chainsecurity - DAI IR Strategy and sDAI Oracle](https://docs.spark.fi/assets/Chainsecurity-DAI-IR-Strategy-and-sDAI-Oracle.pdf)
 
 ## Spark Liquidity Layer
 
-{% file src="../.gitbook/assets/Cantina - Spark Liquidity Layer (2024-09-25).pdf" %}
-
-
-{% file src="../.gitbook/assets/Cantina - Spark Liquidity Layer (2024-10-23).pdf" %}
-
-{% file src="../.gitbook/assets/Chainsecurity - Spark Liquidity Layer (2024-10-22).pdf" %}
+- [Cantina - Spark Liquidity Layer (2024-09-25)](https://docs.spark.fi/assets/Cantina-Spark-Liquidity-Layer-2024-09-25.pdf)
+- [Cantina - Spark Liquidity Layer (2024-10-23)](https://docs.spark.fi/assets/Cantina-Spark-Liquidity-Layer-2024-10-23.pdf)
+- [Chainsecurity - Spark Liquidity Layer (2024-10-22)](https://docs.spark.fi/assets/Chainsecurity-Spark-Liquidity-Layer-2024-10-22.pdf)
 
 ## Savings USDS (sUSDS)
 
-{% file src="../.gitbook/assets/Chainsecurity - sUSDS.pdf" %}
-
-{% file src="../.gitbook/assets/Cantina - sUSDS.pdf" %}
+- [Chainsecurity - sUSDS](https://docs.spark.fi/assets/Chainsecurity-sUSDS.pdf)
+- [Cantina - sUSDS](https://docs.spark.fi/assets/Cantina-sUSDS.pdf)
 
 ## Savings DAI (sDAI)
 
-{% file src="../.gitbook/assets/Chainsecurity - sDAI" %}
+- [Chainsecurity - sDAI](https://docs.spark.fi/assets/Chainsecurity-sDAI.pdf)

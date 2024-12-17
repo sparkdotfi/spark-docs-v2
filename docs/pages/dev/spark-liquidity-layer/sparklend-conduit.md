@@ -1,16 +1,14 @@
 # SparkLend Conduit
 
-{% embed url="https://github.com/marsfoundation/spark-conduits" %}
-
 ## Overview
 
 The SparkLend Conduit is a conduit contract designed to be used within the Sky Allocation System. It implements the IAllocatorConduit interface, so it will be able to work within the constraints on the Allocation System design. There is one contract in this repo:
 
-`SparkLendConduit`: Facilitates the movement of funds between the Sky Allocation System and the SparkLend instance.
+`SparkConduit`: Facilitates the movement of funds between the Sky Allocation System and the SparkLend instance.
 
-{% hint style="info" %}
-ℹ️ In later iterations of this code's development, it is expected for other SparkLend Conduits to be developed to support multichain deployments.
-{% endhint %}
+The Spark Conduits source code can be found here:
+
+- [Spark Conduits Github Repo](https://github.com/marsfoundation/spark-conduits).
 
 ### Roles/Permissions
 
@@ -46,19 +44,19 @@ The `withdraw` function is used to `withdraw` funds from the SparkLend Pool into
 
 ## Invariants
 
-$$totalShares[asset] = \sum_{n=0}^{numIlks}{shares[asset][ilk]}$$
+`totalShares[asset] = \sum_{n=0}^{numIlks}{shares[asset][ilk]`
 
-$$getTotalDeposits(asset) = \sum_{n=0}^{numIlks}{getDeposits(asset, ilk)}$$
+`getTotalDeposits(asset) = \sum_{n=0}^{numIlks}{getDeposits(asset, ilk)}`
 
-$$totalRequestedShares[asset] = \sum_{n=0}^{numIlks}{requestedShares[asset][ilk]}$$
+`totalRequestedShares[asset] = \sum_{n=0}^{numIlks}{requestedShares[asset][ilk]}`
 
-$$totalShares[asset] \le aToken.scaledBalanceOf(conduit)$$
+`totalShares[asset] \le aToken.scaledBalanceOf(conduit)`
 
-$$getTotalDeposits(asset) \le aToken.balanceOf(conduit)$$
+`getTotalDeposits(asset) \le aToken.balanceOf(conduit)`
 
-{% hint style="info" %}
+:::info
 ℹ️ The last two invariants are not strict equalities because of A) the potential for a permissionless transfer of the aToken into the conduit and/or B) the rounding behaviour difference (round on SparkLend vs round-down on SparkLend Conduit).
-{% endhint %}
+:::
 
 ## Upgradeability
 
