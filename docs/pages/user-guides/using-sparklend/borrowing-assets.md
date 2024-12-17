@@ -33,7 +33,7 @@ This is available between ETH correlated assets (ETH, wsETH, rETH) and stablecoi
 
 
 ![](/assets/e-mode-eth.png)
-*E-mode Categories</p></figcaption></figure>
+*E-mode Categories*
 
 
 4. You can borrow an asset by navigating to the asset row, and clicking **Borrow**.
@@ -47,9 +47,8 @@ This is available between ETH correlated assets (ETH, wsETH, rETH) and stablecoi
 
 6.  Once you have done all the necessary transactions, you will receive the borrowed assets. Your overall position will be updated, which is reflected in the **Health Factor** and overview in **Your position**.
 
-
-    ![](/assets/borrow-weth-done.png)
-    *Confirmation: Borrowing WETH</p></figcaption></figure>
+![](/assets/borrow-weth-done.png)
+*Confirmation: Borrowing WETH*
 
 
 7. If you wish to borrow more at a later stage, you simply repeat this process.

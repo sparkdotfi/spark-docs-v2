@@ -57,10 +57,6 @@ Returns `UserReserveData[]` for all user reserves in the Pool associated with th
 
 ## ABI
 
-<details>
-
-<summary>UiPoolDataProviderV3</summary>
-
 ```
 [
     {

@@ -2,9 +2,9 @@
 
 Flash Loans are special transactions that allow the borrowing of an asset, as long as the borrowed amount (and a fee) is returned before the end of the transaction (also called One Block Borrows). These transactions do not require a user to supply collateral prior to engaging in the transaction. There is no real world analogy to Flash Loans, so it requires some basic understanding of how state is managed within blocks in blockchains.
 
-{% hint style="info" %}
+:::info
 Flash Loans are an advanced concept aimed at developers. You **must** have a good understanding of EVM, programming, and smart contracts to be able to use this feature.
-{% endhint %}
+:::
 
 ## Overview
 
@@ -12,15 +12,15 @@ Flash-loan allows users to access liquidity of the pool (only for reserves for w
 
 SparkLend offers two options for flash loans:
 
-* [`flashLoan`](../core-contracts/pool.md#flashloan): Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
-  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../core-contracts/aclmanager.md))
-* [`flashLoanSimple`](../core-contracts/pool.md#flashloansimple): Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
+* [`flashLoan`](/dev/sparklend/core-contracts/pool#flashloan): Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
+  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](/dev/sparklend/core-contracts/aclmanager.md))
+* [`flashLoanSimple`](/dev/sparklend/core-contracts/pool#flashloansimple): Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
 
 ### Execution Flow
 
 For developers, a helpful mental model to consider when developing your solution:
 
-1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using [`flashLoanSimple()`](../core-contracts/pool.md#flashloansimple) or [`flashLoan()`](../core-contracts/pool.md#flashloan).
+1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using [`flashLoanSimple()`](/dev/sparklend/core-contracts/pool#flashloansimple) or [`flashLoan()`](/dev/sparklend/core-contracts/pool#flashloan).
 2. After some sanity checks, the `Pool` transfers the requested `amounts` of the `reserves` to your contract, then calls `executeOperation()` on `receiver` contract .
 3. Your contract, now holding the flash loaned `amount(s)`, executes any arbitrary operation in its code.
    * If you are performing a **flashLoanSimple**, then when your code has finished, you approve Pool for flash loaned amount + fee.
@@ -37,16 +37,16 @@ SparkLend Flash Loans are already used with SparkLend for liquidity swap feature
 
 ### Flash loan fee
 
-The flash loan fee is initialized at deployment to 0.09% and can be updated via Governance Vote. Use [`FLASHLOAN_PREMIUM_TOTAL`](../core-contracts/pool.md#flashloan\_premium\_total) to get current value.
+The flash loan fee is initialized at deployment to 0.09% and can be updated via Governance Vote. Use [`FLASHLOAN_PREMIUM_TOTAL`](/dev/sparklend/core-contracts/pool#flashloan) to get current value.
 
 Flashloan fee can be shared by the LPs (liquidity providers) and the protocol treasury. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
 
 * Fee to LP: `FLASHLOAN_PREMIUM_TOTAL - FLASHLOAN_PREMIUM_TO_PROTOCOL`
 * Fee to Protocol: `FLASHLOAN_PREMIUM_TO_PROTOCOL`
 
-{% hint style="info" %}
+:::info
 At initialization, `FLASHLOAN_PREMIUM_TO_PROTOCOL` is set to 0.
-{% endhint %}
+:::
 
 ## Step by step
 
@@ -62,17 +62,17 @@ To call either of the two flash loan methods on the Pool, we need to pass in the
 
 1.  **From an EOA ('normal' ethereum account)**
 
-    To use an EOA, send a transaction to the relevant `Pool` calling the `flashLoan()` or `flashLoanSimple()` function. See [Pool api docs](../core-contracts/pool.md) for parameter details, ensuring you use your contract address from [step 1](flash-loans.md#1.-setting-up) for the `receiverAddress`.\\
+    To use an EOA, send a transaction to the relevant `Pool` calling the `flashLoan()` or `flashLoanSimple()` function. See [Pool api docs](/dev/sparklend/core-contracts/pool) for parameter details, ensuring you use your contract address from [step 1](#1-setting-up) for the `receiverAddress`.\\
 2.  **From a different contract**
 
-    Similar to sending a transaction from an EOA as above, ensure the `receiverAddress` is your contract address from [step 1](flash-loans.md#1.-setting-up).\\
+    Similar to sending a transaction from an EOA as above, ensure the `receiverAddress` is your contract address from [step 1](#1-setting-up).\\
 3.  **From the \_same**\_\*\* contract\*\*
 
     If you want to use the same contract as in step 1, use `address(this)` for the `receiverAddress` parameter in the flash loan method.
 
-{% hint style="danger" %}
+:::danger
 Never keep funds permanently on your `FlashLoanReceiverBase` contract as they could be exposed to a ['griefing' attack](https://ethereum.stackexchange.com/a/92457/19365), where the stored funds are used by an attacker.
-{% endhint %}
+:::
 
 ### Completing the flash loan
 

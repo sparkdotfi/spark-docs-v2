@@ -13,7 +13,7 @@ The Spark PSM extends the Sky PSM liquidity on Ethereum mainnet to other chains,
 
 | Network  | Spark PSM Address                                                                                                     |
 | -------- | --------------------------------------------------------------------------------------------------------------------- |
-| B**ase** | [0x1601843c5E9bC251A3272907010AFa41Fa18347E](https://basescan.org/address/0x1601843c5E9bC251A3272907010AFa41Fa18347E) |
+| Base | [0x1601843c5E9bC251A3272907010AFa41Fa18347E](https://basescan.org/address/0x1601843c5E9bC251A3272907010AFa41Fa18347E) |
 
 ### State Variables and Immutables
 

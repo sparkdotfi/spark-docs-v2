@@ -4,9 +4,9 @@
 
 Addresses register of the protocol for a particular market. This contract is immutable and the address will never change.
 
-{% hint style="info" %}
+:::info
 Whenever the \`Pool\` contract is needed, we recommended you fetch the correct address from the \`PoolAddressesProvider\` smart contract.
-{% endhint %}
+:::
 
 The source code can be [found on Github](https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/configuration/PoolAddressesProvider.sol)
 
@@ -165,9 +165,9 @@ Call Params
 
 Sets/updates the implementation address of a specific proxied protocol contract.
 
-{% hint style="info" %}
+:::info
 If there is no proxy registered with the given identifier, it creates the proxy setting `newAddress` as implementation and calls the initialize() function on the proxy
-{% endhint %}
+:::
 
 Call Params
 

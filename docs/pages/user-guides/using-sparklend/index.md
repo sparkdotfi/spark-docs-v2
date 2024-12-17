@@ -14,9 +14,11 @@ Get started using SparkLend using this guide:
 
 - [Borrow DAI and USDS](/user-guides/using-sparklend/borrow-dai-and-usds)
 
-## What are the risks?
+## Open Source
 
-No platform can be considered entirely risk-free. The risks related to the SparkLend platform are the smart contract risk (risk of a bug within the protocol code) and liquidation risk (risk on the collateral liquidation process). Every possible step has been taken to minimize the risk as much as possible, the protocol code is public and open source and it has been audited. Additionally, you can find additional security-related information in the [Security Audits](dev/security/security-and-audits) section.
+SparkLend is completely open source, which allows anyone to interact with a user interface client, API or directly with the smart contracts on the Ethereum network. Being open source enables any third-party service or application to integrate and interact with the protocol.
+
+You can find all Spark related code here: [https://github.com/marsfoundation](https://github.com/marsfoundation)
 
 ## Feature Overview
 
@@ -48,12 +50,6 @@ Learn more about Isolation mode here:
 ### Siloed Borrowing
 
 Siloed borrowing allows assets with potentially manipulatable oracles to be listed on Spark as single borrow asset i.e. if a user borrows siloed asset, they cannot borrow any other asset. This helps mitigating the risk associated with such assets from impacting the overall solvency of the protocol.
-
-### Open Source
-
-SparkLend is completely open source, which allows anyone to interact with a user interface client, API or directly with the smart contracts on the Ethereum network. Being open source enables any third-party service or application to integrate and interact with the protocol.
-
-You can find all Spark related code here: [https://github.com/marsfoundation](https://github.com/marsfoundation)
 
 ## Risk Management
 

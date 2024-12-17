@@ -5,13 +5,13 @@ Debt tokens are interest-accruing tokens that are minted and burned on `borrow` 
 * _**Stable Debt Tokens**_**:** represent a debt to the protocol with stable interest rate.
 * _**Variable Debt Tokens**_**:** represent a debt to the protocol with variable interest rate.
 
-{% hint style="danger" %}
+:::danger
 Stable Debt Tokens are not currently being used in SparkLend, they are a legacy piece of technology that will be fully deprecated at some point in the future.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info
 Debt tokens are not transferable.
-{% endhint %}
+:::
 
 The _s/vToken_ value is pegged 1:1 to the value of underlying borrowed asset and represents the current total amount owed to the protocol i.e. principal debt + interest accrued.
 
@@ -120,9 +120,9 @@ Sets the `value` of allowance for `delegatee` to borrow of a particular debt tok
 
 Sets a new Incentives Controller.
 
-{% hint style="danger" %}
+:::danger
 Only Pool Admin can call this methods. To update Incentives Controller on main Spark market, Governance Proposal must be submitted.
-{% endhint %}
+:::
 
 ### Stable Debt Token Methods
 

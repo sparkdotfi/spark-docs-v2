@@ -41,7 +41,6 @@ export default defineConfig({
     },
     {
       text: 'USER GUIDES',
-      link: '/user-guides/getting-started',
       collapsed: false,
       items: [ 
         { 
@@ -360,6 +359,10 @@ export default defineConfig({
     {
       text: 'Brand Assets | Press Kit', 
       link: '/comms/brand-assets-press-kit', 
+    },
+    {
+      text: 'Terms of Use', 
+      link: 'https://spark.fi/terms-of-use', 
     },
   ],
 })

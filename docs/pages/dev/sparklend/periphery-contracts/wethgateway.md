@@ -12,9 +12,9 @@ The WETH Gateway contract is a helper to easily wrap and unwrap ETH (or native c
 
 Supplies the `msg.value` amount of ETH (or native chain token) into the SparkLend pool, minting the same amount of corresponding aWETH and transferring them to the `onBehalfOf` address.
 
-{% hint style="info" %}
+:::info
 Ensure that the `depositETH()` transaction also includes the amount of ETH you are supplying in the `msg.value`.
-{% endhint %}
+:::info
 
 Call Params
 
@@ -46,9 +46,9 @@ Call Params
 
 Repays `onBehalfOf`'s debt `amount` of ETH () which has a `rateMode`.
 
-{% hint style="info" %}
+:::info
 Ensure that the `repayETH()` transaction also includes the amount of ETH you are repaying in the `msg.value`.
-{% endhint %}
+:::info
 
 | Parameter Name | Type    | Description                                                                                                                                                                                                                                                                                                  |
 | -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -96,9 +96,9 @@ Call Params
 
 Method for ERC20 recovery in case of stuck tokens due direct transfers to the contract address.
 
-{% hint style="info" %}
+:::info
 Can be called only by the owner of the contract i.e. Maker Governance
-{% endhint %}
+:::info
 
 ### emergencyEtherTransfer
 
@@ -106,9 +106,9 @@ Can be called only by the owner of the contract i.e. Maker Governance
 
 Method for ETH (or native chain token) recovery in case of stuck ETH due selfdestruct or transfer ether to pre-computated contract address before deployment.
 
-{% hint style="info" %}
+:::info
 Can be called only by the owner of the contract i.e. Maker Governance.
-{% endhint %}
+:::info
 
 ### View
 

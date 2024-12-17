@@ -11,15 +11,15 @@ The `RISK_ADMINS` and `POOL_ADMIN`, set by Maker Governace, can configure a maxi
 * Liquidation bonus
 * A custom price oracle (optional)
 
-{% hint style="info" %}
+:::info
 💡 Category 0 is reserved as the default non-eMode category. All the assets listed on SparkLend, by default have category 0 (which indicates the standard operational mode).
-{% endhint %}
+:::
 
 All Assets listed on SparkLend can be set to any of the pre-configured `eModeCategory` by the `RISK_ADMINS` or `POOL_ADMIN`.
 
-{% hint style="info" %}
+:::info
 The correct categorisation is not enforced on-chain and needs to be maintained by the `RISK_ADMINS` and `POOL_ADMINS` selected via the Maker Governace vote.
-{% endhint %}
+:::
 
 eMode also offers the possibility of introducing a specific price oracle for a certain category.
 

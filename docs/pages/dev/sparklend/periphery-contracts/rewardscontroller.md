@@ -88,9 +88,9 @@ Call Params
 
 Claims single reward type specified by `reward` for the given list of assets on behalf of the `user`. Rewards are received by `to` address.
 
-{% hint style="info" %}
+:::info
 The `msg.sender` must be an authorised claimer set using `setClaimer()` method, via Governance Vote.
-{% endhint %}
+:::
 
 Call Params
 
@@ -135,9 +135,9 @@ Call Params
 
 Claims all rewards for the given list of assets on behalf of the `user`. Rewards are received by `to` address.
 
-{% hint style="info" %}
+:::info
 The `msg.sender` must be an authorised claimer set using `setClaimer()` method, via Governance Vote.
-{% endhint %}
+:::
 
 Call Params
 
