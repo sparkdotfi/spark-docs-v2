@@ -8,7 +8,7 @@ description: Learn how to earn savings on your stablecoin holdings.
 Savings are now live on Base! More networks will be supported soon.
 :::
 
-Spark enables users to easily deposit stablecoins into savings, and receive Savings USDS (sUSDS) tokens in return. The sUSDS tokens represents your share of USDS in the Sky Savings Rate. As savings accrue, sUSDS increases in value over time. The Sky Savings Rate is set by Sky Governance. [You can read more about sUSDS here.](/user-guides/earning-savings/savings-usds.md)
+Spark enables users to easily deposit stablecoins into savings, and receive Savings USDS (sUSDS) tokens in return. The sUSDS tokens represents your share of USDS in the Sky Savings Rate. As savings accrue, sUSDS increases in value over time. The Sky Savings Rate is set by Sky Governance. [You can read more about sUSDS here.](/user-guides/earning-savings/savings-usds)
 
 Savings are supported on Ethereum, Base and Gnosis Chain. More major networks will be supported soon.
 
@@ -20,7 +20,7 @@ Savings are supported on Ethereum, Base and Gnosis Chain. More major networks wi
 
 ### Deposit Savings
 
-1. Make sure you are connected to the network you wish to use. [Savings are supported across different networks](/user-guides/earning-savings/savings-usds.md#supported-networks-and-token-addresses).
+1. Make sure you are connected to the network you wish to use. [Savings are supported across different networks](/user-guides/earning-savings/savings-usds#supported-networks-and-token-addresses).
 2.  To earn yield on your stablecoins such as USDS, DAI, and USDC, navigate to the **Savings** page.
 
 ![](/assets/savings-1.png)

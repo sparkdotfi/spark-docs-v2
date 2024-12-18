@@ -16,7 +16,9 @@ The oracle provides convenience functions to fetch the conversion rate at variou
 
 ## Deployments
 
-<table><thead><tr><th width="216">Network</th><th>Address</th></tr></thead><tbody><tr><td>Base</td><td><a href="https://basescan.org/address/0x65d946e533748a998b1f0e430803e39a6388f7a1#code">0x65d946e533748A998B1f0E430803e39A6388f7a1</a></td></tr></tbody></table>
+| Network | Address                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------- |
+| Base    | [0x65d946e533748A998B1f0E430803e39A6388f7a1](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1) |
 
 Check the Spark Address Registry for the most up to date resource for contract deployments:
 

@@ -4,7 +4,7 @@ hidden: true
 
 # Ethereum
 
-SparkLend is available on [Ethereum](ethereum-addresses.md) and [Gnosis Chain](gnosis-addresses.md).
+SparkLend is available on [Ethereum](#ethereum-addresses) and [Gnosis Chain](#gnosis-addresses).
 
 ## Ethereum Addresses
 

@@ -20,9 +20,9 @@ The Spark App consists of five main sections - click on a section title for spec
 
 1. [**Savings**](/user-guides/earning-savings/) - The landing page of the application hosts Savings. Savings enables you to deposit stablecoins to earn savings using Savings USDS (sUSDS).
 2. **Borrow** - Contains three sections:
-   1. [**Borrow DAI and USDS**](/user-guides/using-sparklend/borrow-dai-and-usds.md), which enables you to borrow USDS and DAI using crypto assets as collateral. This section is focused on USDS and DAI borrowing only.
-   2. [**My portfolio**](/user-guides/using-sparklend/borrowing-assets.md) - Shows the state of your borrow and lending position. Here you can also manage lending and borrow positions of any supported asset.
-   3. [**Markets**](/user-guides/using-sparklend/overview-of-markets.md) **-** gives an overview of the total state of the supported lending markets, such as total liquidity and total borrows. Offers detailed information for each market, and the option to enter the markets.
+   1. [**Borrow DAI and USDS**](/user-guides/using-sparklend/borrow-dai-and-usds), which enables you to borrow USDS and DAI using crypto assets as collateral. This section is focused on USDS and DAI borrowing only.
+   2. [**My portfolio**](/user-guides/using-sparklend/borrowing-assets) - Shows the state of your borrow and lending position. Here you can also manage lending and borrow positions of any supported asset.
+   3. [**Markets**](/user-guides/using-sparklend/overview-of-markets) **-** gives an overview of the total state of the supported lending markets, such as total liquidity and total borrows. Offers detailed information for each market, and the option to enter the markets.
 3. [**Farms**](/user-guides/farming-rewards/) - Enables users to deposit tokens into farms to earn Sky Token Rewards.
 
 ![](/assets/homepage.png)

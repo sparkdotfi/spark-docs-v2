@@ -156,7 +156,7 @@ export default defineConfig({
         },
         { 
           text: 'SPK Token & Airdrop', 
-          link: '/rewards/spk-token', 
+          link: '/governance/spk-token', 
         },
         { 
           text: 'Troubleshooting',

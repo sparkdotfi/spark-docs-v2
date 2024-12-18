@@ -58,7 +58,7 @@ SparkLend is a decentralized non-custodial liquidity market protocol that powers
 
 ### How do I interact with SparkLend?
 
-[Get started using SparkLend using this guide](/user-guides/using-sparklend/borrow-dai-and-usds.md).
+[Get started using SparkLend using this guide](/user-guides/using-sparklend/borrow-dai-and-usds).
 
 ### What is the cost of interacting with Borrow?
 
@@ -82,8 +82,8 @@ Each asset has its own market of supply and demand with its own APY (Annual Perc
 
 ### Can I opt-out my asset from being used as a collateral?
 
-Yes. After depositing your assets, you are able to unselect the asset so that it will not be used as collateral. The opt-out is available in the **Deposit** section within your dashboard. Simply switch the **Collateral** toggle on the asset you would prefer to opt-out from being used as a collateral.\
-\
+Yes. After depositing your assets, you are able to unselect the asset so that it will not be used as collateral. The opt-out is available in the **Deposit** section within your dashboard. Simply switch the **Collateral** toggle on the asset you would prefer to opt-out from being used as a collateral.
+
 You can withdraw your assets without opting out of using them as collateral, as long as those funds are not actively being lent out or the withdrawal would cause a liquidation on your loans.
 
 ### Why would I borrow instead of selling my assets?
@@ -124,7 +124,7 @@ In order to payback the loan you simply go to the Borrowings section of your das
 
 ### How do I avoid liquidation?
 
-In order to avoid the reduction of your health factor leading to liquidation, you can repay the loan or deposit more collateral assets in order to increase your health factor. Learn more about liquidations here: [Liquidations](/user-guides/using-sparklend/liquidations.md)
+In order to avoid the reduction of your health factor leading to liquidation, you can repay the loan or deposit more collateral assets in order to increase your health factor. Learn more about liquidations here: [Liquidations](/user-guides/using-sparklend/liquidations)
 
 ## Spark Liquidity Layer
 
