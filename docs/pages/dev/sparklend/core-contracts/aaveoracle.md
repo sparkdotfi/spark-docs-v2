@@ -65,7 +65,7 @@ Returns the address of the fallback oracle.
 Sets the price source for given list of assets.
 
 :::danger
-This method can be called only by `POOL_ADMIN` or `ASSET_LISTING_ADMIN`. Check [ACLManager](aclmanager.md) for details on system roles.
+This method can be called only by `POOL_ADMIN` or `ASSET_LISTING_ADMIN`. Check [ACLManager](/dev/sparklend/core-contracts/aclmanager) for details on system roles.
 :::
 
 Call Params
@@ -82,7 +82,7 @@ Call Params
 Sets/updates the fallback oracle.
 
 :::danger
-This method can be called only by `POOL_ADMIN`or`ASSET_LISTING_ADMIN`. Check [ACLManager](aclmanager.md) for details on system roles.
+This method can be called only by `POOL_ADMIN`or`ASSET_LISTING_ADMIN`. Check [ACLManager](/dev/sparklend/core-contracts/aclmanager) for details on system roles.
 :::
 
 Call Params

@@ -5,7 +5,7 @@ description: Learn about sDAI and the Dai Savings Rate.
 # Savings DAI
 
 :::info
-**Note:** Savings DAI is the old version of Savings USDS. [Learn how to upgrade to sUSDS and earn a higher yield here.](/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds.md)
+**Note:** Savings DAI is the old version of Savings USDS. [Learn how to upgrade to sUSDS and earn a higher yield here.](/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds)
 :::
 
 ## What is sDAI?

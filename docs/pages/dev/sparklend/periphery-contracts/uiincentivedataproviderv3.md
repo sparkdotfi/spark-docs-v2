@@ -77,7 +77,7 @@ The [SparkLend Utilities SDK](https://github.com/marsfoundation/spark-utilities#
 
 `function getReservesIncentivesData(IPoolAddressesProvider provider)`
 
-Returns `AggregatedReserveIncentiveData[]` for the pool associated with given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns `AggregatedReserveIncentiveData[]` for the pool associated with given [`provider`](/dev/sparklend/core-contracts/pooladdressesprovider).
 
 #### getUserReservesIncentivesData
 
@@ -89,7 +89,7 @@ Returns `UserReserveIncentiveData[]` for the given `user` for the pool associate
 
 `function getFullReservesIncentiveData(IPoolAddressesProvider provider, address user)`
 
-Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]` for the given `user` for the pool associated with given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]` for the given `user` for the pool associated with given [`provider`](/dev/sparklend/core-contracts/pooladdressesprovider).
 
 ## ABI
 

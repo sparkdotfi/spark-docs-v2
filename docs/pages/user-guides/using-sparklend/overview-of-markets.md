@@ -33,7 +33,7 @@ In the section below it displays the following data for each supported asset:
 ![](/assets/markets-2.png)
 *Market Status: Specific for each asset*
 
-For each asset you can click on the details button to get a more in-depth overview of the metrics for the asset, and its parameters, such as liquidation threshold and penalty, and whether the asset can be used in E-mode. The page also displays which oracle is being used for this asset ([you can read more about this here](oracles.md)). It also displays a more in-depth overview of the interest rate model for the asset. You are also able to deposit or borrow the asset directly from this page, using the sidebar on the right.
+For each asset you can click on the details button to get a more in-depth overview of the metrics for the asset, and its parameters, such as liquidation threshold and penalty, and whether the asset can be used in E-mode. The page also displays which oracle is being used for this asset ([you can read more about this here](/user-guides/using-sparklend/oracles)). It also displays a more in-depth overview of the interest rate model for the asset. You are also able to deposit or borrow the asset directly from this page, using the sidebar on the right.
 
 ![](/assets/markets-3.png)
 *Detailed Asset Overview*

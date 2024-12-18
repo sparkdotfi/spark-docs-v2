@@ -5,7 +5,7 @@ icon: coins
 # sUSDS Token
 
 :::info
-**This page only reflects the sUSDS implementation on Ethereum mainnet. If you are looking to integrate sUSDS on other networks, see this page:** [**Cross-chain USDS & sUSDS**](cross-chain-usds-and-susds.md)**.**
+**This page only reflects the sUSDS implementation on Ethereum mainnet. If you are looking to integrate sUSDS on other networks, see this page:** [**Cross-chain USDS & sUSDS**](/dev/savings/cross-chain-usds-and-susds)**.**
 :::
 
 ## Overview

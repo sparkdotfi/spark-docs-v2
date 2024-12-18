@@ -1,7 +1,7 @@
 # Cross-chain USDS & sUSDS
 
 :::info
-If you are looking to integrate Ethereum mainnet sUSDS, you should use [this documentation instead](susds-token.md).
+If you are looking to integrate Ethereum mainnet sUSDS, you should use [this documentation instead](/dev/savings/susds-token).
 :::
 
 ## Overview

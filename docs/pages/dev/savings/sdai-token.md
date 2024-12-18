@@ -1,7 +1,3 @@
----
-icon: coin-vertical
----
-
 # sDAI Token
 
 ## Overview

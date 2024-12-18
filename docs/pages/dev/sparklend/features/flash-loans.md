@@ -13,7 +13,7 @@ Flash-loan allows users to access liquidity of the pool (only for reserves for w
 SparkLend offers two options for flash loans:
 
 * [`flashLoan`](/dev/sparklend/core-contracts/pool#flashloan): Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
-  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](/dev/sparklend/core-contracts/aclmanager.md))
+  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](/dev/sparklend/core-contracts/aclmanager))
 * [`flashLoanSimple`](/dev/sparklend/core-contracts/pool#flashloansimple): Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
 
 ### Execution Flow

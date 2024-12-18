@@ -191,7 +191,7 @@ Call Params
 Sets the `asset` of `msg.sender` to be used as collateral or not.
 
 :::info
-An asset in [Isolation Mode](../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
+An asset in [Isolation Mode](/dev/sparklend/features/isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
 :::
 
 :::info
@@ -223,7 +223,7 @@ Liquidators must \`approve()\` the \`Pool\` contract to use \`debtToCover\` of t
 
 * _In most scenarios_, profitable liquidators will choose to liquidate as much as they can (50% of the `user` position).
 * `debtToCover` parameter can be set to `uint(-1)` and the protocol will proceed with the highest possible liquidation allowed by the close factor.
-* To check a user's health factor, use [`getUserAccountData()`.](pool.md#getuseraccountdata)
+* To check a user's health factor, use [`getUserAccountData()`.](#getuseraccountdata)
 
 Call Params
 

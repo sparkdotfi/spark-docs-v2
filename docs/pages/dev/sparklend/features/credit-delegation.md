@@ -8,7 +8,7 @@ This enables:
 * The borrowers (aka delegatees) to access an uncollateralized loan.
 
 :::warning
-Borrow by _delegatee_ must be consistent with _delegator_ [eMode](../features/efficiency-mode-emode.md) category.\
+Borrow by _delegatee_ must be consistent with _delegator_ [eMode](/dev/sparklend/features/efficiency-mode-emode) category.\
 For eg. if a delegator eMode category is `STABLECOINS`, then
 
 * delegator can only borrow `STABLECOINS` eMode category asset.
@@ -21,7 +21,7 @@ The _delegatee_ cannot abuse credit approval to liquidate _delegator_ i.e. if th
 
 ## Approving the delegation
 
-The [`approveDelegation()`](../tokens/debttoken.md#approvedelegation) or [`delegationWithSig()`](../tokens/debttoken.md#delegationwithsig) must be called by the supplier (delegator), approving the borrower (delegatee) a certain amount.
+The [`approveDelegation()`](/dev/sparklend/tokens/debttoken#approvedelegation) or [`delegationWithSig()`](/dev/sparklend/tokens/debttoken#delegationwithsig) must be called by the supplier (delegator), approving the borrower (delegatee) a certain amount.
 
 This is done for each debt token that needs to be delegated.
 
