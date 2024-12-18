@@ -48,7 +48,7 @@ Tenderly is a tool for interacting and debugging smart contracts in a browser in
 
 To run simulations you will need two things, a contract address and contract abi.
 
-The contract addresses for each official and testnet market of the SparkLend can be found [here](../../deployment-addresses/).
+The contract addresses for each official and testnet market of the SparkLend can be found here.
 
 The abi for each contract can obtained from a block explorer or compiling contract code directly.
 
