@@ -23,7 +23,7 @@ New assets can be listed as _**isolated**_. Borrowers supplying an isolated asse
 
 ### Siloed Borrowing
 
-Siloed borrowing allows assets with potentially manipulatable oracles to be listed on Spark as single borrow asset i.e. if a user borrows siloed asset, they cannot borrow any other asset. This helps mitigating the risk associated with such assets from impacting the overall solvency of the protocol. Please see the [Siloed Borrowing](../sparklend/sparklend/features/siloed-borrowing.md) page for more details.
+Siloed borrowing allows assets with potentially manipulatable oracles to be listed on Spark as single borrow asset i.e. if a user borrows siloed asset, they cannot borrow any other asset. This helps mitigating the risk associated with such assets from impacting the overall solvency of the protocol.
 
 ## Risk Management
 

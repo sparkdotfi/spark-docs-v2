@@ -1,7 +1,5 @@
 ---
 description: Learn how to use the Easy Borrow Flow to borrow USDS or DAI.
-content: 
-  width: 1000
 ---
 
 # Borrow DAI and USDS
