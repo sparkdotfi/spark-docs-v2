@@ -14,7 +14,7 @@ export default defineConfig({
     },
     {
       icon: 'github',
-      link: 'https://github.com/marsfoundation/spark-docs-v2',
+      link: 'https://github.com/marsfoundation/',
     },
     {
       icon: 'discord',
@@ -27,8 +27,11 @@ export default defineConfig({
   },
   iconUrl: '/fav.svg',
   theme: { 
-    accentColor: '#FF8D70',
-     
+    accentColor: '#FF8D70',   
+  },
+  editLink: { 
+    pattern: 'https://github.com/marsfoundation/spark-docs-v2/edit/dev/docs/pages/:path', 
+    text: 'Edit on GitHub'
   },
   sidebar: [
     {
@@ -164,7 +167,6 @@ export default defineConfig({
     {
       text: 'DEVELOPERS',
       collapsed: false,
-      link: '/dev/',
       items: [ 
         { 
           text: 'Deployments', 
