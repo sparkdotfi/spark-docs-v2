@@ -1,16 +1,5 @@
 ---
 description: Learn how the Spark Liquidity Layer works.
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Spark Liquidity Layer
