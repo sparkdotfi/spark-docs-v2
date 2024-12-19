@@ -28,7 +28,7 @@ Under the Sky Endgame model, Sky Stars allocate capital to the best yielding inv
 
 All Sky Stars have equal access to yield based opportunities, based on an Asset & Liability Management (ALM) framework, Sky Stars make the decision to provide liquidity to the target protocols.
 
-The ALM framework defines the logic within the constraints set by [**The Stability and Liquidity Scope Framework (MIP103)**](https://forum.makerdao.com/t/mip103-the-stability-and-liquidity-scope-framework/19675), supported by the the ALM Capitalization Requirements defined in MIP102 regarding collateral asset types based on the conversion delay and slippage tolerance.
+The ALM framework defines the logic within the constraints set by [**The Stability and Liquidity Scope Framework (MIP103)**](https://forum.makerdao.com/t/mip103-the-stability-and-liquidity-scope-framework/19675), supported by the ALM Capitalization Requirements defined in MIP102 regarding collateral asset types based on the conversion delay and slippage tolerance.
 
 **Sky Star User Experience with Conduits**
 
@@ -51,7 +51,7 @@ Protocols need to ensure that the conduits are built and audited, and provide a 
 
 ### **Peg stability & pulling liquidity**
 
-Maker’s objective is to sustainable grow and manage DAI to become a major stablecoin. To that end, the ability to quickly (speed) and efficiently (slippage) pull liquidity is critical in order to ensure a stable peg.
+Maker’s objective is to sustainably grow and manage DAI to become a major stablecoin. To that end, the ability to quickly (speed) and efficiently (slippage) pull liquidity is critical in order to ensure a stable peg.
 
 subDAOs should be able to unwind positions as quickly as possible with the least impact on price as possible. The ALM requirements limit the exposure to asset types based on this condition.
 
