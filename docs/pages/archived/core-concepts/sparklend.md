@@ -5,7 +5,7 @@ hidden: true
 
 # SparkLend
 
-SparkLend is decentralized non-custodial liquidity protocol where users can participate as depositors, borrowers or liquidators. Depositors provide liquidity to a market and can earn interest on the crypto assets provided, while borrowers are able to borrow in an overcollateralized fashion.
+SparkLend is a decentralized non-custodial liquidity protocol where users can participate as depositors, borrowers or liquidators. Depositors provide liquidity to a market and can earn interest on the crypto assets provided, while borrowers are able to borrow in an overcollateralized fashion.
 
 ## Capital Efficiency
 
@@ -15,7 +15,7 @@ We allow users to optimise their assets supplied to the SparkLend in terms of yi
 
 The High Efficiency Mode or _**E-Mode**_ allows borrowers to extract the highest borrowing power out of their collateral when supplied and borrowed assets are correlated in price, particularly when both are derivatives of the same underlying asset (e.g. stablecoins pegged to USD).
 
-This can enabling a wave of new use cases such as High leverage forex trading, Highly efficient yield farming (for example, deposit ETH staking derivatives to borrow ETH), Diversified risk management&#x20;
+This can enable a wave of new use cases such as High leverage forex trading, Highly efficient yield farming (for example, deposit ETH staking derivatives to borrow ETH), Diversified risk management&#x20;
 
 ### Isolation Mode
 
@@ -27,14 +27,14 @@ Siloed borrowing allows assets with potentially manipulatable oracles to be list
 
 ## Risk Management
 
-SparkLend brings a greatly improved set risk parameters and new features to protect the protocol from insolvency.
+SparkLend brings a greatly improved set of risk parameters and new features to protect the protocol from insolvency.
 
 ### Supply and Borrow Caps
 
 Sky Governance can now configure Borrow and Supply Caps.
 
 * **Borrow Caps:** allow to modulate how much of each asset can be borrowed, which reduces insolvency risk.
-* **Supply Caps**: allow to limit how much of a certain asset is supplied to SparkLend. This helps reducing exposure to a certain asset and mitigate attacks like infinite minting or price oracle manipulation.
+* **Supply Caps:** allow to limit how much of a certain asset is supplied to SparkLend. This helps reducing exposure to a certain asset and mitigate attacks like infinite minting or price oracle manipulation.
 
 ### Granular Borrowing Power Control
 
@@ -42,7 +42,7 @@ In SparkLend, it will be possible to lower the borrowing power of any asset to a
 
 ### Risk Admins
 
-SparkLend introduces the ability for the Sky Governance to grant entities permission to update the risk parameters with going through governance vote for every change. These entities can be DAOs or automated agents that can build on top of this feature to react automatically in case of unanticipated events.
+SparkLend introduces the ability for the Sky Governance to grant entities permission to update the risk parameters without going through governance vote for every change. These entities can be DAOs or automated agents that can build on top of this feature to react automatically in case of unanticipated events.
 
 {% hint style="info" %}
 Sky Governance will have the ability to revoke access to existing Risk Admins or add new Risk Admins.
