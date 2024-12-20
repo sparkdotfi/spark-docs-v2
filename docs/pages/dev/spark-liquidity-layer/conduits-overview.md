@@ -28,7 +28,7 @@ Under the Sky Endgame model, Sky Stars allocate capital to the best yielding inv
 
 All Sky Stars have equal access to yield based opportunities, based on an Asset & Liability Management (ALM) framework, Sky Stars make the decision to provide liquidity to the target protocols.
 
-The ALM framework defines the logic within the constraints set by [**The Stability and Liquidity Scope Framework (MIP103)**](https://forum.makerdao.com/t/mip103-the-stability-and-liquidity-scope-framework/19675), supported by the the ALM Capitalization Requirements defined in MIP102 regarding collateral asset types based on the conversion delay and slippage tolerance.
+The ALM framework defines the logic within the constraints set by [**The Stability and Liquidity Scope Framework (MIP103)**](https://forum.makerdao.com/t/mip103-the-stability-and-liquidity-scope-framework/19675), supported by the ALM Capitalization Requirements defined in MIP102 regarding collateral asset types based on the conversion delay and slippage tolerance.
 
 **Sky Star User Experience with Conduits**
 

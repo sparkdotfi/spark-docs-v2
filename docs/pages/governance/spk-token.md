@@ -87,7 +87,7 @@ The SPK emissions follow the rules set forth in [MIP101: Sky Atlas Immutable Ali
 
 The Genesis farming follow the following emission schedule:
 
-| <p><br></p> | Yearly Amount of SPK (in millions) | Total Amount of SPK (in millions) |
+|             | Yearly Amount of SPK (in millions) | Total Amount of SPK (in millions) |
 | ----------- | ---------------------------------- | --------------------------------- |
 | Year 1      | 1000                               | 1000                              |
 | Year 2      | 1000                               | 2000                              |

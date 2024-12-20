@@ -3,9 +3,10 @@ import { defineConfig } from 'vocs'
 export default defineConfig({
   title: 'Spark Docs',
   topNav: [
-    { text: 'Website', link: 'https://app.spark.fi/' },
+    { text: 'Website', link: 'https://spark.fi/' },
     { text: 'App', link: 'https://app.spark.fi/' },
     { text: 'Analytics', link: 'https://spark.blockanalitica.com/' },
+    { text: 'Bug Bounty', link: 'https://immunefi.com/bug-bounty/sparklend/information/' },
   ],
   socials: [
     {
@@ -338,21 +339,21 @@ export default defineConfig({
             },
           ], 
         },
-        { 
-          text: 'Security', 
-          collapsed: true,
-          items: [ 
-            { 
-              text: 'Security Audits', 
-              link: '/dev/security/security-and-audits', 
-            },
-            { 
-              text: 'Bug Bounty Program', 
-              link: '/dev/security/bug-bounty-program', 
-            },
-          ], 
-        },
       ],
+    },
+    { 
+      text: 'SECURITY', 
+      collapsed: false,
+      items: [ 
+        { 
+          text: 'Security Audits', 
+          link: '/dev/security/security-and-audits', 
+        },
+        { 
+          text: 'Bug Bounty Program', 
+          link: '/dev/security/bug-bounty-program', 
+        },
+      ], 
     },
     { 
       text: 'Spark Analytics', 
