@@ -89,7 +89,7 @@ While the aim of USDS is to always be worth 1 USD, sUSDS is constantly increasin
 
 * No **`Transfer`** event at mint/burn
 
-ERC4626 specifies a **`Deposit`** and **`Withdraw`** event which is more verbose than the ERC20 **`Transfer`** event. In the short term this has a negative effects with integrations of dapps as most only register **`Transfer`** events, ignoring **`Deposit`** and **`Withdraw`**. Long term, it makes sense for dapps to consider the richer events and avoid unnecessary gas use for the redundant event.
+ERC4626 specifies a **`Deposit`** and **`Withdraw`** event which is more verbose than the ERC20 **`Transfer`** event. In the short term this has a negative effect with integrations of dapps as most only register **`Transfer`** events, ignoring **`Deposit`** and **`Withdraw`**. Long term, it makes sense for dapps to consider the richer events and avoid unnecessary gas use for the redundant event.
 
 ## Additional resources
 
