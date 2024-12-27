@@ -2,6 +2,8 @@
 
 ## Overview
 
+**Source code:** [Github Repository](https://github.com/marsfoundation/spark-alm-controller)
+
 The Spark ALM Controller contains the onchain components of the Spark Liquidity Layer:
 
 - `ALMProxy`: The proxy contract that holds custody of all funds. This contract routes calls to external contracts according to logic within a specified `controller` contract. This pattern was used to allow for future iterations in logic, as a new controller can be onboarded and can route calls through the proxy with new logic. This contract is stateless except for the ACL logic contained within the inherited OpenZeppelin `AccessControl` contract.
