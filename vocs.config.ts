@@ -48,7 +48,7 @@ export default defineConfig({
       collapsed: false,
       items: [ 
         { 
-          text: 'Getting started', 
+          text: 'Getting Started', 
           link: '/user-guides/getting-started', 
         },
         { 
@@ -334,8 +334,8 @@ export default defineConfig({
           collapsed: true,
           items: [ 
             { 
-              text: 'SparkLend Conduit', 
-              link: '/dev/spark-liquidity-layer/sparklend-conduit', 
+              text: 'Spark ALM Controller', 
+              link: '/dev/spark-liquidity-layer/spark-alm-controller', 
             },
           ], 
         },
