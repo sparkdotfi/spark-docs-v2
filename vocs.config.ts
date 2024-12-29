@@ -67,7 +67,7 @@ export default defineConfig({
           ],
         },
         { 
-          text: 'Lending & Borrowing',
+          text: 'Using SparkLend',
           link: '/user-guides/using-sparklend/',
           collapsed: true,
           items: [ 
