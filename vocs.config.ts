@@ -67,7 +67,7 @@ export default defineConfig({
           ],
         },
         { 
-          text: 'Using SparkLend',
+          text: 'Lending & Borrowing',
           link: '/user-guides/using-sparklend/',
           collapsed: true,
           items: [ 
@@ -100,16 +100,16 @@ export default defineConfig({
               link: '/user-guides/using-sparklend/oracles',
             },
             { 
+              text: 'Liquidations',
+              link: '/user-guides/using-sparklend/liquidations',
+            },
+            { 
               text: 'E-Mode',
               link: '/user-guides/using-sparklend/e-mode',
             },
             { 
               text: 'Isolation Mode',
               link: '/user-guides/using-sparklend/isolation-mode',
-            },
-            { 
-              text: 'Liquidations',
-              link: '/user-guides/using-sparklend/liquidations',
             }
           ],
         },
@@ -138,16 +138,16 @@ export default defineConfig({
           collapsed: true,
           items: [ 
             { 
-              text: 'Depositing Into Farms', 
-              link: '/user-guides/farming-rewards/depositing-into-farms', 
+              text: 'Upgrading to USDS', 
+              link: '/user-guides/upgrading-to-usds-and-susds/upgrading-to-usds', 
             },
             { 
-              text: 'Claiming Rewards', 
-              link: '/user-guides/farming-rewards/claiming-rewards', 
+              text: 'Upgrading to sUSDS', 
+              link: '/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds', 
             },
             { 
-              text: 'Withdrawing From Farms', 
-              link: '/user-guides/farming-rewards/withdrawing-from-farms', 
+              text: 'Downgrading to DAI', 
+              link: '/user-guides/upgrading-to-usds-and-susds/downgrading-to-dai', 
             },
           ],
         },
