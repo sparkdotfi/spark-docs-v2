@@ -361,7 +361,7 @@ export default defineConfig({
     },
     {
       text: 'Brand Assets | Press Kit', 
-      link: '/comms/brand-assets-press-kit', 
+      link: 'https://web3-growth.notion.site/Spark-Brand-Kit-13b40bd4be65808098bddf08f31cfacf', 
     },
     {
       text: 'Terms of Use', 
