@@ -104,8 +104,8 @@ Call Params
 
 Repays `onBehalfOf`'s debt `amount` of `asset` which has a `rateMode`.
 
-{% hint style="warning" %}
-When repaying, the `Pool` contract must have\*\*`allowance()`**to spend funds on behalf of**`msg.sender`\*\* for at-least\*\*`amount`\*\* for the **`asset`** you are repaying with. This can be done via the standard ERC20 `approve()`method on the underlying token contract.
+:::warning
+When repaying, the `Pool` contract must have `allowance()` to spend funds on behalf of `msg.sender` for at-least `amount` for the `asset` you are repaying with. This can be done via the standard ERC20 `approve()`method on the underlying token contract.
 :::
 
 :::info
