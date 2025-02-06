@@ -8,7 +8,7 @@ SparkLend uses oracle price feeds to power its lending markets. Depending on the
 
 ## Oracle Providers
 
-SparkLend uses [Chronicle](https://chroniclelabs.org/) and [Chainlink](https://chain.link/) as the main oracle providers for the lending markets. You can see which Oracle is used for the specific market on the [Markets page](#where-can-i-check-what-oracle-is-being-used).
+SparkLend uses [Chronicle](https://chroniclelabs.org/), [Chainlink](https://chain.link/) and [RedStone](https://www.redstone.finance/) as oracle providers for the lending markets. You can see which Oracle is used for the specific market on the [Markets page](#where-can-i-check-what-oracle-is-being-used).
 
 ## Where can I check what Oracle is being used?
 
@@ -52,5 +52,5 @@ For a Yielding Fixed oracle, the asset price is calculated using both an exchang
 
 ## Redundant Oracle Feeds
 
-For certain assets SparkLend uses oracle price feeds from both Chronicle and Chainlink, ensuring that in the unlikely event one price feed should fail, a redundant price feed will automatically be used. Finally, in the extremely unlikely event that price feeds from both Chronicle and Chainlink should fail at the same time, a Uniswap TWAP (time-weighted average price), is used as a fallback price feed. This ensures maximum protection for SparkLend users. You can see an example of this mechanism above in the Yielding Fixed Oracle used for wstETH. \
+For certain assets SparkLend uses oracle price feeds from both Chronicle, Chainlink and RedStone, ensuring that in the unlikely event one price feed should fail, a redundant price feed will automatically be used. Finally, in the extremely unlikely event that price feeds from Chronicle, Chainlink and RedStone should fail at the same time, a Uniswap TWAP (time-weighted average price), is used as a fallback price feed. This ensures maximum protection for SparkLend users. You can see an example of this mechanism above in the Yielding Fixed Oracle used for wstETH. \
 You can check if an asset uses redundant price feeds, by checking if it says "Redundant" in its Oracle type, on the specific Market page. [See here where to check the oracle type.](#where-can-i-check-what-oracle-is-being-used)
