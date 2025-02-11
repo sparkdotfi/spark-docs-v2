@@ -1,5 +1,5 @@
-# Savings Tokens
-This page provides an overview of the different savings tokens available on Spark Savings: sUSDS and sDAI. Savings tokens represent deposits in the Sky Savings Rate (SSR) and the Dai Savings Rate (DSR) offered by Sky. The savings tokens enable users to receive returns on their deposits while still being able to transfer, stake, lend and use them in any way they want. All the savings tokens are ERC4626 compliant, and are accumulating tokens, meaning they increase in value over time against its base asset. Savings token are therefore not rebasing.
+# Savings Vaults
+This page provides an overview of the different savings vaults available on Spark Savings: sUSDS and sDAI. The savings vaults tokenizes user deposits into savings tokens, which enable users to receive returns on their deposits while still being able to transfer, stake, lend and use them in any way they want. All the savings tokens are ERC4626 compliant, and are accumulating tokens, meaning they increase in value over time against its base asset. Savings token are therefore not rebasing.
 
 ## Savings USDS
 
@@ -15,7 +15,7 @@ sUSDS increases in value according to the SSR, as its USDS denominated value gra
 
 The yield source for USDS is the Sky Savings Rate (SSR), which is a feature of the Sky Protocol that enables any USDS holder to earn a savings rate on their USDS. The SSR is paid out in USDS.
 
-The Sky Savings Rate is funded Sky's revenue, which includes fees from crypto collateralized loans, investments into US T-bills and its liquidity provisioning into SparkLend and Spark Liquidity Layer. You can find a full overview of revenue sources here: https://info.sky.money/collateral
+The Sky Savings Rate is funded by Sky's revenue, which includes fees from crypto collateralized loans, investments into U.S. treasury bills and its liquidity provisioning into SparkLend and the Spark Liquidity Layer. You can find a full overview of revenue sources here: https://info.sky.money/collateral
 
 You can always find the current Sky Savings Rate on the [Savings page in the Spark App](http://app.spark.fi/).
 
@@ -58,7 +58,7 @@ The yield source for sDAI is the Dai Savings Rate (DSR), which is a feature of t
 
 Dai does not automatically earn savings, you must activate the DSR by depositing Dai into the Dai Savings Rate contract. The Dai is not locked and can always be instantly withdrawn.
 
-The Dai Savings Rate is funded Sky's revenue, which includes fees from crypto collateralized loans, investments into US T-bills and its liquidity provisioning into SparkLend and Spark Liquidity Layer. You can find a full overview of revenue sources here: https://info.sky.money/collateral
+The Dai Savings Rate is funded by Sky's revenue, which includes fees from crypto collateralized loans, investments into U.S. treasury bills and its liquidity provisioning into SparkLend and the Spark Liquidity Layer. You can find a full overview of revenue sources here: https://info.sky.money/collateral
 
 The Dai Savings Rate is set by Sky Governance and is subject to change. Spark has no control over the Dai Savings Rate.
 

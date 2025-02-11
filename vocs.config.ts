@@ -57,8 +57,8 @@ export default defineConfig({
           collapsed: true,
           items: [ 
             { 
-              text: 'Savings Vaults & Tokens', 
-              link: '/user-guides/earning-savings/savings-tokens', 
+              text: 'Savings Vaults', 
+              link: '/user-guides/earning-savings/savings-vaults', 
             }
           ],
         },

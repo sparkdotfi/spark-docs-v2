@@ -2,12 +2,12 @@
     "redirects": [
         {
             "source": "/user-guides/earning-savings/savings-usds",
-            "destination": "/user-guides/earning-savings/savings-tokens",
+            "destination": "/user-guides/earning-savings/savings-vaults",
             "permanent": true
         },
         {
             "source": "/user-guides/earning-savings/savings-dai",
-            "destination": "/user-guides/earning-savings/savings-tokens",
+            "destination": "/user-guides/earning-savings/savings-vaults",
             "permanent": true
         },
         {
