@@ -9,6 +9,11 @@
             "source": "/user-guides/earning-savings/savings-dai",
             "destination": "/user-guides/earning-savings/savings-tokens",
             "permanent": true
+        },
+        {
+            "source": "/rewards/spk-token",
+            "destination": "/governance/spk-token",
+            "permanent": true
         }
     ]
 }
