@@ -1,18 +1,18 @@
 {
     "redirects": [
         {
+            "source": "/rewards/spk-token",
+            "destination": "/governance/spk-token",
+            "permanent": true
+        },
+        {
             "source": "/user-guides/earning-savings/savings-usds",
-            "destination": "/user-guides/earning-savings/savings-vaults",
+            "destination": "/user-guides/earning-savings/susds",
             "permanent": true
         },
         {
             "source": "/user-guides/earning-savings/savings-dai",
-            "destination": "/user-guides/earning-savings/savings-vaults",
-            "permanent": true
-        },
-        {
-            "source": "/rewards/spk-token",
-            "destination": "/governance/spk-token",
+            "destination": "/user-guides/earning-savings/sdai",
             "permanent": true
         }
     ]
