@@ -4,24 +4,30 @@ description: Learn how to earn savings on your stablecoin holdings.
 
 # Earning Savings
 
-:::info
-Savings are now live on Base! More networks will be supported soon.
-:::
-
-Spark enables users to easily deposit stablecoins into savings, and receive Savings USDS (sUSDS) tokens in return. The sUSDS tokens represents your share of USDS in the Sky Savings Rate. As savings accrue, sUSDS increases in value over time. The Sky Savings Rate is set by Sky Governance. [You can read more about sUSDS here.](/user-guides/earning-savings/savings-usds)
-
-Savings are supported on Ethereum, Base and Gnosis Chain. More major networks will be supported soon.
+Spark enables users to easily deposit stablecoins into Savings Vaults, and receive Savings Tokens, representing your share of deposits in the Savings Vaults. As savings accrue, Savings Tokens increases in value over time against the underlying deposit asset.
 
 :::info
-**Note:** Savings USDS and the Sky Savings Rate are non-custodial and permissionless smart contracts offered by Sky, and is not issued by Spark. Spark never has custody of funds deposited into savings or any control over the Sky Savings Rate or sUSDS token.
+**Note:** sUSDS, sDAI, the Sky Savings Rate and DAI Savings Rate are non-custodial and permissionless smart contracts offered by Sky, and is not issued by Spark. Spark never has custody of funds deposited into savings or any control over sUSDS, sDAI, the Sky Savings Rate and DAI Savings Rate.
 :::
+
+## Savings Vaults
+Spark currently supports the following Savings Vaults:
+
+- **Savings USDS**
+    - The Savings USDS vault deposits user deposits of USDS into the Sky Savings Rate.
+    - [You can read more about sUSDS here.](/user-guides/earning-savings/savings-tokens#savings-usds)
+
+- **Savings DAI**
+    - The Savings DAI vault deposits user deposits of DAI into the DAI Savings Rate.
+    - [You can read more about sDAI here.](/user-guides/earning-savings/savings-tokens#savings-dai)
+
 
 ## Tutorial
 
 ### Deposit Savings
 
-1. Make sure you are connected to the network you wish to use. [Savings are supported across different networks](/user-guides/earning-savings/savings-usds#supported-networks-and-token-addresses).
-2.  To earn yield on your stablecoins such as USDS, DAI, and USDC, navigate to the **Savings** page.
+1. Make sure you are connected to the network you wish to use.
+2. To earn yield on your stablecoins such as USDS, DAI, and USDC, navigate to the **Savings** page, which is the front page of [app.spark.fi](https://spark.fi).
 
 ![](/assets/savings-1.png)
 *Savings Page*
