@@ -58,11 +58,11 @@ export default defineConfig({
           items: [ 
             { 
               text: 'Savings USDS', 
-              link: '/user-guides/earning-savings/savings-usds', 
+              link: '/user-guides/earning-savings/susds', 
             },
             { 
               text: 'Savings DAI', 
-              link: '/user-guides/earning-savings/savings-dai', 
+              link: '/user-guides/earning-savings/sdai', 
             }
           ],
         },

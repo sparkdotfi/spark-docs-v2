@@ -15,11 +15,11 @@ Spark currently supports the following Savings Vaults:
 
 - **Savings USDS**
     - The Savings USDS vault deposits user deposits of USDS into the Sky Savings Rate.
-    - [You can read more about sUSDS here.](/user-guides/earning-savings/savings-usds)
+    - [You can read more about sUSDS here.](/user-guides/earning-savings/susds)
 
 - **Savings DAI**
     - The Savings DAI vault deposits user deposits of DAI into the DAI Savings Rate.
-    - [You can read more about sDAI here.](/user-guides/earning-savings/savings-dai)
+    - [You can read more about sDAI here.](/user-guides/earning-savings/sdai)
 
 
 ## Tutorial
