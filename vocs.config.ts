@@ -57,13 +57,9 @@ export default defineConfig({
           collapsed: true,
           items: [ 
             { 
-              text: 'Savings USDS', 
-              link: '/user-guides/earning-savings/savings-usds', 
-            },
-            { 
-              text: 'Savings DAI',
-              link: '/user-guides/earning-savings/savings-dai',
-            }, 
+              text: 'Savings Vaults', 
+              link: '/user-guides/earning-savings/savings-vaults', 
+            }
           ],
         },
         { 
