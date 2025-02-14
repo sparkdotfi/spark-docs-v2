@@ -25,6 +25,8 @@ Savings USDS and the Sky Savings Rate are non-custodial and permissionless smart
 | ------- | ----- | --------------------------------------------------------------------------------------------------------------------- |
 | Base    | USDS  | [0x820C137fa70C8691f0e44Dc420a5e53c168921Dc](https://basescan.org/address/0x820c137fa70c8691f0e44dc420a5e53c168921dc) |
 | Base    | sUSDS | [0x5875eEE11Cf8398102FdAd704C9E96607675467a](https://basescan.org/address/0x5875eee11cf8398102fdad704c9e96607675467a) |
+| Arbitrum   | USDS  | [0x6491c05A82219b8D1479057361ff1654749b876b](https://arbiscan.io/address/0x6491c05A82219b8D1479057361ff1654749b876b) |
+| Arbitrum   | sUSDS | [0xdDb46999F8891663a8F2828d25298f70416d7610](https://arbiscan.io/address/0xdDb46999F8891663a8F2828d25298f70416d7610) |
 
 ### ERC20 token functionality
 
