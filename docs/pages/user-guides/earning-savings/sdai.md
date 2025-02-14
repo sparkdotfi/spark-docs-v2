@@ -38,3 +38,14 @@ For technical documentation on the sDAI implementation please refer to the [Deve
 ## Integrating Savings Vaults
 
 For technical documentation on the sDAI implementation and how to integrate please refer to the [Developer docs](/dev/savings/sdai-token).
+
+## Savings xDai on Gnosis Chain
+
+Savings xDAI on Gnosis Chain will in most cases offer a higher yield than sDAI on Ethereum Mainnet. This is an intentional mechanic of how Savings xDAI is designed.
+
+Gnosis Chain uses xDAI, which is DAI bridged from Ethereum to Gnosis Chain as its base network currency for fees. The bridged DAI is locked in a token bridge on Ethereum mainnet, where it is deposited into the Dai Savings Rate to earn yield. This means all DAI on Gnosis Chain, is earning the DSR. Gnosis Chain offers its own version of Savings DAI called Savings xDAI. For users to earn savings on Gnosis Chain, they must deposit xDAI it into the Gnosis Savings xDAI contract.
+Gnosis has elected to distribute all the yield accrued for the entire bridged DAI supply only to Savings xDAI depositors on Gnosis Chain. This means Savings xDAI will offer a higher yield, due to the fact that not all xDAI is deposited into Savings xDAI. Therefore you will in most cases see a higher yield for Savings xDAI on Gnosis Chain than Savings DAI on Ethereum Mainnet.
+
+- Savings xDAI Token Address: [0xaf204776c7245bf4147c2612bf6e5972ee483701](https://gnosisscan.io/token/0xaf204776c7245bf4147c2612bf6e5972ee483701)
+
+- More info on Savings xDAI: [Gnosis Forum Post](https://forum.gnosis.io/t/deposit-dai-of-the-xdai-bridge-in-sdai-vault-from-spark/7236)
