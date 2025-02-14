@@ -27,6 +27,16 @@ The oracle provides convenience functions to fetch the conversion rate at variou
 | Receiver (Base)         | [0x212871A1C235892F86cAB30E937e18c94AEd8474](https://basescan.org/address/0x212871A1C235892F86cAB30E937e18c94AEd8474) |
 
 
+### Arbitrum
+| Contract                | Address                                                                                                               |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| AuthOracle              | [0xEE2816c1E1eed14d444552654Ed3027abC033A36](https://arbiscan.io/address/0xEE2816c1E1eed14d444552654Ed3027abC033A36) |
+| Chainlink Rate Provider | [0x84AB0c8C158A1cD0d215BE2746cCa668B79cc287](https://arbiscan.io/address/0x84AB0c8C158A1cD0d215BE2746cCa668B79cc287) |
+| Balancer Rate Provider  | [0xc0737f29b964e6fC8025F16B30f2eA4C2e2d6f22](https://arbiscan.io/address/0xc0737f29b964e6fC8025F16B30f2eA4C2e2d6f22) |
+| Forwarder (Ethereum)    | [0x1A229AdbAC83A948226783F2A3257B52006247D5](https://etherscan.io/address/0x1A229AdbAC83A948226783F2A3257B52006247D5) |
+| Receiver (Base)         | [0x567214Dc57a2385Abc4a756f523ddF0275305Cbc](https://arbiscan.io/address/0x567214Dc57a2385Abc4a756f523ddF0275305Cbc) |
+
+
 Check the Spark Address Registry for the most up to date resource for contract deployments:
 
 - [Spark Address Registry](/dev/deployments#spark-address-registry)

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Spark PSM extends the Sky PSM liquidity on Ethereum mainnet to other chains, starting with Base. It allows swaps between USDS, sUSDS, and USDC with no slippage or fees beyond gas, making it the top liquidity source for these pairs in DeFi. This enables holders of USDC on supported networks to easily acquire sUSDS to earn yield, at no cost beyond gas.
+The Spark PSM extends the Sky PSM liquidity on Ethereum mainnet to other chains such as Base and Arbitrum. It allows swaps between USDS, sUSDS, and USDC with no slippage or fees beyond gas, making it the top liquidity source for these pairs in DeFi. This enables holders of USDC on supported networks to easily acquire sUSDS to earn yield, at no cost beyond gas.
 
 ## Contract Details
 
@@ -14,6 +14,7 @@ The Spark PSM extends the Sky PSM liquidity on Ethereum mainnet to other chains,
 | Network  | Spark PSM Address                                                                                                     |
 | -------- | --------------------------------------------------------------------------------------------------------------------- |
 | Base | [0x1601843c5E9bC251A3272907010AFa41Fa18347E](https://basescan.org/address/0x1601843c5E9bC251A3272907010AFa41Fa18347E) |
+| Arbitrum | [0x2B05F8e1cACC6974fD79A673a341Fe1f58d27266](https://arbiscan.io/address/0x2B05F8e1cACC6974fD79A673a341Fe1f58d27266) |
 
 ### State Variables and Immutables
 
