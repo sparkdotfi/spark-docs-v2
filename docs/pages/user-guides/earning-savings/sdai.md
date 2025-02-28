@@ -1,7 +1,7 @@
 # Savings DAI
 
 :::info
-**Note:** Savings DAI is the old version of Savings USDS. [Learn how to upgrade to sUSDS and earn a higher yield here.](/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds)
+**Note:** Savings DAI is the old version of Savings USDS. [Learn how to upgrade to sUSDS and earn a higher yield here.](/user-guides/converting-tokens/)
 :::
 
 Savings Dai (sDAI) is the old version of sUSDS. sDai is a tokenized representation of Dai deposited in the Dai Savings Rate (DSR) offered by Sky. The sDAI token enables users to receive returns on their DSR deposits while still being able to transfer, stake, lend and use it in any way they want.

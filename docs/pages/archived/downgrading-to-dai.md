@@ -10,12 +10,12 @@ description: Learn how to downgrade USDS to DAI.
 
 ## Tutorial
 
-1. Navigate to [app.spark.fi](http://app.spark.fi) and go to the Savings page.
+1. Navigate to [app.spark.fi](http://app.spark.fi) and go to the Savings page (the front page).
 
 ![](/assets/savings-nav.png)
 *Navigate to the Savings page*
 
-2. In the Stablecoin in wallet section, your stablecoin balances are show. Next to USDS you will see three dots all the way to the right. Click the three dots, and click Downgrade to DAI.
+2. Below the Stablecoins in wallet section, click on the Convert button.
 
 ![](/assets/upgrade-8.png)
 *Downgrade option in dropdown menu*
