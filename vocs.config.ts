@@ -133,23 +133,9 @@ export default defineConfig({
           ],
         },
         { 
-          text: 'Upgrading to USDS & sUSDS',
-          link: '/user-guides/upgrading-to-usds-and-susds/',
-          collapsed: true,
-          items: [ 
-            { 
-              text: 'Upgrading to USDS', 
-              link: '/user-guides/upgrading-to-usds-and-susds/upgrading-to-usds', 
-            },
-            { 
-              text: 'Upgrading to sUSDS', 
-              link: '/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds', 
-            },
-            { 
-              text: 'Downgrading to DAI', 
-              link: '/user-guides/upgrading-to-usds-and-susds/downgrading-to-dai', 
-            },
-          ],
+          text: 'Converting Tokens',
+          link: '/user-guides/converting-tokens/',
+          collapsed: false,
         },
         { 
           text: 'Spark Liquidity Layer',

@@ -4,7 +4,7 @@ description: Learn how to use the Easy Borrow Flow to borrow USDS or DAI.
 
 # Borrow DAI and USDS
 :::warning
-**Note:** When borrowing USDS, you are actually borrowing DAI which is then upgraded to USDS in the same transaction. This means that your debt is in DAI and must be repaid using DAI. To payback DAI, you can downgrade USDS to DAI on the Savings page. [Find more info here.](/user-guides/upgrading-to-usds-and-susds/)
+**Note:** When borrowing USDS, you are actually borrowing DAI which is then upgraded to USDS in the same transaction. This means that your debt is in DAI and must be repaid using DAI. To payback DAI, you can downgrade USDS to DAI on the Savings page. [Find more info here.](/user-guides/converting-tokens/)
 :::
 ## Tutorial
 

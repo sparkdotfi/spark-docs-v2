@@ -7,7 +7,7 @@ description: Learn how to repay your loans on Spark.
 ## Tutorial
 
 :::warning
-**Note:** If you have borrowed USDS using the Easy Borrow Flow, your debt must be repaid in DAI. To do so, you can downgrade USDS to DAI on the Savings page. [Find more info here.](/user-guides/upgrading-to-usds-and-susds/)
+**Note:** If you have borrowed USDS using the Easy Borrow Flow, your debt must be repaid in DAI. To do so, you can downgrade USDS to DAI on the Savings page. [Find more info here.](/user-guides/converting-tokens/)
 :::
 
 1.  To repay your loan, navigate to the **My portfolio** page and find the **Borrow** section. Assets that you have borrowed will show up in the **Your borrow** column.

@@ -14,6 +14,11 @@
             "source": "/user-guides/earning-savings/savings-dai",
             "destination": "/user-guides/earning-savings/sdai",
             "permanent": true
+        },
+        {
+            "source": "/user-guides/upgrading-to-usds-and-susds",
+            "destination": "/user-guides/converting-tokens",
+            "permanent": true
         }
     ]
 }
