@@ -325,6 +325,16 @@ export default defineConfig({
             },
           ], 
         },
+        { 
+          text: 'Integration Guides', 
+          collapsed: true,
+          items: [ 
+            { 
+              text: 'Listing sUSDS on Lending Markets', 
+              link: '/dev/integration-guides/susds-lending-market', 
+            },
+          ], 
+        },
       ],
     },
     { 
