@@ -28,10 +28,14 @@ See the [Earning Savings](/user-guides/earning-savings/) for a guide on how to d
 
 ## Supported Networks and Token Addresses
 
-| Network  | Address                                                                                                                    |
-| -------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Ethereum | [0xa3931d71877c0e7a3148cb7eb4463524fec27fbd](https://etherscan.io/address/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd)      |
-| Base     | [0x982f2DF63Fe38AB8d55f4B1464e8cfDc8eA5dEC8](https://basescan.org/address/0x982f2DF63Fe38AB8d55f4B1464e8cfDc8eA5dEC8#code) |
+| Network  | Token | Address                                                                                                                    |
+| -------- | ----- | ---------------------------------------------------------------------------------------------------------------------------|
+| Ethereum | USDS  | [0xdC035D45d973E3EC169d2276DDab16f1e407384F](https://etherscan.io/address/0xdC035D45d973E3EC169d2276DDab16f1e407384F)      |
+| Ethereum | sUSDS | [0xa3931d71877c0e7a3148cb7eb4463524fec27fbd](https://etherscan.io/address/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd)      |
+| Base     | USDS  | [0x820C137fa70C8691f0e44Dc420a5e53c168921Dc](https://basescan.org/address/0x820C137fa70C8691f0e44Dc420a5e53c168921Dc) |
+| Base     | sUSDS | [0x5875eEE11Cf8398102FdAd704C9E96607675467a](https://basescan.org/address/0x5875eEE11Cf8398102FdAd704C9E96607675467a) |
+| Arbitrum | USDS  | [0x6491c05A82219b8D1479057361ff1654749b876b](https://arbiscan.io/address/0x6491c05A82219b8D1479057361ff1654749b876b)       |
+| Arbitrum | sUSDS | [0xdDb46999F8891663a8F2828d25298f70416d7610](https://arbiscan.io/address/0xdDb46999F8891663a8F2828d25298f70416d7610)       |
 
 ## Integrating Savings Vaults
 
