@@ -19,6 +19,21 @@
             "source": "/user-guides/upgrading-to-usds-and-susds",
             "destination": "/user-guides/converting-tokens",
             "permanent": true
+        },
+        {
+            "source": "/user-guides/upgrading-to-usds-and-susds/upgrading-to-usds",
+            "destination": "/user-guides/converting-tokens",
+            "permanent": true
+        },
+        {
+            "source": "/user-guides/upgrading-to-usds-and-susds/upgrading-to-susds",
+            "destination": "/user-guides/converting-tokens",
+            "permanent": true
+        },
+        {
+            "source": "/user-guides/upgrading-to-usds-and-susds/downgrading-to-dai",
+            "destination": "/user-guides/converting-tokens",
+            "permanent": true
         }
     ]
 }
