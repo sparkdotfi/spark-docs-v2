@@ -44,18 +44,22 @@ Currently, most dapps only look for **`Transfer`** events from the null address 
 
 ### **ERC4626 token functionality**
 
+:::info
+**Note:** In the following the term *asset* refers to DAI and the term *share* refers to sDAI.
+:::
+
 The contract implements the functions specified in the ERC-4626 interface.
 
-* **`asset`**: This function returns the address of the underlying asset (DAI) associated with the SavingsDai token.
-* **`totalAssets`**: This function returns the total value of assets held by the SavingsDai token, calculated based on the total supply of shares.
+* **`asset`**: This function returns the address of the underlying asset (DAI) associated with the Savings DAI token.
+* **`totalAssets`**: This function returns the total value of assets held by the Savings DAI token, calculated based on the total supply of shares.
 * **`convertToShares`**: This function converts the specified amount of assets into the corresponding number of shares based on the current exchange rate.
 * **`convertToAssets`**: This function converts the specified number of shares into the corresponding amount of assets based on the current exchange rate.
-* **`maxDeposit`**: This function returns the maximum amount of assets that can be deposited into the SavingsDai contract.
+* **`maxDeposit`**: This function returns the maximum amount of assets that can be deposited into the Savings DAI contract.
 * **`previewDeposit`**: This function calculates and returns the number of shares that would be minted for the specified amount of assets upon deposit.
-* **`deposit`**: This function allows users to deposit a specified amount of assets into the SavingsDai contract and mints the corresponding number of shares.
+* **`deposit`**: Deposit a specified amount of assets into the Savings DAI contract and receive the corresponding number of shares.
 * **`maxMint`**: This function returns the maximum number of shares that can be minted by an address.
 * **`previewMint`**: This function calculates and returns the amount of assets that would be minted for the specified number of shares upon minting.
-* **`mint`**: This function allows users to mint a specified number of shares and receives the corresponding amount of assets.
+* **`mint`**: Similar to deposit, except here you specify the amount of shares you wish to mint, and the contract will pull the necessary amount of assets from the user wallet.
 * **`maxWithdraw`**: This function returns the maximum amount of assets that can be withdrawn by the specified owner address.
 * **`previewWithdraw`**: This function calculates and returns the number of shares that would be burned for the specified amount of assets upon withdrawal.
 * **`withdraw`**: This function allows the owner to withdraw a specified amount of assets, burns the corresponding number of shares, and transfers the assets to the receiver address.

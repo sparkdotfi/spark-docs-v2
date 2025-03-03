@@ -56,6 +56,10 @@ The contract implements the functions specified in the ERC-20 interface.
 
 ### **ERC4626 token functionality**
 
+:::info
+**Note:** In the following the term *asset* refers to USDS and the term *share* refers to sUSDS.
+:::
+
 The contract implements the functions specified in the ERC-4626 interface.
 
 * **`asset`**: This function returns the address of the underlying asset (USDS) associated with the Savings USDS token.
@@ -64,10 +68,10 @@ The contract implements the functions specified in the ERC-4626 interface.
 * **`convertToAssets`**: This function converts the specified number of shares into the corresponding amount of assets based on the current exchange rate.
 * **`maxDeposit`**: This function returns the maximum amount of assets that can be deposited into the Savings USDS contract.
 * **`previewDeposit`**: This function calculates and returns the number of shares that would be minted for the specified amount of assets upon deposit.
-* **`deposit`**: This function allows users to deposit a specified amount of assets into the Savings USDS contract and mints the corresponding number of shares.
+* **`deposit`**: Deposit a specified amount of assets into the Savings USDS contract and receive the corresponding number of shares.
 * **`maxMint`**: This function returns the maximum number of shares that can be minted by an address.
 * **`previewMint`**: This function calculates and returns the amount of assets that would be minted for the specified number of shares upon minting.
-* **`mint`**: This function allows users to mint a specified number of shares and receives the corresponding amount of assets.
+* **`mint`**: Similar to deposit, except here you specify the amount of shares you wish to mint, and the contract will pull the necessary amount of assets from the user wallet.
 * **`maxWithdraw`**: This function returns the maximum amount of assets that can be withdrawn by the specified owner address.
 * **`previewWithdraw`**: This function calculates and returns the number of shares that would be burned for the specified amount of assets upon withdrawal.
 * **`withdraw`**: This function allows the owner to withdraw a specified amount of assets, burns the corresponding number of shares, and transfers the assets to the receiver address.
