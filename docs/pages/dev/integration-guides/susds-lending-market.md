@@ -1,17 +1,18 @@
 
 ## Introduction
 
-This integration guide explains why listing sUSDS instead of USDS on lending markets is beneficial and how this integration can be efficiently implemented.
+This integration guide explains why listing sUSDS instead of USDS on lending markets is beneficial and how to implement this integration efficiently.
 
-## Benefits of listing sUSDS over USDS
+## Benefits of Listing sUSDS Over USDS
 
-The key advantage of listing sUSDS over USDS is that it ensures base lending and borrow rates follow the Sky Savings Rate (SSR) of sUSDS, making markets more capital efficient. In practice, this means liquidity providers will always earn at least the base rate of sUSDS—the Sky Savings Rate—even without any borrowing activity.
+The key advantage of listing sUSDS over USDS is that it ensures base lending and borrowing rates follow the Sky Savings Rate (SSR) of sUSDS, making markets more capital-efficient. In practice, this means liquidity providers will always earn at least the base rate of sUSDS—the Sky Savings Rate—even without any borrowing activity.
 
-This isn't the case with USDS, where markets require either sufficient borrow demand or efficient rate arbitrage to ensure the lending rate matches that of sUSDS. By listing sUSDS, the protocol becomes more capital efficient for LPs by eliminating the opportunity cost of potentially low rates, as depositors always earn the Sky Savings Rate. This should attract more liquidity to the lending protocol, potentially generating more loans and ultimately more fees.
+This is not the case with USDS, where markets require either sufficient borrowing demand or efficient rate arbitrage to ensure the lending rate matches that of sUSDS. By listing sUSDS, the protocol becomes more capital-efficient for LPs by eliminating the opportunity cost of potentially low rates, as depositors always earn the Sky Savings Rate. This should attract more liquidity to the lending protocol, potentially generating more loans and ultimately more fees.
 
 Conversely, listing sUSDS also guarantees a minimum borrow rate equal to the SSR. This reduces the need for rate arbitrage across lending markets by mitigating market inefficiencies.
 
 From a user experience perspective, sUSDS usage can be completely abstracted away, as USDS and sUSDS can be freely converted without liquidity constraints or fees. The result is a lending market that appears to be a standard USDS market but with guaranteed lending and borrowing base rates equal to the SSR.
+
 
 ## How Does it Work?
 
@@ -35,7 +36,9 @@ sUSDS is an ERC4626 token with USDS as its base asset. sUSDS increases in value 
 
 sUSDS can be integrated like any other token as it is ERC20 compliant.
 
-You can find more documentation on sUSDS here.
+You can find more documentation on sUSDS here:
+
+- [sUSDS Developer Documentation](/dev/savings/susds-token)
 
 ### Price Feed
 
@@ -44,6 +47,8 @@ For markets to list an asset, they typically need a price feed to calculate user
 The sUSDS token contract on Ethereum mainnet contains a conversion rate [`chi`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F7) which increases over time according to the Sky Savings Rate (SSR). `chi` is essentially the price of sUSDS in USDS and is a 27-decimal number.
 
 On networks other than Ethereum mainnet, sUSDS is not an ERC4626 token and doesn't contain the `chi` variable. Instead, the `chi` value can be fetched from the [SSR Oracle here](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F4) (in this example Base). You can read more about the SSR Oracle here.
+
+- [SSR Oracle Developer Documentation](/dev/savings/cross-chain-savings-rate-oracle)
 
 The protocol can leverage a USDS/USD oracle price to calculate the sUSDS/USD price by multiplying the two together:
 
@@ -142,9 +147,13 @@ On Ethereum, if the user has USDS, the lending market can integrate the deposit 
 
 When the user withdraws, the system can leverage the withdraw function of sUSDS to send USDS to the user. This is also done when a user borrows USDS.
 
-You can read about the ERC4626 deposit and withdraw functions here.
+You can read about the sUSDS ERC4626 functions here:
+
+- [sUSDS Developer Documentation](/dev/savings/susds-token#erc4626-token-functionality)
 
 On networks other than Ethereum mainnet, sUSDS is not an ERC4626 token but a simple ERC20 token, which is why these conversion functions are not available in the token itself. Instead, you can leverage the Spark PSM, which enables swapping between USDS, sUSDS, and USDC with no slippage or fee (besides gas), to achieve the same functionality. You can read more about the Spark PSM here.
+
+- [Spark PSM Developer Documentation](/dev/savings/spark-psm)
 
 The Spark Liquidity Layer will ensure there is always enough liquidity on external networks for swapping.
 
