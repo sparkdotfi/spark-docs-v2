@@ -1,4 +1,3 @@
-
 ## Introduction
 
 This integration guide explains why listing sUSDS instead of USDS on lending markets is beneficial and how to implement this integration efficiently.
@@ -13,14 +12,13 @@ Conversely, listing sUSDS also guarantees a minimum borrow rate equal to the SSR
 
 From a user experience perspective, sUSDS usage can be completely abstracted away, as USDS and sUSDS can be freely converted without liquidity constraints or fees. The result is a lending market that appears to be a standard USDS market but with guaranteed lending and borrowing base rates equal to the SSR.
 
-
 ## How Does it Work?
 
 sUSDS is a token that increases in value against USDS according to the Sky Savings Rate. This means the dollar value of sUSDS gradually increases over time. By listing sUSDS in a lending market, depositors earn this rate as their sUSDS becomes more valuable, in addition to the interest earned (which is also in sUSDS).
 
 Similarly, when borrowing sUSDS, both the interest and the principal debt amount increase in value over time according to the Sky Savings Rate. In other words, it gradually becomes more expensive to acquire the sUSDS tokens needed to repay the debt.
 
-Lending markets should adjust their interest rate mechanisms to account for these "built-in" rates. Read more about this in the Rates section below.
+Lending markets should adjust their interest rate mechanisms to account for these "built-in" rates. Read more about this in the [Rates section](#rates) below.
 
 ## Improving the User Experience
 
@@ -44,55 +42,62 @@ You can find more documentation on sUSDS here:
 
 For markets to list an asset, they typically need a price feed to calculate user collateral value, borrow limits, and trigger liquidations.
 
-The sUSDS token contract on Ethereum mainnet contains a conversion rate [`chi`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F7) which increases over time according to the Sky Savings Rate (SSR). `chi` is essentially the price of sUSDS in USDS and is a 27-decimal number.
+On Ethereum Mainnet the sUSDS token contract on Ethereum mainnet contains a conversion function [`convertToAssets`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F8) which takes a USDS amount and returns the sUSDS amount. If you just want the sUSDS price, you can simply input 10ˆ18 (due to 18 decimals) and divide by 10^18:
 
-On networks other than Ethereum mainnet, sUSDS is not an ERC4626 token and doesn't contain the `chi` variable. Instead, the `chi` value can be fetched from the [SSR Oracle here](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F4) (in this example Base). You can read more about the SSR Oracle here.
-
-- [SSR Oracle Developer Documentation](/dev/savings/cross-chain-savings-rate-oracle)
+`sUSDS_price = convertToAssets(10ˆ18) / 10ˆ18`
 
 The protocol can leverage a USDS/USD oracle price to calculate the sUSDS/USD price by multiplying the two together:
 
-`sUSDS_price = USDS_price * chi / ray`
+`sUSDS/USD = USDS/USD * sUSDS/USDS`
 
-Where `ray = 10^27`
+On networks other than Ethereum mainnet, sUSDS is not an ERC4626 token and doesn't contain the `convertToAssets` function. Instead, the `getConversionRate` function can be used from the [SSR Oracle here](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F4) (in this example Base) to retrieve the sUSDS price.
 
-We divide by ray because `chi` is a 27-decimal number.
+You can read more about the SSR Oracle here.
 
-Spark uses the following Chainlink-compliant oracle for sUSDS: [https://etherscan.io/address/0x27f3A665c75aFdf43CfbF6B3A859B698f46ef656#readContract](https://etherscan.io/address/0x27f3A665c75aFdf43CfbF6B3A859B698f46ef656#readContract)
+- [SSR Oracle Developer Documentation](/dev/savings/cross-chain-savings-rate-oracle)
 
-**Note:** This oracle uses a fixed 1.00 USD price for USDS. If you wish to use a market price for USDS, you should not use this oracle.
+If you need a Chainlink compliant oracle, you can use the [Chainlink Rate Provider](/dev/savings/cross-chain-savings-rate-oracle#rate-providers), which will wrap the SSR oracle data in a Chainlink compliant format. [You can find a list of supported networks here.](/dev/savings/cross-chain-savings-rate-oracle#deployments)
 
 ### Conversions
 
-To convert USDS to sUSDS, divide by the `chi` variable, which can be fetched from the [sUSDS contract on Ethereum](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F7) or from the SSROracle on other networks ([Base Example](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F4)):
+The following section will explain how to convert between USDS and sUSDS amounts for accounting purposes. For swapping between USDS and sUSDS see the [Depositing and Withdrawing section](#depositing--withdrawing-usds).
 
-`ray = 10^27`
+#### Ethereum
 
-`sUSDS_amount = USDS_amount * ray / chi`
+On Ethereum, the following ERC4626 functions can be used for conversions:
 
-On Ethereum, the ERC4626 function [`convertToAssets`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F8) of sUSDS performs this calculation. It takes an sUSDS amount and returns the USDS amount.
+sUSDS to USDS conversion:
 
-To convert sUSDS to USDS, multiply by `chi`:
+- The ERC4626 function [`convertToAssets`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F8) takes an sUSDS amount and returns the USDS amount.
 
-`USDS_amount = sUSDS_amount * chi / ray`
+USDS to sUSDS conversion:
 
-On Ethereum, the ERC4626 function [`convertToShares`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F9) of sUSDS performs this calculation. It takes a USDS amount and returns the sUSDS amount.
+- The ERC4626 function [`convertToShares`](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F9) takes a USDS amount and returns the sUSDS amount.
+
+#### Other Networks
+
+On other networks, the SSR Oracle can be used to do conversions. [See which networks are supported here](/dev/savings/cross-chain-savings-rate-oracle#deployments).
+
+- The `getConversionRate` function from the SSROracle ([Base Example](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F6)) can be used to get the conversion rate between USDS and sUSDS. This is essentially the sUSDS price in USDS. This is a 27-decimal variable, so you should divide by 10ˆ27 to get the price:
+
+`USDS amount = sUSDS_amount * getConversionRate / 10ˆ27`
+`sUSDS amount = USDS_amount / getConversionRate * 10ˆ27`
 
 ### Rates
 
-The Sky Savings Rate can be fetched from the [sUSDS contract on Ethereum](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F24) or from the [SSROracle on external networks](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F13) as the `ssr` variable. `ssr` is a 27-decimal variable. This is a per-second rate, so to calculate the APY, use the following conversion:
+The Sky Savings Rate can be fetched from the [sUSDS contract on Ethereum](https://etherscan.io/token/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract#F24) or from the [SSROracle on external networks](https://basescan.org/address/0x65d946e533748A998B1f0E430803e39A6388f7a1#readContract#F13) as the `ssr` variable. `ssr` is a 27-decimal variable. This is a per-second rate, so to calculate the APY, use the following conversion:
 
 `APY = (ssr/ray)^(seconds_in_a_year)-1 = (ssr/ray)^(60*60*24*365)-1`
 
 An example is:
 
-`APY = (1000000002659864411854984565/10^27)^(60*60*24*365)-1 = 0.0875 = 8.75%`
+`APY = (1.000000002659864411854984565/10^27)^(60*60*24*365)-1 = 0.0875 = 8.75%`
 
 ### Interest Rate Models
 
 Since sUSDS has a "built-in" rate, integrators should consider this when defining their interest rate models.
 
-In an Aave-type lending market, this would mean adjusting the base rate. From a USDS perspective, the base rate and optimal rate in this scenario are the additional rates on top of the SSR. The base rate could be set to 0 to just reflect the underlying SSR, with the optimal rate slightly above. These rates would therefore need to be set differently than for non-yielding stablecoins.
+In an Aave-type lending market, this would mean adjusting the base rate. From a USDS perspective, the base rate and optimal rate in this scenario are the additional rates on top of the SSR. The base rate could be set to 0 to just reflect the underlying SSR, with the optimal rate slightly above. These rates would therefore need to be set differently than for non-yielding stablecoins.Æ
 
 The combined rate of the SSR and the protocol rate in USDS terms would be calculated as:
 
@@ -104,8 +109,8 @@ Note that we use APY for both rates. This can subsequently be converted into APR
 
 **Example**
 
--   The Sky Savings Rate is 5% APY.
--   sUSDS price (chi) is `1.0384`
+- The Sky Savings Rate is 5% APY.
+- sUSDS price is `1.0384`
 
 Alice deposits 1000 USDS into sUSDS and receives 962.98 sUSDS (worth 1000 USDS)
 
@@ -115,7 +120,7 @@ After a year, Alice will have earned:
 
 `0.02 * 962.98 sUSDS = 19.26 sUSDS`
 
-Making her total balance `962.98 + 19.26 = 982.24` sUSDS total.
+Making her total balance `962.98 + 19.26 = 982.24` sUSDS total.
 
 In the same time span, sUSDS has increased in value by 5% against USDS.
 
@@ -135,15 +140,15 @@ Which is equal to
 
 Since users are mostly familiar with lending/borrowing non-yielding stablecoins, it makes sense to abstract away the use of sUSDS. It's important to note that this is simply an sUSDS market on the backend, but with clever conversions will look and behave like a standard USDS lending market with a base rate equal to the Sky Savings Rate. This can be achieved using the ERC4626 conversion functions of the sUSDS token on Ethereum, or the Spark PSM on other networks, when depositing and withdrawing USDS into the lending market. Furthermore, the rate conversions above can be used to display accounting of supply, debt, lending, and borrowing rates in terms of USDS instead of sUSDS.
 
-#### Price Feed
+### Price Feed
 
 Since the market would be an sUSDS market on the backend, it will still use an sUSDS oracle for collateral pricing. See the price feed section for more information.
 
-#### Depositing & Withdrawing USDS
+### Depositing & Withdrawing USDS
 
 If the user already has sUSDS, they should simply be able to deposit it directly. However, the frontend will still display balances, accounting, and rates for USDS using the conversion methods outlined above.
 
-On Ethereum, if the user has USDS, the lending market can integrate the deposit function of sUSDS to mint sUSDS and transfer it into the lending market. The balances and rates shown to the user in the frontend would be converted to USDS, as per the Conversions and Rates sections above.
+On Ethereum, if the user has USDS, the lending market can integrate the deposit function of sUSDS to mint sUSDS and transfer it into the lending market. The balances and rates shown to the user in the frontend would be converted to USDS, as per the [Conversions](#conversions) and [Rates](#rates) sections above.
 
 When the user withdraws, the system can leverage the withdraw function of sUSDS to send USDS to the user. This is also done when a user borrows USDS.
 
@@ -157,16 +162,16 @@ On networks other than Ethereum mainnet, sUSDS is not an ERC4626 token but a sim
 
 The Spark Liquidity Layer will ensure there is always enough liquidity on external networks for swapping.
 
-#### USDS Balances & Debt
+### USDS Balances & Debt
 
-To display USDS balances and debt in the UI, the conversion functions in the "Conversions" section can be used to convert sUSDS balances to USDS balances.
+To display USDS balances and debt in the UI, the conversion functions in the [Conversions section](#conversions) can be used to convert sUSDS balances to USDS balances.
 
-#### USDS Lending and Borrow Rates
+### USDS Lending and Borrow Rates
 
-To display rates according to USDS, you can refer to the example in the Interest Rate Models section. The rates for USDS can be calculated using the Sky Savings Rate and the sUSDS borrow or lending rate as follows:
+To display rates according to USDS, you can refer to the example in the [Interest Rate Models section](#interest-rate-models). The rates for USDS can be calculated using the Sky Savings Rate and the sUSDS borrow or lending rate as follows:
 
 `APY_combined_USDS = (1+ssr_apy) * (1+protocol_apy_sUSDS) - 1`
 
-#### USDS Liquidations
+### USDS Liquidations
 
 For liquidations, the protocol can elect to support paying down sUSDS debt using USDS, by using the same conversions as for lending and borrowing. Liquidators would still have to monitor the sUSDS debt and price to trigger liquidations.
