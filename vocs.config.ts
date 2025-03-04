@@ -15,7 +15,7 @@ export default defineConfig({
     },
     {
       icon: 'github',
-      link: 'https://github.com/marsfoundation/',
+      link: 'https://github.com/sparkdotfi/',
     },
     {
       icon: 'discord',
