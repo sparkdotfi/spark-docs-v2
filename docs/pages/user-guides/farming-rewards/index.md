@@ -56,4 +56,4 @@ You can only deposit USDS, however you are able to convert savings tokens to USD
 
 ### What are the risks?
 
-Funds deposited into farms are not being used in any liquidity pool, or staking mechanism, and can therefore always be instantly withdrawn with no liquidity constraints and no fees beyond gas cost. No other actor than the user itself have access to deposited funds. You are therefore not taking on any market or staking related risks.
+Funds deposited into farms are not being used in any liquidity pool, or staking mechanism, and can therefore always be instantly withdrawn with no liquidity constraints and no fees beyond gas cost. No other actor than the user itself have access to deposited funds. You are therefore not taking on any market or staking related risks on the deposited funds. However the earned Sky token rewards might fluctuate in value.
