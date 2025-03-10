@@ -12,7 +12,7 @@ sUSDC increases in value according to the SSR, as its USDC denominated value gra
 
 The yield source for USDC is the Sky Savings Rate (SSR), which is a feature of the Sky Protocol that enables users to earn a savings rate on their USDS. It is therefore similar to sUSDS, except that it is denominated in USDC.
 
-The USDC Savings vault exchanges USDC for USDS using the Sky PSM, and deposits it into the the Sky Savings Rate. When users withdraw, the USDS is exchanged back to USDC using the Sky PSM. The Spark Liquidity Layer ensures there is always enough USDC liquidity to redeem sUSDC for USDC even for large sizes. This is possible due to Sky keeping 25 % of USDS backing in cash reserves, such as USDC. This results in readily available liquidity in the billions.
+The USDC Savings vault exchanges USDC for USDS using the Sky PSM, and deposits it into the the Sky Savings Rate. When users withdraw, the USDS is exchanged back to USDC using the Sky PSM. This is a 1:1 swap with no slippage or fees besides network fees. The Spark Liquidity Layer ensures there is always enough USDC liquidity to redeem sUSDC for USDC even for large sizes. This is possible due to Sky keeping 25 % of USDS backing in cash reserves, such as USDC. This results in readily available liquidity in the billions.
 You can always check the current yield of sUSDC on the Spark App.
 
 The Sky Savings Rate is funded by Sky's revenue, which includes fees from crypto collateralized loans, investments into U.S. treasury bills and its liquidity provisioning into SparkLend and the Spark Liquidity Layer. You can find a full overview of revenue sources here: https://info.sky.money/collateral
