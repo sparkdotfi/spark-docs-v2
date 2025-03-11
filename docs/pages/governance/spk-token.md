@@ -55,7 +55,7 @@ In season 2 6.66M SPK will be rewarded per month to SparkLend users who qualify 
 
 The monthly SPK rewards are allocated as following:
 
-* 80 % is allocated to users borrowing DAI
+* 80 % is allocated to users borrowing USDS or DAI
 * 20 % is allocated to users supplying ETH.
 
 Season 2 is an additional pre-farming period, which runs until the Spark Sky Star launches as part of Sky Endgame launch season.
@@ -72,7 +72,7 @@ The monthly SPK rewards are allocated as following:
 
 The idle USDS supply consistently earns the Sky Savings Rate (SSR), ensuring capital efficiency for suppliers.
 
-To prevent gaming the incentives through "stablecoin looping", meaning supplying USDS and borrowing DAI or USDS and supplying USDS again, effectively providing a highly leveraged USDS position, the following formula is used to discount such behaviour:
+To prevent gaming the incentives through "stablecoin looping", meaning supplying USDS and borrowing DAI or USDS and supplying USDS again, effectively providing a highly leveraged USDS position, the following formula is used to discount such behavior:
 
 `USDS Supplies - Sum_i(USDS+DAI Borrow Amount (in USD) / USDS+DAI Liquidation Threshold)`
 
@@ -113,6 +113,12 @@ Users of [Spark](http://app.spark.fi) who borrow DAI or supply ETH qualify for t
 
 For clarity here are some **valid examples:**
 
+* Supply wstETH, Borrow USDS - USDS amount is included ✅
+* Supply rETH, Borrow USDS - USDS amount is included ✅
+* Supply wstETH, Borrow USDS, Swap USDS for sUSDS - USDS amount is included ✅
+* Supply ETH, Borrow USDS - Both ETH and USDS amounts are included in the airdrop ✅
+* Supply rETH, Supply ETH, Borrow USDS - Both ETH and USDS amounts are included in the airdrop ✅
+* Supply GNO, Borrow USDS - USDS amount is included ✅
 * Supply wstETH, Borrow DAI - DAI amount is included ✅
 * Supply rETH, Borrow DAI - DAI amount is included ✅
 * Supply wstETH, Borrow DAI, Swap DAI for sDAI - DAI amount is included ✅
@@ -124,9 +130,15 @@ For clarity here are some **valid examples:**
 
 **Invalid examples:**
 
+* Supply sUSDS, Borrow USDS - FORFEIT AIRDROP ❌
+* Supply sUSDS, Borrow DAI - FORFEIT AIRDROP ❌
+* Supply sDAI, Borrow USDS - FORFEIT AIRDROP ❌
 * Supply sDAI, Borrow DAI - FORFEIT AIRDROP ❌
 * Supply ETH, Borrow ETH - FORFEIT AIRDROP ❌
+* Supply wstETH, Borrow USDS, Deposit sUSDS as Collateral - FORFEIT AIRDROP ❌
+* Supply wstETH, Borrow USDS, Deposit sDAI as Collateral - FORFEIT AIRDROP ❌
 * Supply wstETH, Borrow DAI, Deposit sDAI as Collateral - FORFEIT AIRDROP ❌
+* Supply wstETH, Borrow DAI, Deposit sUSDS as Collateral - FORFEIT AIRDROP ❌
 
 **Note:** Borrowing DAI and depositing it into sDAI using the Cash and Savings feature of Spark is accepted and does not count against the airdrop. It is only penalized if you supply sDAI as collateral to borrow against.
 
@@ -136,7 +148,7 @@ This section only relates to SPK rewards on SparkLend. To learn more about the A
 
 The SPK Airdrop for SparkLend is calculated using the following formula:
 
-`Airdrop = 80% * DAI Borrows in USD + 20% * ETH Supplies in USD`
+`Airdrop = 80% * USDS+DAI Borrows in USD + 20% * ETH Supplies in USD`
 
 Please note all supplies and borrows are denominated in USD and will use the on-chain oracle price at that block to determine the conversion.
 
@@ -150,7 +162,7 @@ As noted in the “[How do I qualify for the airdrop?](#how-do-i-qualify-for-the
 
 Full anti-cheat formula (don’t worry about this if you are using the system legitimately:
 
-`Airdrop = 80% * (DAI Borrows - sDAI Supplies * sDAI Liquidation Threshold) + 20% * (ETH Supplies - ETH Borrows / ETH Liquidation Threshold)`
+`Airdrop = 80% * (DAI Borrows + USDS Borrows - sDAI Supplies * sDAI Liquidation Threshold - sUSDS Supplies * sUSDS Liquidation Threshold) + 20% * (ETH Supplies - ETH Borrows / ETH Liquidation Threshold)`
 
 For Aave Rewards anti-cheat formula, [read more here](#aave).
 
