@@ -17,6 +17,10 @@ Spark currently supports the following Savings Vaults:
     - The Savings USDS vault deposits user deposits of USDS into the Sky Savings Rate.
     - [You can read more about sUSDS here.](/user-guides/earning-savings/susds)
 
+- **Savings USDC**
+    - The Savings USDC vault deposits user deposits of USDC into the Sky Savings Rate.
+    - [You can read more about sUSDC here.](/user-guides/earning-savings/susdc)
+
 - **Savings DAI**
     - The Savings DAI vault deposits user deposits of DAI into the DAI Savings Rate.
     - [You can read more about sDAI here.](/user-guides/earning-savings/sdai)
@@ -27,16 +31,24 @@ Spark currently supports the following Savings Vaults:
 ### Deposit Savings
 
 1. Make sure you are connected to the network you wish to use.
-2. To earn yield on your stablecoins such as USDS, DAI, and USDC, navigate to the **Savings** page, which is the front page of [app.spark.fi](https://spark.fi).
+2. To earn yield on your stablecoins such as USDS, USDC, and DAI navigate to the **Savings** page, which is the front page of [app.spark.fi](https://spark.fi).
 
 ![](/assets/savings-1.png)
 *Savings Page*
 
-3. If you have stablecoins in your wallet, the UI will show you the savings opportunity based on your holdings. It shows the current Sky Savings Rate (SSR), a 30 day projected savings and a 1-year projected savings.
+3. To the left, you can see which Savings Vaults are available. To see more info or to deposit, you can click on the different Vaults. In this example we will use the USDS vault.
 
-4. To deposit stablecoins, you navigate to the **Stablecoins in wallet** section, which displays the stablecoin holdings in your wallet, and click on the deposit button for the asset you wish to deposit.
+![](/assets/savings-vaults.png)
+*Savings Vaults*
 
-5.  In the deposit window you specify the stablecoin (dropdown) and amount (input) you wish to deposit.
+4. Below the general info it shows the current and historical Savings Rate (SSR) for the selected vault.
+
+![](/assets/savings-apy.png)
+*Savings Rate*
+
+5. To deposit, for the selected vault, click on the Deposit button. You can also navigate to the **Supported stablecoins** section, which displays the stablecoin holdings in your wallet, and click on the deposit button for the asset you wish to deposit. Note that different Savings Vaults will support different stablecoins.
+
+6.  In the deposit window you specify the stablecoin (dropdown) and amount (input) you wish to deposit.
 
     In the Transaction Overview it will show the APY, the route (if not using USDS, how tokens are swapped, before being deposited), and the final outcome of the deposit.
     To finalize the deposit you must execute the transactions in the **Actions** section.
@@ -51,12 +63,17 @@ The following example showcases a USDC deposit:
 ![](/assets/savings-3.png)
 *Depositing USDC into Savings*
 
-6. Once you have done all the necessary transactions, the specified amount of assets will be deposited and you will receive Savings USDS (sUSDS) tokens in return.
+7. Once you have done all the necessary transactions, the specified amount of assets will be deposited and you will receive Savings USDS (sUSDS) tokens in return.
 
 ![](/assets/savings-4.png)
 *Confirmation Savings Deposit*
 
-7. The sUSDS tokens represents your share of USDS deposited the Sky Savings Rate. You need the sUSDS tokens to withdraw accrued savings in the future, so keep the tokens safe.
+8. The sUSDS tokens represents your share of USDS deposited the Sky Savings Rate. You need the sUSDS tokens to withdraw accrued savings in the future, so keep the tokens safe.
+
+9. After your deposit, you will see your Savings grow in real time. You can also see your projected earnings in the My Earnings section.
+
+![](/assets/savings-earnings.png)
+*My Earnings*
 
 ### Withdraw Savings
 

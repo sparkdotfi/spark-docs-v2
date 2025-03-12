@@ -61,6 +61,10 @@ export default defineConfig({
               link: '/user-guides/earning-savings/susds', 
             },
             { 
+              text: 'Savings USDC', 
+              link: '/user-guides/earning-savings/susdc', 
+            },
+            { 
               text: 'Savings DAI', 
               link: '/user-guides/earning-savings/sdai', 
             }
@@ -166,6 +170,10 @@ export default defineConfig({
             { 
               text: 'sUSDS Token', 
               link: '/dev/savings/susds-token', 
+            },
+            { 
+              text: 'sUSDC Token', 
+              link: '/dev/savings/susdc-token', 
             },
             { 
               text: 'Cross-chain USDS & sUSDS', 
