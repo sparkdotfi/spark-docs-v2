@@ -80,27 +80,27 @@ To prevent gaming the incentives through "stablecoin looping", meaning supplying
 
 ## What will the total supply of SPK be?
 
-The SPK emissions follow the rules set forth in [MIP101: Sky Atlas Immutable Alignment Artifact](https://forum.makerdao.com/t/mip102c2-sp21-mip-amendment-subproposal/23039/5#h-4312-allocatordao-emissions-107) as part of the Sky Endgame, which states that **4.6 billion SPK tokens will be emitted over the first 10 years**. 4 billion tokens are emitted through Genesis farming, which gradually decreases over time, and 600 million tokens are allocated to a workforce bonus pool. See the allocation chart below:
+The SPK emissions follow the rules set forth in the [Sky Atlas](https://forum.sky.money/t/atlas-edit-weekly-cycle-proposal-week-of-2025-03-10/26111), which states that **10 billion SPK tokens will be emitted over the first 10 years**. 6.5 billion tokens are emitted through Genesis farming, which gradually decreases over time, and 3.5 billion tokens are allocated to the Spark Foundation.
 
-![](/assets/spk_distribution.png)
+![](/assets/spk_distribution1.png)
 *SPK Genesis Distribution*
 
 The Genesis farming follow the following emission schedule:
 
 |             | Yearly Amount of SPK (in millions) | Total Amount of SPK (in millions) |
 | ----------- | ---------------------------------- | --------------------------------- |
-| Year 1      | 1000                               | 1000                              |
-| Year 2      | 1000                               | 2000                              |
-| Year 3      | 500                                | 2500                              |
-| Year 4      | 500                                | 3000                              |
-| Year 5      | 250                                | 3250                              |
-| Year 6      | 250                                | 3500                              |
-| Year 7      | 125                                | 3625                              |
-| Year 8      | 125                                | 3750                              |
-| Year 9      | 125                                | 3875                              |
-| Year 10     | 125                                | 4000                              |
+| Year 1      | 1625.00                           | 1625.00                            |
+| Year 2      | 1625.00                           | 3250.00                            |
+| Year 3      | 812.50                            | 4062.50                            |
+| Year 4      | 812.50                            | 4875.00                            |
+| Year 5      | 406.25                            | 5281.25                            |
+| Year 6      | 406.25                            | 5687.50                            |
+| Year 7      | 203.13                            | 5890.63                            |
+| Year 8      | 203.13                            | 6093.75                            |
+| Year 9      | 203.13                            | 6296.88                            |
+| Year 10     | 203.13                            | 6500.00                            |
 
-![](/assets/spk_emissions.png)
+![](/assets/spk_emissions1.png)
 *SPK Emissions Over First 10 Years*
 
 ## How do I qualify for the SPK airdrop?
