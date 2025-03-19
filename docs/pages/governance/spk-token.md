@@ -51,7 +51,7 @@ The current season offers SPK rewards across both SparkLend and Aave. Learn more
 
 #### SparkLend
 
-In season 2 14.5M SPK will be rewarded per month to SparkLend users who qualify for the airdrop.
+In season 2 6.66M SPK will be rewarded per month to SparkLend users who qualify for the airdrop.
 
 The monthly SPK rewards are allocated as following:
 
@@ -64,7 +64,7 @@ Season 2 is an additional pre-farming period, which runs until the Spark Sky Sta
 
 #### Aave
 
-In season 2 7.25M SPK will be rewarded per month to Aave users who qualify for the airdrop.
+In season 2 3.33M SPK will be rewarded per month to Aave users who qualify for the airdrop.
 
 The monthly SPK rewards are allocated as following:
 
