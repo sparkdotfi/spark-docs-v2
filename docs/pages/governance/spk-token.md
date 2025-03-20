@@ -36,7 +36,7 @@ Spark is running a pre-farming airdrop campaign based on usage of its lending pl
 
 ### Season 1 (Aug 20, 2023 - May 20, 2024)
 
-In season 1 60M SPK was allocated to users who qualified for the airdrop.
+In season 1, 130,434,783 SPK was allocated to users who qualified for the airdrop.
 
 * 80 % (48M) is allocated to users borrowing DAI
 * 20 % (12M) is allocated to users supplying ETH.
@@ -51,7 +51,7 @@ The current season offers SPK rewards across both SparkLend and Aave. Learn more
 
 #### SparkLend
 
-In season 2 14.5M SPK will be rewarded per month to SparkLend users who qualify for the airdrop.
+In season 2, 14,478,261 SPK will be rewarded per month to SparkLend users who qualify for the airdrop.
 
 The monthly SPK rewards are allocated as following:
 
@@ -64,7 +64,7 @@ Season 2 is an additional pre-farming period, which runs until the Spark Sky Sta
 
 #### Aave
 
-In season 2 7.25M SPK will be rewarded per month to Aave users who qualify for the airdrop.
+In season 2 7,239,130 SPK will be rewarded per month to Aave users who qualify for the airdrop.
 
 The monthly SPK rewards are allocated as following:
 
