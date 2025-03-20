@@ -38,8 +38,8 @@ Spark is running a pre-farming airdrop campaign based on usage of its lending pl
 
 In season 1, 130,434,783 SPK was allocated to users who qualified for the airdrop.
 
-* 80 % (48M) is allocated to users borrowing DAI
-* 20 % (12M) is allocated to users supplying ETH.
+* 80 % is allocated to users borrowing DAI
+* 20 % is allocated to users supplying ETH.
 
 Season 1 was a pre-farming period of 9 months active from Aug 20 2023 14:25 UTC (Ethereum block 17956537) to May 20 2024 14:25 UTC.
 
