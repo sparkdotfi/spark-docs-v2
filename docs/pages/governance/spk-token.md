@@ -64,7 +64,7 @@ Season 2 is an additional pre-farming period, which runs until the Spark Sky Sta
 
 #### Aave
 
-In season 2 7,239,130 SPK will be rewarded per month to Aave users who qualify for the airdrop.
+In season 2, 7,239,130 SPK will be rewarded per month to Aave users who qualify for the airdrop.
 
 The monthly SPK rewards are allocated as following:
 
