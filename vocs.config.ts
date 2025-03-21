@@ -19,7 +19,7 @@ export default defineConfig({
     },
     {
       icon: 'discord',
-      link: 'https://discord.com/invite/sparkdao',
+      link: 'https://discord.com/invite/sparkdotfi',
     }
   ],
   logoUrl: {
