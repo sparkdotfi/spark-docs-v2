@@ -6,7 +6,7 @@ The Spark Rewards program offers weekly token rewards to users who participate i
 
 ## What are the rewards?
 
-The rewards will mainly be tokens from partners of Spark, this being DeFi projects or companies that Spark has a partnership with. An example is the Redstone campaign, which rewards users who deposits cbBTC into the SparkLend market, which is powered by RedStone oracles.
+The rewards will mainly be tokens from partners of Spark, this being other DeFi projects or companies that Spark has a partnership with. An example is the [Redstone campaign](/rewards/redstone), which rewards users who deposits cbBTC into the SparkLend market, which is powered by RedStone oracles.
 
 ## How do I earn rewards?
 
@@ -42,6 +42,6 @@ You claim the rewards on the Spark App Rewards page. Navigate to [app.spark.fi/r
 
 No, you do not have to claim rewards each week. Rewards will continue to accrue and accumulate and you can claim multiple weeks rewards in a single transaction. The application will show an overview of much of the rewards are able to be claimed immediately, and what is pending the next weekly distribution.
 
-## Do rewards expire?
+## Is there a claim deadline?
 
 Yes, unclaimed rewards will eventually expire depending on the campaign. However there will always be a grace period between when a campaign ends and when the rewards expire of a few months, so users should have ample time to claim their rewards in time. The unclaimed rewards will be used to further reward active users of Spark.
