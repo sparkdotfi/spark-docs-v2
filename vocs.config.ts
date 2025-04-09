@@ -118,7 +118,7 @@ export default defineConfig({
           ],
         },
         { 
-          text: 'Farming Rewards',
+          text: 'Farms',
           link: '/user-guides/farming-rewards/',
           collapsed: true,
           items: [ 
@@ -148,6 +148,17 @@ export default defineConfig({
         { 
           text: 'SPK Token & Airdrop', 
           link: '/governance/spk-token', 
+        },
+        { 
+          text: 'Spark Rewards',
+          link: '/rewards/',
+          collapsed: true,
+          items: [ 
+            { 
+              text: 'Redstone Rewards', 
+              link: '/rewards/redstone', 
+            }
+          ],
         },
         { 
           text: 'Troubleshooting',
