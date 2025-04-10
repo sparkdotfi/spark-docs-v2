@@ -34,9 +34,7 @@ Rewards are distributed based on these key factors:
 
 ## Claim Deadlines
 
-- There is a 3 month grace period to claim after season end.
-- First season will run to sometime in July 2025.
-- The claim deadline for first season will be 3 months after the end of the season - sometime in October 2025.
+- Users will have to claim their rewards within 3 months from issuance. Rewards not claimed within 3 months will expire, and cannot be claimed.
 - Stay updated for announcements regarding claim deadlines and remember to claim your rewards regularly.
 
 ## Restricted Geographies
