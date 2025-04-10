@@ -40,5 +40,5 @@ Rewards are distributed based on these key factors:
 - Stay updated for announcements regarding claim deadlines and remember to claim your rewards regularly.
 
 ## Restricted Geographies
-Users from the follwoing countries will not be able to claim rewards:
+Users from the following countries will not be able to claim rewards:
 - USA
