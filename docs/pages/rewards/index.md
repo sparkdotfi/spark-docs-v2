@@ -47,4 +47,4 @@ No, you do not have to claim rewards each week. Rewards will continue to accrue 
 Yes, unclaimed rewards will eventually expire depending on the campaign. However there will always be a grace period between when a campaign ends and when the rewards expire of a few months, so users should have ample time to claim their rewards in time. The unclaimed rewards will be used to further reward active users of Spark.
 
 ## Restricted geographies
-Certain campaigns might have restricted countries for legal reasons. Check the specific campaign to see the details.
+Campaigns might restrict participation of users from specific countries for legal reasons. Check the specific campaign to see the details.
