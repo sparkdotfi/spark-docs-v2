@@ -38,3 +38,7 @@ Rewards are distributed based on these key factors:
 - First season will run to sometime in July 2025.
 - The claim deadline for first season will be 3 months after the end of the season - sometime in October 2025.
 - Stay updated for announcements regarding claim deadlines and remember to claim your rewards regularly.
+
+## Restricted Geographies
+Users from the follwoing countries will not be able to claim rewards:
+- USA
