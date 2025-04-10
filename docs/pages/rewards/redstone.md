@@ -29,7 +29,7 @@ Rewards are distributed based on these key factors:
 
 ## Campaign Details
 
-- Campaign duration: 12 month
+- Campaign duration: 12 months
 - Total amount of tokens for distribution in first month: 960,819 RED
 
 ## Claim Deadlines
