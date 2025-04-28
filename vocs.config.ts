@@ -31,7 +31,7 @@ export default defineConfig({
     accentColor: '#FF8D70',   
   },
   editLink: { 
-    pattern: 'https://github.com/marsfoundation/spark-docs-v2/edit/master/docs/pages/:path', 
+    pattern: 'https://github.com/sparkdotfi/spark-docs-v2/edit/master/docs/pages/:path', 
     text: 'Edit on GitHub'
   },
   sidebar: [

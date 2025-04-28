@@ -6,7 +6,7 @@ description: Learn how to deposit into farms.
 
 ## Tutorial
 
-1. Navigate to the Farms page in the top navigation bar.
+1. Navigate to the Farms page using the menu of the top navigation bar.
 
 ![](/assets/farms-nav.png)
 *Navigate to the Farms page*
