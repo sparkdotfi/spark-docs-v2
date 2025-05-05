@@ -31,7 +31,7 @@ export default defineConfig({
     accentColor: '#FF8D70',   
   },
   editLink: { 
-    pattern: 'https://github.com/marsfoundation/spark-docs-v2/edit/master/docs/pages/:path', 
+    pattern: 'https://github.com/sparkdotfi/spark-docs-v2/edit/master/docs/pages/:path', 
     text: 'Edit on GitHub'
   },
   sidebar: [
@@ -146,10 +146,6 @@ export default defineConfig({
           link: '/user-guides/spark-liquidity-layer/',
         },
         { 
-          text: 'SPK Token & Airdrop', 
-          link: '/governance/spk-token', 
-        },
-        { 
           text: 'Spark Rewards',
           link: '/rewards/',
           collapsed: true,
@@ -164,6 +160,20 @@ export default defineConfig({
           text: 'Troubleshooting',
           link: '/user-guides/troubleshooting/',
         }, 
+      ],
+    },
+    { 
+      text: 'GOVERNANCE',
+      collapsed: false,
+      items: [ 
+        { 
+          text: 'SPK Token', 
+          link: '/governance/spk-token', 
+        },
+        { 
+          text: 'SPK Airdrop', 
+          link: '/governance/spk-airdrop', 
+        },
       ],
     },
     {
