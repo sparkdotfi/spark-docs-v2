@@ -146,10 +146,6 @@ export default defineConfig({
           link: '/user-guides/spark-liquidity-layer/',
         },
         { 
-          text: 'SPK Token & Airdrop', 
-          link: '/governance/spk-token', 
-        },
-        { 
           text: 'Spark Rewards',
           link: '/rewards/',
           collapsed: true,
@@ -164,6 +160,20 @@ export default defineConfig({
           text: 'Troubleshooting',
           link: '/user-guides/troubleshooting/',
         }, 
+      ],
+    },
+    { 
+      text: 'GOVERNANCE',
+      collapsed: false,
+      items: [ 
+        { 
+          text: 'SPK Token', 
+          link: '/governance/spk-token', 
+        },
+        { 
+          text: 'SPK Airdrop', 
+          link: '/governance/spk-airdrop', 
+        },
       ],
     },
     {
